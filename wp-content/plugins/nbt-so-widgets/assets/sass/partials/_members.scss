@@ -1,0 +1,130 @@
+.nbtsow-members {
+	@include bp(xs) {
+		margin-bottom: 45px;
+	}
+	@include bp(sm) {
+		margin-bottom: 90px;
+	}
+	.nbtsow-member {
+		@include jw-column();
+		@include jw-xs-column(12);
+		@include jw-sm-column(6);
+		@include jw-md-column(3);
+		padding-top: 10px;
+		@include breakpoint(0, 991px) {
+			margin-bottom: 30px
+		}
+		.nbtsow-member-thumb {
+			position: relative;
+			text-align: center;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			margin-bottom: 30px;
+			@include bp(sm) {
+				&:before {
+					position: absolute;
+					z-index: -1;
+				    width: 100%;
+				    height: 100%;
+				    background: rgba(0, 0, 0, 0.2);
+				    content: "";
+				    left: 0;
+				    top: 0;
+				    transform: translate3d(0, -100%, 0);
+				    opacity: 0;
+				    visibility: hidden;
+				    transition-duration: .4s;
+				    transition-property: transform, opacity;
+				}
+			}
+			&:after {
+				position: absolute;
+				width: 100%;
+				z-index: -1;
+			    content: "";
+			    height: 70%;
+			    bottom: 0;
+			    left: 0;
+			    border: 8px solid $c1;
+			    transition: all 0.4s;
+			    opacity: 1;
+			    visibility: visible;
+			}
+			.nbtsow-member-social {
+				display: inline-block;
+				position: absolute;
+			    bottom: 90px;
+			    left: 50%;
+			    transform: translate(-50%,0);
+			    transition: all 0.4s;
+			    min-width: 200px;
+			    @include bp(sm)  {
+			    	opacity: 0;
+			    	visibility: hidden;
+			    }
+			    i {
+			    	border-radius: 50%;
+			    	font-size: 20px;
+			    	@include bp(xs) {
+			    		background: $c1;
+				    	color: #fff
+			    	}
+			    	@include bp(sm) {
+			    		background: $c1;
+				    	color: #fff
+			    	}
+					background: $c1;
+					color: #fff;
+					@include bp(lg) {
+						background: #fff;
+						color: #7d7d7d;
+						&:hover {
+							background: $c1;
+							color: #fff
+						}
+					}
+				    transition: all .4s;
+				    &.icon-facebook {
+						padding: 7px 9px;
+						margin-right: 5px;
+				    }
+				    &.icon-twitter {
+				    	padding: 7px;
+				    	margin-right: 5px;
+				    }
+				    &.icon-gplus {
+				    	padding: 7px;
+				    }
+			    }
+			}
+			&:hover {
+				@include bp(sm) {
+					&:before {
+						transform: none;
+						z-index: 0;
+				    	opacity: 1;
+				    	visibility: visible;
+					}
+					&:after {
+						bottom: -500px;
+						border: 8px solid transparent;
+						opacity: 0;
+				    	visibility: hidden;
+					}
+					& .nbtsow-member-social {
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+			}
+		}
+		.nbtsow-member-details {
+			text-align: center;
+			.nbtsow-member-name {
+				margin-bottom: 30px;
+				font-weight: bold;
+				color: #444;
+			}
+		}
+	}
+}

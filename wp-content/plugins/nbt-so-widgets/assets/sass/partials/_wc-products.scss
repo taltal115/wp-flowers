@@ -1,0 +1,118 @@
+#new-products {
+	.nbtsow-wcproducts.layout-1 {
+		.product {
+			@include jw-column();
+			@include bp(xs) {
+				width: 90%;
+			    margin-left: auto;
+			    margin-right: auto;
+			    max-width: 400px;
+			}
+			@include jw-sm-column(12);
+			@include jw-md-column(6);
+			padding-bottom: 30px;
+			padding-top: 30px;
+			.product-thumb {
+				@include jw-column();
+				@include jw-sm-column(3);
+				@include bp(sm) {
+					display: inline-block;
+					text-align: center;
+				}
+				img {
+					width: 100%;
+					height: auto;
+				}
+				&:before {
+					content: "";
+					position: absolute;
+					top: 0;
+					width: 100%;
+					height: 100%;
+					background: rgba(255, 255, 255, 0.6);
+					opacity: 0;
+					visibility: hidden;
+					transition: all .4s;
+				}
+				&:hover {
+					&:before {
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+				.product-button {
+					@include bp(xs) {
+						font-size: 14px;
+					}
+					@include centerer;
+					visibility: hidden;
+					opacity: 0;
+					background: $c1;
+					text-transform: uppercase;
+					font-size: 12px;
+					padding: 8px 15px;
+					border-radius: 20px;
+					white-space: nowrap;
+					transition: all .4s;
+					a {
+						color: #fff;
+					}
+				}
+				&:hover {
+					.product-button {
+						visibility: visible;
+						opacity: 1;
+					}
+				}
+			}
+			.product-details {
+				@include bp(xs) {
+					padding-left: 15px;
+					padding-right: 15px;
+				}
+				@include jw-column();
+				@include jw-sm-column(9);
+				.product-meta {
+					@include bp(xs) {
+						text-align: center;
+					}
+					.product-title {
+					    position: relative;
+					    text-transform: capitalize;
+					    @include bp(xs) {
+					    	font-size: 20px;
+					    }
+					    font-weight: bold;
+					    a {
+					    	color: #666;
+					    }
+					}
+					.product-price {
+						font-weight: bold;
+						@include bp(xs) {
+							font-size: 20px;
+						}
+						color: #444
+					}
+				}
+			}
+			.product-sep {
+				width: 100%;
+			    height: 1px;
+			    border-bottom: 1px solid #d7d7d7;
+			    float: left;
+			    margin: 0 15px 0 0;
+			}
+			// &:after {
+			// 	@extend .hidden-xs;
+			// 	position: absolute;
+			//     content: "";
+			//     width: 87%;
+			//     height: 1px;
+			//     border-bottom: 1px solid #d7d7d7;
+			//     bottom: 0;
+			//     left: 45px;
+			// }
+		}
+	}
+}

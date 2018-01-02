@@ -1,0 +1,9 @@
+.redux-dev-mode-notice-container.redux-dev-qtip { display: none; }
+.rAds {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+.redux-message.redux-notice {
+    display: none !important;
+}

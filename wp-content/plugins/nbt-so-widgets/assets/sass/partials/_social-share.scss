@@ -1,0 +1,74 @@
+.nbtsow-social-wrap {
+	border-bottom: 1px solid #d7d7d7;
+	padding: 10px 0 20px;
+	margin-bottom: 20px;
+    .nbtsow-title {
+        display: inline-block;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #444;
+        margin-right: 15px;
+    }
+    a {
+        color: #888;
+		i {
+			font-size: 17px;
+			border-radius: 50%;
+			@include bp(lg) {
+				margin-right: 10px;
+			}			    
+			@include bp(md) {
+				margin-right: 2px;
+			}
+			transition: background .4s;			    
+		}
+		.fa-facebook {
+			@include bp(xs) {
+				padding: 9px 13px;
+			}
+			@include bp(sm) {
+				padding: 9px 13px;
+			}
+			@include bp(md) {
+				padding: 7px 11px;
+			}
+			@include bp(lg) {
+				padding: 9px 13px;
+			}		
+		}
+		.fa-google-plus {
+			@include bp(xs) {
+				padding: 9px 10px;
+			}
+			@include bp(sm) {
+				padding: 9px 10px;
+			}
+			@include bp(md) {
+				padding: 7px 8px;
+			}
+			@include bp(lg) {
+				padding: 9px 10px;
+			}			
+		}
+		.fa-twitter, .fa-pinterest {
+			@include bp(xs) {
+				padding: 9px 11px;
+			}
+			@include bp(sm) {
+				padding: 9px 11px;
+			}
+			@include bp(md) {
+				padding: 7px 9px;
+			}
+			@include bp(lg) {
+				padding: 9px 11px;
+			}			
+		}
+		&:hover {
+			i {
+				background: $c1;
+				color: #fff;
+			}
+		}
+    }
+}

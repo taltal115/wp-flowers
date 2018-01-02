@@ -1,0 +1,334 @@
+
+---Downloaded files---
+The import files for: Nb_flower were successfully downloaded!
+Initial max execution time = 30
+Files info:
+Site URL = http://localhost/blog
+Data file = /var/www/html/blog/wp-content/themes/nb_flower/inc/import-files/content.xml
+Widget file = /var/www/html/blog/wp-content/themes/nb_flower/inc/import-files/widgets.wie
+Customizer file = not defined!
+Redux files:
+nb_flower_options -> /var/www/html/blog/wp-content/themes/nb_flower/inc/import-files/theme_options.json 
+
+
+------
+New AJAX call!
+[WARNING] Failed to import pa_color Blue
+[WARNING] Failed to import pa_product-intro Brochure direct mailing services available
+[WARNING] Failed to import product_type external
+[WARNING] Failed to import pa_color Green
+[WARNING] Failed to import product_type grouped
+[WARNING] Failed to import pa_product-intro Lightning-fast turnaround times, including one-day production
+[WARNING] Failed to import pa_product-intro Multiple premium paper stocks and folding options
+[WARNING] Failed to import pa_color Red
+[WARNING] Failed to import product_type simple
+[WARNING] Failed to import product_type variable
+[WARNING] Failed to import product_cat Basket Flower
+[WARNING] Failed to import product_cat Birthday flower
+[WARNING] Failed to import product_cat Lily flower
+[WARNING] Failed to import product_cat Mother's Day Flower
+[WARNING] Failed to import product_cat mummy flower
+[WARNING] Failed to import product_cat Office flower
+[WARNING] Failed to import product_cat Rose
+[WARNING] Failed to import product_cat Shool Flower
+[WARNING] Failed to import product_cat spring flower
+[WARNING] Failed to import product_cat Tulips
+[WARNING] Failed to import product_cat vacation flower
+[WARNING] Failed to import product_cat Wedding flower
+[WARNING] Failed to import product_cat wedding flower
+[WARNING] Failed to import product_cat winter flower
+[WARNING] Failed to import product_cat women day flower
+[WARNING] Failed to import product_cat Basket and flower
+[WARNING] Failed to import product_cat Contemporary
+[WARNING] Failed to import product_cat Lilies
+[WARNING] Failed to import product_cat Roses
+
+
+------
+New AJAX call!
+[WARNING] Failed to import pa_color Blue
+[WARNING] Failed to import pa_product-intro Brochure direct mailing services available
+[WARNING] Failed to import product_type external
+[WARNING] Failed to import pa_color Green
+[WARNING] Failed to import product_type grouped
+[WARNING] Failed to import pa_product-intro Lightning-fast turnaround times, including one-day production
+[WARNING] Failed to import pa_product-intro Multiple premium paper stocks and folding options
+[WARNING] Failed to import pa_color Red
+[WARNING] Failed to import product_type simple
+[WARNING] Failed to import product_type variable
+[WARNING] Failed to import product_cat Basket Flower
+[WARNING] Failed to import product_cat Birthday flower
+[WARNING] Failed to import product_cat Lily flower
+[WARNING] Failed to import product_cat Mother's Day Flower
+[WARNING] Failed to import product_cat mummy flower
+[WARNING] Failed to import product_cat Office flower
+[WARNING] Failed to import product_cat Rose
+[WARNING] Failed to import product_cat Shool Flower
+[WARNING] Failed to import product_cat spring flower
+[WARNING] Failed to import product_cat Tulips
+[WARNING] Failed to import product_cat vacation flower
+[WARNING] Failed to import product_cat Wedding flower
+[WARNING] Failed to import product_cat wedding flower
+[WARNING] Failed to import product_cat winter flower
+[WARNING] Failed to import product_cat women day flower
+[WARNING] Failed to import product_cat Basket and flower
+[WARNING] Failed to import product_cat Contemporary
+[WARNING] Failed to import product_cat Lilies
+[WARNING] Failed to import product_cat Roses
+
+
+------
+New AJAX call!
+[WARNING] Failed to import pa_color Blue
+[WARNING] Failed to import pa_product-intro Brochure direct mailing services available
+[WARNING] Failed to import product_type external
+[WARNING] Failed to import pa_color Green
+[WARNING] Failed to import product_type grouped
+[WARNING] Failed to import pa_product-intro Lightning-fast turnaround times, including one-day production
+[WARNING] Failed to import pa_product-intro Multiple premium paper stocks and folding options
+[WARNING] Failed to import pa_color Red
+[WARNING] Failed to import product_type simple
+[WARNING] Failed to import product_type variable
+[WARNING] Failed to import product_cat Basket Flower
+[WARNING] Failed to import product_cat Birthday flower
+[WARNING] Failed to import product_cat Lily flower
+[WARNING] Failed to import product_cat Mother's Day Flower
+[WARNING] Failed to import product_cat mummy flower
+[WARNING] Failed to import product_cat Office flower
+[WARNING] Failed to import product_cat Rose
+[WARNING] Failed to import product_cat Shool Flower
+[WARNING] Failed to import product_cat spring flower
+[WARNING] Failed to import product_cat Tulips
+[WARNING] Failed to import product_cat vacation flower
+[WARNING] Failed to import product_cat Wedding flower
+[WARNING] Failed to import product_cat wedding flower
+[WARNING] Failed to import product_cat winter flower
+[WARNING] Failed to import product_cat women day flower
+[WARNING] Failed to import product_cat Basket and flower
+[WARNING] Failed to import product_cat Contemporary
+[WARNING] Failed to import product_cat Lilies
+[WARNING] Failed to import product_cat Roses
+
+
+------
+New AJAX call!
+[WARNING] Failed to import pa_color Blue
+[WARNING] Failed to import pa_product-intro Brochure direct mailing services available
+[WARNING] Failed to import product_type external
+[WARNING] Failed to import pa_color Green
+[WARNING] Failed to import product_type grouped
+[WARNING] Failed to import pa_product-intro Lightning-fast turnaround times, including one-day production
+[WARNING] Failed to import pa_product-intro Multiple premium paper stocks and folding options
+[WARNING] Failed to import pa_color Red
+[WARNING] Failed to import product_type simple
+[WARNING] Failed to import product_type variable
+[WARNING] Failed to import product_cat Basket Flower
+[WARNING] Failed to import product_cat Birthday flower
+[WARNING] Failed to import product_cat Lily flower
+[WARNING] Failed to import product_cat Mother's Day Flower
+[WARNING] Failed to import product_cat mummy flower
+[WARNING] Failed to import product_cat Office flower
+[WARNING] Failed to import product_cat Rose
+[WARNING] Failed to import product_cat Shool Flower
+[WARNING] Failed to import product_cat spring flower
+[WARNING] Failed to import product_cat Tulips
+[WARNING] Failed to import product_cat vacation flower
+[WARNING] Failed to import product_cat Wedding flower
+[WARNING] Failed to import product_cat wedding flower
+[WARNING] Failed to import product_cat winter flower
+[WARNING] Failed to import product_cat women day flower
+[WARNING] Failed to import product_cat Basket and flower
+[WARNING] Failed to import product_cat Contemporary
+[WARNING] Failed to import product_cat Lilies
+[WARNING] Failed to import product_cat Roses
+
+
+------
+New AJAX call!
+[WARNING] Failed to import pa_color Blue
+[WARNING] Failed to import pa_product-intro Brochure direct mailing services available
+[WARNING] Failed to import product_type external
+[WARNING] Failed to import pa_color Green
+[WARNING] Failed to import product_type grouped
+[WARNING] Failed to import pa_product-intro Lightning-fast turnaround times, including one-day production
+[WARNING] Failed to import pa_product-intro Multiple premium paper stocks and folding options
+[WARNING] Failed to import pa_color Red
+[WARNING] Failed to import product_type simple
+[WARNING] Failed to import product_type variable
+[WARNING] Failed to import product_cat Basket Flower
+[WARNING] Failed to import product_cat Birthday flower
+[WARNING] Failed to import product_cat Lily flower
+[WARNING] Failed to import product_cat Mother's Day Flower
+[WARNING] Failed to import product_cat mummy flower
+[WARNING] Failed to import product_cat Office flower
+[WARNING] Failed to import product_cat Rose
+[WARNING] Failed to import product_cat Shool Flower
+[WARNING] Failed to import product_cat spring flower
+[WARNING] Failed to import product_cat Tulips
+[WARNING] Failed to import product_cat vacation flower
+[WARNING] Failed to import product_cat Wedding flower
+[WARNING] Failed to import product_cat wedding flower
+[WARNING] Failed to import product_cat winter flower
+[WARNING] Failed to import product_cat women day flower
+[WARNING] Failed to import product_cat Basket and flower
+[WARNING] Failed to import product_cat Contemporary
+[WARNING] Failed to import product_cat Lilies
+[WARNING] Failed to import product_cat Roses
+
+
+------
+New AJAX call!
+[WARNING] Failed to import pa_color Blue
+[WARNING] Failed to import pa_product-intro Brochure direct mailing services available
+[WARNING] Failed to import product_type external
+[WARNING] Failed to import pa_color Green
+[WARNING] Failed to import product_type grouped
+[WARNING] Failed to import pa_product-intro Lightning-fast turnaround times, including one-day production
+[WARNING] Failed to import pa_product-intro Multiple premium paper stocks and folding options
+[WARNING] Failed to import pa_color Red
+[WARNING] Failed to import product_type simple
+[WARNING] Failed to import product_type variable
+[WARNING] Failed to import product_cat Basket Flower
+[WARNING] Failed to import product_cat Birthday flower
+[WARNING] Failed to import product_cat Lily flower
+[WARNING] Failed to import product_cat Mother's Day Flower
+[WARNING] Failed to import product_cat mummy flower
+[WARNING] Failed to import product_cat Office flower
+[WARNING] Failed to import product_cat Rose
+[WARNING] Failed to import product_cat Shool Flower
+[WARNING] Failed to import product_cat spring flower
+[WARNING] Failed to import product_cat Tulips
+[WARNING] Failed to import product_cat vacation flower
+[WARNING] Failed to import product_cat Wedding flower
+[WARNING] Failed to import product_cat wedding flower
+[WARNING] Failed to import product_cat winter flower
+[WARNING] Failed to import product_cat women day flower
+[WARNING] Failed to import product_cat Basket and flower
+[WARNING] Failed to import product_cat Contemporary
+[WARNING] Failed to import product_cat Lilies
+[WARNING] Failed to import product_cat Roses
+
+
+------
+New AJAX call!
+[WARNING] Failed to import pa_color Blue
+[WARNING] Failed to import pa_product-intro Brochure direct mailing services available
+[WARNING] Failed to import product_type external
+[WARNING] Failed to import pa_color Green
+[WARNING] Failed to import product_type grouped
+[WARNING] Failed to import pa_product-intro Lightning-fast turnaround times, including one-day production
+[WARNING] Failed to import pa_product-intro Multiple premium paper stocks and folding options
+[WARNING] Failed to import pa_color Red
+[WARNING] Failed to import product_type simple
+[WARNING] Failed to import product_type variable
+[WARNING] Failed to import product_cat Basket Flower
+[WARNING] Failed to import product_cat Birthday flower
+[WARNING] Failed to import product_cat Lily flower
+[WARNING] Failed to import product_cat Mother's Day Flower
+[WARNING] Failed to import product_cat mummy flower
+[WARNING] Failed to import product_cat Office flower
+[WARNING] Failed to import product_cat Rose
+[WARNING] Failed to import product_cat Shool Flower
+[WARNING] Failed to import product_cat spring flower
+[WARNING] Failed to import product_cat Tulips
+[WARNING] Failed to import product_cat vacation flower
+[WARNING] Failed to import product_cat Wedding flower
+[WARNING] Failed to import product_cat wedding flower
+[WARNING] Failed to import product_cat winter flower
+[WARNING] Failed to import product_cat women day flower
+[WARNING] Failed to import product_cat Basket and flower
+[WARNING] Failed to import product_cat Contemporary
+[WARNING] Failed to import product_cat Lilies
+[WARNING] Failed to import product_cat Roses
+
+
+---Importing widgets---
+sidebar-1 : Sidebar does not exist in theme (moving widget to Inactive)
+
+Search - Search The Blog - Imported to Inactive
+Categories - CATEGORY - Imported to Inactive
+
+sidebar-woo : Sidebar does not exist in theme (moving widget to Inactive)
+
+sow-image - No Title - Site does not support widget
+Text - No Title - Imported to Inactive
+
+nb_flower-language : Sidebar does not exist in theme (moving widget to Inactive)
+
+Text - No Title - Imported to Inactive
+
+menu-header-creative : Sidebar does not exist in theme (moving widget to Inactive)
+
+Text - No Title - Imported to Inactive
+
+nb_flower-footer-top : Sidebar does not exist in theme (moving widget to Inactive)
+
+Text - No Title - Imported to Inactive
+
+Blog Sidebar : 
+
+nbtsow-social-share-widget - Get Connected - Site does not support widget
+Search - Search the blog - Imported
+nbtsow-products-widget - Recent Products - Site does not support widget
+
+Woocommerce Shop Sidebar : 
+
+nbtsow-wc-category-widget - No Title - Site does not support widget
+
+Woocommerce Product Sidebar : 
+
+nbtsow-icon-widget - No Title - Site does not support widget
+nbtsow-social-share-widget - Share - Site does not support widget
+nbtsow-products-widget - RELATED - Site does not support widget
+
+Sub Sidebar : 
+
+nbtsow-image-widget - No Title - Site does not support widget
+
+Footer 1 : 
+
+Text - ABOUT US - Imported
+nbtsow-image-widget - No Title - Site does not support widget
+
+Footer 2 : 
+
+Navigation Menu - OUR SERVICES - Imported
+
+Footer 3 : 
+
+Text - NEWSLETTER - Imported
+Text - No Title - Imported
+nbtsow-social-share-widget - FOLLOW US: - Site does not support widget
+
+Footer 4 : 
+
+nbtsow-image-widget - No Title - Site does not support widget
+
+Header Languages : 
+
+Text - No Title - Imported
+
+Header Currency : 
+
+WooCommerce Currency Switcher - No Title - Imported
+
+Footer Top : 
+
+Text - No Title - Imported
+
+mega-menu : Sidebar does not exist in theme (moving widget to Inactive)
+
+Text - discover our lastest extension - navigation menu - mega menu now! - Imported to Inactive
+nbtsow-image-widget - No Title - Site does not support widget
+nbtsow-image-widget - DONEC AC TEMPUC - Site does not support widget
+Navigation Menu - No Title - Imported to Inactive
+nbtsow-products-widget - No Title - Site does not support widget
+nbtsow-image-widget - DONEC AC TEMPUC - Site does not support widget
+
+
+
+---Importing Redux settings---
+Redux settings import for: nb_flower_options finished successfully!
+
+---pt-ocdi/after_import---
+Active siteorigin widgets success!

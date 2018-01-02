@@ -1,0 +1,400 @@
+//Mixin variable
+$prefixes: webkit moz ms o;
+$direction: top right bottom left;
+
+// font
+@mixin font-face($name, $url) {
+  @font-face {
+    font-family: #{$name};
+    src: url('#{$url}.ttf') format('truetype'),
+         url('#{$url}.svg##{$name}') format('svg'),
+         url('#{$url}.woff') format('woff'),
+         url('#{$url}.woff2') format('woff2');
+
+    @content;
+  }
+}
+
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+@mixin line-height($heightValue){
+  line-height: ($heightValue * 10) + px;
+  line-height: $heightValue + rem;
+}
+
+@mixin font-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// position absolute
+@mixin ab ($top: a, $right: a, $bottom: a, $left: a) {
+  @if $top == 'a' {
+    top: auto
+  } @else {
+    top: $top + px
+  }
+  @if $right == 'a' {
+    right: auto
+  } @else {
+    right: $right + px
+  }
+  @if $bottom == 'a' {
+    bottom: auto
+  } @else {
+    bottom: $bottom + px
+  }
+  @if $left == 'a' {
+    left: auto
+  } @else {
+    left: $left + px
+  }
+  position: absolute;
+}
+
+// clearfix
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+
+//box sizing
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model;
+     -moz-box-sizing: $box-model;
+          box-sizing: $box-model;
+}
+@mixin border-radius($radius,$border-direction: all) {
+  @if $border-direction == all {
+    -webkit-border-radius: $radius + px;
+    border-radius: $radius + px;
+    background-clip: padding-box
+  } @else if $border-direction == 't' {
+    -webkit-border-top-right-radius: $radius + px;
+    border-top-right-radius: $radius + px;
+    -webkit-border-top-left-radius: $radius + px;
+    border-top-left-radius: $radius + px;
+    background-clip: padding-box
+  } @else if $border-direction == 'r' {
+    -webkit-border-bottom-right-radius: $radius + px;
+    border-bottom-right-radius: $radius + px;
+    -webkit-border-top-right-radius: $radius + px;
+    border-top-right-radius: $radius + px;
+    background-clip: padding-box
+  } @else if $border-direction == 'b' {
+    -webkit-border-bottom-right-radius: $radius + px;
+    border-bottom-right-radius: $radius + px;
+    -webkit-border-bottom-left-radius: $radius + px;
+    border-bottom-left-radius: $radius + px;
+    background-clip: padding-box;
+  } @else if $border-direction == 'l' {
+    -webkit-border-bottom-left-radius: $radius + px;
+    border-bottom-left-radius: $radius + px;
+    -webkit-border-top-left-radius: $radius + px;
+    border-top-left-radius: $radius + px;
+    background-clip: padding-box
+  } @else if $border-direction == 'tl' {
+    -webkit-border-top-left-radius: $radius + px;
+    border-top-left-radius: $radius + px;
+    background-clip: padding-box
+  } @else if $border-direction == 'tr' {
+    -webkit-border-top-right-radius: $radius + px;
+    border-top-right-radius: $radius + px;
+    background-clip: padding-box
+  } @else if $border-direction == 'br' {
+    -webkit-border-bottom-right-radius: $radius + px;
+    border-bottom-right-radius: $radius + px;
+    background-clip: padding-box
+  } @else if $border-direction == 'bl' {
+    -webkit-border-bottom-left-radius: $radius + px;
+    border-bottom-left-radius: $radius + px;
+    background-clip: padding-box
+  }
+}
+
+//opacity and ie8 fix
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie);
+}
+
+// margin 0 auto
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// keyframes
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+      @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+      @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+      @content;
+  }
+  @-o-keyframes #{$animation-name} {
+      @content;
+  }
+  @keyframes #{$animation-name} {
+      @content;
+  }
+}
+
+// animation
+@mixin animation($str) {
+  animation: #{$str};
+  @each $prefix in $prefixes {
+    -#{$prefix}-animation: #{$str};
+  }
+}
+
+// transform
+@mixin transform($transform) {
+  @each $prefix in $prefixes {
+    -#{$prefix}-transform: #{$transform};
+  }
+  transform: #{$transform};
+}
+
+// transform:rotate
+@mixin rotate ($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+
+// transform:scale
+@mixin scale($scale) {
+   @include transform(scale($scale));
+}
+// transform:translate
+@mixin translate ($x, $y) {
+   @include transform(translate($x, $y));
+}
+// transform:skew
+@mixin skew ($x, $y) {
+   @include transform(skew(#{$x}deg, #{$y}deg));
+}
+// transform:transform origin
+@mixin transform-origin ($origin) {
+  @each $prefix in $prefixes {
+    -#{$prefix}-transform-origin: #{$origin};
+  }
+  transform-origin: #{$origin}
+}
+
+// transition
+@mixin transition($ms: 'slow'){
+  @if $ms == 'fast' {
+    transition: all .3s ease-in-out;
+    @each $prefix in $prefixes {
+      -#{$prefix}-transition: all .3s ease-in-out;
+    }
+  } @else if $ms == 'medium' {
+    transition: all .5s ease-in-out;
+    @each $prefix in $prefixes {
+      -#{$prefix}-transition: all .5s ease-in-out;
+    }
+  } @else {
+	  transition: all .7s ease-in-out;
+    @each $prefix in $prefixes {
+      -#{$prefix}-transition: all .7s ease-in-out;
+    }
+  }
+}
+
+//linear-gradient
+@mixin linear-gradient($color-1, $color-2, $angle: t) {
+  @if $angle == 't' {
+    background: linear-gradient(180deg, $color-1, $color-2);
+    @each $prefix in $prefixes {
+      background: -#{$prefix}-linear-gradient(180deg, $color-1, $color-2);
+    }
+  }
+  @else if $angle == 'r' {
+    background: linear-gradient(-90deg, $color-1, $color-2);
+    @each $prefix in $prefixes {
+      background: -#{$prefix}-linear-gradient(-90deg, $color-1, $color-2);
+    }
+  }
+  @if $angle == 'b' {
+    background: linear-gradient(0deg, $color-1, $color-2);
+    @each $prefix in $prefixes {
+      background: -#{$prefix}-linear-gradient(0deg, $color-1, $color-2);
+    }
+  }
+  @if $angle == 'l' {
+    background: linear-gradient(90deg, $color-1, $color-2);
+    @each $prefix in $prefixes {
+      background: -#{$prefix}-linear-gradient(90deg, $color-1, $color-2);
+    }
+  }
+
+}
+
+//absolute center
+@mixin centerer($centerer: a) {
+  position: absolute;
+  @if ($centerer == 'a') {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @each $prefix in $prefixes {
+      -#{$prefix}-transform: translate(-50%, -50%);
+    }
+  } @else if ($centerer == 'h')  {
+    left: 50%;
+    transform: translate(-50%, 0);
+    @each $prefix in $prefixes {
+      -#{$prefix}-transform: translate(-50%, 0);
+    }
+  } @else if ($centerer == 'v') {
+    top: 50%;
+    transform: translate(0, -50%);
+    @each $prefix in $prefixes {
+      -#{$prefix}-transform: translate(0, -50%);
+    }
+  }
+}
+
+//border
+@mixin bor($border-color, $bdr: all) {
+  @if $border-color == 0 {
+    @if $bdr == "t" {
+      border-top: 0
+    } @else if $bdr == "r" {
+      border-right: 0
+    } @else if $bdr == "b" {
+      border-bottom: 0
+    } @else if $bdr == "l" {
+      border-left: 0
+    }
+  } @else if $bdr == "all" {
+    border: 1px solid $border-color
+  } @else if $bdr == "t" {
+    border-top: 1px solid $border-color
+  } @else if $bdr == "r" {
+    border-right: 1px solid $border-color
+  } @else if $bdr == "b" {
+    border-bottom: 1px solid $border-color
+  } @else if $bdr == "l" {
+    border-left: 1px solid $border-color
+  }
+}
+
+//padding
+@mixin pad ($padding-direction, $padding-top, $padding-right: $padding-top, $padding-bottom: $padding-top, $padding-left: $padding-right) {
+  @if $padding-direction == "a" {
+    padding: $padding-top + px $padding-right + px $padding-bottom + px $padding-left + px
+  } @else if $padding-direction == "t" {
+    padding-top: $padding-top + px
+  } @else if $padding-direction == "r" {
+    padding-right: $padding-top + px
+  } @else if $padding-direction == "b" {
+    padding-bottom: $padding-top + px
+  } @else if $padding-direction == "l" {
+    padding-left: $padding-top + px
+  }
+}
+
+//margin
+@mixin mar ($margin-direction, $margin-top, $margin-right: $margin-top, $margin-bottom: $margin-top, $margin-left: $margin-right) {
+  @if $margin-direction == "a" {
+    margin: $margin-top + px $margin-right + px $margin-bottom + px $margin-left + px
+  } @else if $margin-direction == "t" {
+    margin-top: $margin-top + px
+  } @else if $margin-direction == "r" {
+    margin-right: $margin-top + px
+  } @else if $margin-direction == "b" {
+    margin-bottom: $margin-top + px
+  } @else if $margin-direction == "l" {
+    margin-left: $margin-top + px
+  }
+}
+
+//flex container
+@mixin flex() {
+    display:-webkit-box;
+    display:-moz-box;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+    display: flex;
+}
+
+@mixin justify($justify-content: flex-start) {
+  -webkit-justify-content: $justify-content;
+  justify-content: $justify-content
+}
+
+@mixin align-item($align-item) {
+  -webkit-align-items: $align-item;
+  align-items: $align-item
+}
+
+@mixin flex-direction($flex-direction) {
+  -webkit-flex-direction: $flex-direction;
+  -moz-flex-direction: $flex-direction;
+  flex-direction: $flex-direction
+}
+
+@mixin flex-wrap($flex-wrap) {
+  -webkit-flex-wrap: $flex-wrap;
+  -moz-flex-wrap: $flex-wrap;
+  flex-wrap: $flex-wrap
+}
+
+@mixin jw-column() {
+    position: relative;
+    min-height: 1px;
+}
+
+@mixin jw-xs-column($columns, $gutter: $jw-gutter) {
+    float: left;
+    width: percentage(($columns / $jw-columns));
+    padding-left:  ($gutter / 2);
+    padding-right:  ($gutter / 2);
+}
+
+
+// Generate the small columns
+@mixin jw-sm-column($columns, $gutter: $jw-gutter) {
+    padding-left:  ($gutter / 2);
+    padding-right:  ($gutter / 2);
+    @media (min-width: $jw-sm) {
+        float: left;
+        width: percentage(($columns / $jw-columns));
+    }
+}
+
+// Generate the medium columns
+@mixin jw-md-column($columns, $gutter: $jw-gutter) {
+    padding-left:  ($gutter / 2);
+    padding-right:  ($gutter / 2);
+    @media (min-width: $jw-md) {
+        float: left;
+        width: percentage(($columns / $jw-columns));
+    }
+}
+
+// Generate the large columns
+@mixin jw-lg-column($columns, $gutter: $jw-gutter) {
+    padding-left:  ($gutter / 2);
+    padding-right:  ($gutter / 2);
+    @media (min-width: $jw-lg) {
+        float: left;
+        width: percentage(($columns / $jw-columns));
+    }
+}

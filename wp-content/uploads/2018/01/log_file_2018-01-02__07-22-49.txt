@@ -1,0 +1,107 @@
+
+---Downloaded files---
+The import files for: Nb_flower were successfully downloaded!
+Initial max execution time = 30
+Files info:
+Site URL = http://localhost/blog
+Data file = /var/www/html/blog/wp-content/themes/nb_flower/inc/import-files/content.xml
+Widget file = /var/www/html/blog/wp-content/themes/nb_flower/inc/import-files/widgets.wie
+Customizer file = not defined!
+Redux files:
+nb_flower_options -> /var/www/html/blog/wp-content/themes/nb_flower/inc/import-files/theme_options.json 
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+sidebar-1 : Sidebar does not exist in theme (moving widget to Inactive)
+
+Search - Search The Blog - Widget already exists
+Categories - CATEGORY - Widget already exists
+
+sidebar-woo : Sidebar does not exist in theme (moving widget to Inactive)
+
+SiteOrigin Image - No Title - Imported to Inactive
+Text - No Title - Widget already exists
+
+nb_flower-language : Sidebar does not exist in theme (moving widget to Inactive)
+
+Text - No Title - Widget already exists
+
+menu-header-creative : Sidebar does not exist in theme (moving widget to Inactive)
+
+Text - No Title - Widget already exists
+
+nb_flower-footer-top : Sidebar does not exist in theme (moving widget to Inactive)
+
+Text - No Title - Widget already exists
+
+Blog Sidebar : 
+
+NetBaseTeam social share widget - Get Connected - Imported
+Search - Search the blog - Widget already exists
+Netbaseteam Woocommerce Products - Recent Products - Imported
+
+Woocommerce Shop Sidebar : 
+
+NetBaseTeam WC Category Widget - No Title - Imported
+
+Woocommerce Product Sidebar : 
+
+NetBaseTeam Icon Widget - No Title - Imported
+NetBaseTeam social share widget - Share - Imported
+Netbaseteam Woocommerce Products - RELATED - Imported
+
+Sub Sidebar : 
+
+NetBaseTeam Image Widget - No Title - Imported
+
+Footer 1 : 
+
+Text - ABOUT US - Widget already exists
+NetBaseTeam Image Widget - No Title - Imported
+
+Footer 2 : 
+
+Navigation Menu - OUR SERVICES - Widget already exists
+
+Footer 3 : 
+
+Text - NEWSLETTER - Widget already exists
+Text - No Title - Widget already exists
+NetBaseTeam social share widget - FOLLOW US: - Imported
+
+Footer 4 : 
+
+NetBaseTeam Image Widget - No Title - Imported
+
+Header Languages : 
+
+Text - No Title - Widget already exists
+
+Header Currency : 
+
+WooCommerce Currency Switcher - No Title - Widget already exists
+
+Footer Top : 
+
+Text - No Title - Widget already exists
+
+Max Mega Menu Widgets : 
+
+Text - discover our lastest extension - navigation menu - mega menu now! - Imported
+NetBaseTeam Image Widget - No Title - Imported
+NetBaseTeam Image Widget - DONEC AC TEMPUC - Imported
+Navigation Menu - No Title - Imported
+Netbaseteam Woocommerce Products - No Title - Imported
+NetBaseTeam Image Widget - DONEC AC TEMPUC - Imported
+
+
+
+---Importing Redux settings---
+Redux settings import for: nb_flower_options finished successfully!
+
+---pt-ocdi/after_import---
+Slider processedActive siteorigin widgets success!
