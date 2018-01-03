@@ -84,7 +84,8 @@ Tags:two-columns, left-sidebar, right-sidebar, custom-background, custom-colors,
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-family: sans-serif;
+  font-family: 'Alef', sans-serif;
+
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
 
@@ -313,6 +314,33 @@ th {
   .table-bordered th,
   .table-bordered td {
     border: 1px solid #ddd !important; } }
+
+@font-face {
+    font-family: 'Alef';
+    src: url('Alef-Bold.eot');
+    src: url('Alef-Bold.eot?#iefix') format('embedded-opentype'),
+         url('Alef-Bold.woff') format('woff'),
+         url('Alef-Bold.ttf') format('truetype'),
+         url('Alef-Bold.svg#alefbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'Alef';
+    src: url('Alef-Regular.eot');
+    src: url('Alef-Regular.eot?#iefix') format('embedded-opentype'),
+         url('Alef-Regular.woff') format('woff'),
+         url('Alef-Regular.ttf') format('truetype'),
+         url('Alef-Regular.svg#alefregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 @font-face {
   font-family: 'Glyphicons Halflings';
@@ -1129,7 +1157,8 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Alef', sans-serif;
+
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
@@ -5254,7 +5283,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Alef', sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5367,7 +5396,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Alef', sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6124,7 +6153,7 @@ html {
 body,
 html {
   min-height: 100vh;
-  font-family: 'Roboto';
+  font-family: 'Alef', sans-serif;
   color: #888;
   overflow-x: hidden;
 }
@@ -6270,7 +6299,10 @@ article.format-gallery .entry-content:after {
     float: left; }
 
 .header-right-wrap-top {
-  text-align: center; }
+  text-align: center; 
+	font-size: 20px;
+    font-weight: bold;
+}
   .header-right-wrap-top .menu {
     padding: 20px 0; }
     .header-right-wrap-top .menu > ul > li {
@@ -14844,4 +14876,8 @@ body.home .site-content {
 
 .site-header.main-menu5 .div-header-cart-from-search {
   display: flex
+}
+
+.nbtsow-wc-categories-wrap.category-accordion .nbtsow-wc-categories .li-count {
+	
 }
