@@ -7,6 +7,10 @@ ul li {
   list-style: none;
 }
 
+body {
+	font-family: 'Alef', sans-serif;
+}
+
 .wpnetbase-testi .ow-pt-image img {
   width: 100px !important;
   height: auto;
@@ -1629,7 +1633,7 @@ ul li {
   margin-right: 10px;
 }
 
-,
+
 #home5-tabs-products1 .woocommerce ul.products li.product .empty-rating:after,
 #home5-promotions-products-section .woocommerce ul.products li.product .empty-rating:after {
   display: block;
