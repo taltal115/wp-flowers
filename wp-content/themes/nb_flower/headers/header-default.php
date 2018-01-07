@@ -4,24 +4,6 @@
 			
 			<div class="header-left-widgets col-xs-12 col-sm-3 col-md-3 ">
 
-				<div class="header-social">
-					<?php if ( is_user_logged_in() ) { ?>
-					<a href="<?php echo esc_url(home_url( '/my-account' )); ?>" title="Account" class="social-user"><i class="fa fa-user" aria-hidden="true"></i><?php esc_html_e('Account','nb_flower') ?></a>
-					<?php } else { ?>
-					<a href="<?php echo esc_url(home_url( '/my-account' )); ?>" title="Login" class="social-user"><i class="fa fa-sign-in"></i><?php esc_html_e('Login','nb_flower') ?></a>
-					
-					<?php } ?>
-				</div>
-
-				<?php
-					if(is_active_sidebar('header-languages')){
-						dynamic_sidebar('header-languages');
-					}
-
-					if(is_active_sidebar('header-currency')){
-						dynamic_sidebar('header-currency'); 
-					}
-				?>
 			</div>
 			
 			<div class="header-center-logo col-xs-12 col-sm-6 col-md-6 text-center">
@@ -51,6 +33,14 @@
 							<input type="search" class="search-field form-control" placeholder="<?php echo esc_attr_x( 'Search', 'placeholder', 'nb_flower' ); ?>" value="<?php echo get_search_query(); ?>" name="s" />
 						</label>
 					</form>
+                    <div class="header-social">
+                        <?php if ( is_user_logged_in() ) { ?>
+                            <a href="<?php echo esc_url(home_url( '/my-account' )); ?>" title="Account" class="social-user"><i class="fa fa-user" aria-hidden="true"></i><?php esc_html_e('Account','nb_flower') ?></a>
+                        <?php } else { ?>
+                            <a href="<?php echo esc_url(home_url( '/my-account' )); ?>" title="Login" class="social-user"><i class="fa fa-sign-in"></i><?php esc_html_e('Login','nb_flower') ?></a>
+
+                        <?php } ?>
+                    </div>
 				</div>
 				<span id="netbase-responsive-toggle"><i class="fa fa-bars"></i></span>
 			</div>
@@ -59,7 +49,7 @@
 	</div>
 </div> <!-- /#topbar -->
 
-<header id="masthead" class="site-header ">
+<header dir="rtl" id="masthead" class="site-header ">
 	<div class="header-wrap">
 		<div class="container">
 			<div class="header-right-wrap-top col-sm-12 col-md-12">

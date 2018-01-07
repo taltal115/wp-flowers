@@ -14845,3 +14845,8 @@ body.home .site-content {
 .site-header.main-menu5 .div-header-cart-from-search {
   display: flex
 }
+
+.header-right-wrap-top {
+  font-weight: bold;
+  font-size: 20px;
+}

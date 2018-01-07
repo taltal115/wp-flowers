@@ -18,7 +18,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body dir="rtl" <?php body_class(); ?>>
+<body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 	<?php /*$data = $nb_flower_options['header_blocker'];*/
 		$header = get_field('choice_header');

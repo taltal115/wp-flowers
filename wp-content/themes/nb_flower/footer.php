@@ -12,7 +12,7 @@
 	
 	<div class="clear"></div>
 
-	<footer id="colophon" class="site-footer" >
+	<footer dir="rtl" id="colophon" class="site-footer" >
 		<?php 
 		// $footer = $nb_flower_options['footer_layout'];
 		$footer = get_field('choice_footer');
