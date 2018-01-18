@@ -261,14 +261,14 @@ function nb_flower_get_product_info(){
     endif;
 ?>
     <div class="product_advance_info">
-        <?php if( $info01 != '' ): ?>
-        <p class="product_info product_info1"><?php echo  esc_html($info01) ?></p>
+        <?php if( $info03 != '' ): ?>
+            <p class="product_info product_info3"><?php echo  esc_html($info03) ?></p>
         <?php endif; ?>
         <?php if( $info02 != '' ): ?>
         <p class="product_info product_info2"><?php echo  esc_html($info02) ?></p>
         <?php endif; ?>
-        <?php if( $info03 != '' ): ?>
-        <p class="product_info product_info3"><?php echo  esc_html($info03) ?></p>
+        <?php if( $info01 != '' ): ?>
+            <p class="product_info product_info1"><?php echo  esc_html($info01) ?></p>
         <?php endif; ?>
     </div>
 <?php

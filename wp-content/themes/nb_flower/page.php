@@ -24,7 +24,7 @@ get_header(); ?>
 					</h1>
 					<?php if(function_exists('bcn_display')):?>
 					<div class="page-breadcrumb">
-						<?php esc_html_e('You are here: ', 'nb_flower'); ?><?php bcn_display(); ?>
+						<?php esc_html_e('אתה כאן: ', 'nb_flower'); ?><?php bcn_display(); ?>
 					</div>
 					<?php endif; ?>
 				</div>				

@@ -38,17 +38,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <div itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-    <div class="single-product-images-wraps">
-        <?php
-		/**
-		 * woocommerce_before_single_product_summary hook.
-		 *
-		 * @hooked woocommerce_show_product_sale_flash - 10
-		 * @hooked woocommerce_show_product_images - 20
-		 */
-		do_action( 'woocommerce_before_single_product_summary' );
-	    ?>
-    </div>
+
 	
 	<div class="summary entry-summary">
 
@@ -68,7 +58,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 		?>
 
 	</div><!-- .summary -->
-
+    <div class="single-product-images-wraps">
+        <?php
+        /**
+         * woocommerce_before_single_product_summary hook.
+         *
+         * @hooked woocommerce_show_product_sale_flash - 10
+         * @hooked woocommerce_show_product_images - 20
+         */
+        do_action( 'woocommerce_before_single_product_summary' );
+        ?>
+    </div>
 	<?php
 		/**
 		 * woocommerce_after_single_product_summary hook.
