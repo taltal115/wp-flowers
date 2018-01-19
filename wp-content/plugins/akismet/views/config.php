@@ -174,7 +174,7 @@
 				<div class="akismet-card">
 					<div class="akismet-section-header">
 						<div class="akismet-section-header__label">
-							<span><?php esc_html_e( 'Account' , 'akismet'); ?></span>
+							<span><?php esc_html_e( '111Account' , 'akismet'); ?></span>
 						</div>
 					</div>
 				

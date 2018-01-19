@@ -2,11 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47ae39d9-e9e7-4296-817d-f680a7fcc4a6" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/wp-config.php" afterPath="$PROJECT_DIR$/wp-config.php" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nb_flower/footer.php" afterPath="$PROJECT_DIR$/wp-content/themes/nb_flower/footer.php" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nb_flower/header.php" afterPath="$PROJECT_DIR$/wp-content/themes/nb_flower/header.php" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/nb_flower/headers/header-default.php" afterPath="$PROJECT_DIR$/wp-content/themes/nb_flower/headers/header-default.php" />
+      <change beforePath="$PROJECT_DIR$/wp-content/languages/admin-he_IL.po" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wp-content/languages/admin-network-he_IL.po" afterPath="$PROJECT_DIR$/wp-content/languages/admin-network-he_IL.po" />
+      <change beforePath="$PROJECT_DIR$/wp-content/languages/continents-cities-he_IL.po" afterPath="$PROJECT_DIR$/wp-content/languages/continents-cities-he_IL.po" />
+      <change beforePath="$PROJECT_DIR$/wp-content/languages/he_IL.po" afterPath="$PROJECT_DIR$/wp-content/languages/he_IL.po" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/views/config.php" afterPath="$PROJECT_DIR$/wp-content/plugins/akismet/views/config.php" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/nb_flower/style.css" afterPath="$PROJECT_DIR$/wp-content/themes/nb_flower/style.css" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/siteorigin-widgets/nbtsow-tabs-widget-tabs-style-a8736c8b5e1d.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/siteorigin-widgets/sow-headline-default-3460d004d3e7.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/siteorigin-widgets/sow-headline-default-71387ca07c93.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/siteorigin-widgets/sow-headline-default-ce97f42c207b.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/siteorigin-widgets/sow-headline-default-e930c9a643ea.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/siteorigin-widgets/sow-image-default-813df796d9b1.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/wc-logs/fatal-errors-0aa95bc502bd8d5f7cc5c8f7322d8e8f.log" afterPath="$PROJECT_DIR$/wp-content/uploads/wc-logs/fatal-errors-0aa95bc502bd8d5f7cc5c8f7322d8e8f.log" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,8 +33,8 @@
       <file leaf-file-name="wp-config.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="69" lean-forward="false" selection-start-line="20" selection-start-column="69" selection-end-line="20" selection-end-column="69" />
+            <state relative-caret-position="374">
+              <caret line="39" column="15" lean-forward="false" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="15" />
               <folding>
                 <element signature="e#6#463#0#PHP" expanded="true" />
               </folding>
@@ -32,51 +42,99 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/nb_flower/style.css">
+      <file leaf-file-name="continents-cities-he_IL.po" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/languages/continents-cities-he_IL.po">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="14851" column="1" lean-forward="false" selection-start-line="14851" selection-start-column="1" selection-end-line="14851" selection-end-column="1" />
+            <state relative-caret-position="34">
+              <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header-default.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="header-default.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/nb_flower/headers/header-default.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="51" column="16" lean-forward="false" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+            <state relative-caret-position="84">
+              <caret line="37" column="94" lean-forward="false" selection-start-line="37" selection-start-column="94" selection-end-line="37" selection-end-column="94" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/nb_flower/footer.php">
+      <file leaf-file-name="admin-network-he_IL.po" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/languages/admin-network-he_IL.po">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+            <state relative-caret-position="119">
+              <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/nb_flower/header.php">
+      <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/myaccount/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="15" column="76" lean-forward="false" selection-start-line="15" selection-start-column="76" selection-end-line="15" selection-end-column="76" />
+            <state relative-caret-position="102">
+              <caret line="6" column="60" lean-forward="false" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="widgets.wie" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/nb_flower/inc/import-files/widgets.wie">
+      <file leaf-file-name="header-home5.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/nb_flower/headers/header-home5.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="0" column="7226" lean-forward="false" selection-start-line="0" selection-start-column="7150" selection-end-line="0" selection-end-column="7226" />
+            <state relative-caret-position="374">
+              <caret line="22" column="175" lean-forward="false" selection-start-line="22" selection-start-column="175" selection-end-line="22" selection-end-column="185" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="class.akismet-admin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/akismet/class.akismet-admin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3978">
+              <caret line="234" column="39" lean-forward="false" selection-start-line="234" selection-start-column="39" selection-end-line="234" selection-end-column="39" />
+              <folding>
+                <marker date="1516053367955" expanded="true" signature="13619:13626" ph="..." />
+                <marker date="1516053367955" expanded="true" signature="13909:13916" ph="..." />
+                <marker date="1516053367955" expanded="true" signature="16399:16478" ph="SELECT * FRO... $" />
+                <marker date="1516053367955" expanded="true" signature="21238:21251" ph="..." />
+                <marker date="1516053367955" expanded="true" signature="24601:24621" ph="..." />
+                <marker date="1516053367955" expanded="true" signature="25750:25851" ph="SELECT COUNT... $" />
+                <marker date="1516053367955" expanded="true" signature="28405:28479" ph="SELECT COUNT... $" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="phrase.rnc" pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/phrase.rnc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1904">
+              <caret line="112" column="16" lean-forward="false" selection-start-line="112" selection-start-column="16" selection-end-line="112" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="404.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/nb_flower/404.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="archive.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/nb_flower/archive.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -91,6 +149,11 @@
       <find>Do you want to receive our</find>
       <find>&lt;footer</find>
       <find>masthead</find>
+      <find>_e(</find>
+      <find>WPLANG</find>
+      <find>'Account'</find>
+      <find>Account</find>
+      <find>&quot;Account&quot;</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -99,13 +162,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/wp-config.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/nb_flower/assets/css/style.css" />
-        <option value="$PROJECT_DIR$/wp-content/themes/nb_flower/style.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/nb_flower/inc/import-files/widgets.wie" />
         <option value="$PROJECT_DIR$/wp-content/themes/nb_flower/footer.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/nb_flower/header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/nb_flower/headers/header-default.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nb_flower/style.css" />
+        <option value="$PROJECT_DIR$/wp-config.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/nb_flower/headers/header-home5.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/akismet/class.akismet-admin.php" />
       </list>
     </option>
   </component>
@@ -136,7 +201,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -145,34 +209,22 @@
               <item name="blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="nb_flower" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\blog\wp-content\languages" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -200,34 +252,37 @@
       <option name="presentableId" value="Default" />
       <updated>1515357478975</updated>
       <workItem from="1515357482052" duration="323000" />
-      <workItem from="1515357879333" duration="2784000" />
+      <workItem from="1515357879333" duration="5814000" />
+      <workItem from="1516050449304" duration="2959000" />
+      <workItem from="1516222429179" duration="604000" />
+      <workItem from="1516347773116" duration="20000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3107000" />
+    <option name="totallyTimeSpent" value="9720000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24054463" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21860817" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32840723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.318555" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.545156" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -247,26 +302,180 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/wp-config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="374">
+          <caret line="39" column="15" lean-forward="false" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="15" />
           <folding>
             <element signature="e#6#463#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/nb_flower/inc/import-files/content.xml">
+    <entry file="file://$PROJECT_DIR$/wp-content/languages/continents-cities-he_IL.po">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6685" column="0" lean-forward="false" selection-start-line="6685" selection-start-column="0" selection-end-line="6685" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/nb_flower/assets/css/style.css">
+    <entry file="file://$PROJECT_DIR$/wp-content/languages/admin-network-he_IL.po">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="2034" column="1" lean-forward="true" selection-start-line="2034" selection-start-column="1" selection-end-line="2034" selection-end-column="1" />
+        <state relative-caret-position="119">
+          <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/myaccount/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="60" lean-forward="false" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nb_flower/headers/header-home5.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="175" lean-forward="false" selection-start-line="22" selection-start-column="175" selection-end-line="22" selection-end-column="185" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/akismet/class.akismet-admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3978">
+          <caret line="234" column="39" lean-forward="false" selection-start-line="234" selection-start-column="39" selection-end-line="234" selection-end-column="39" />
+          <folding>
+            <marker date="1516053367955" expanded="true" signature="13619:13626" ph="..." />
+            <marker date="1516053367955" expanded="true" signature="13909:13916" ph="..." />
+            <marker date="1516053367955" expanded="true" signature="16399:16478" ph="SELECT * FRO... $" />
+            <marker date="1516053367955" expanded="true" signature="21238:21251" ph="..." />
+            <marker date="1516053367955" expanded="true" signature="24601:24621" ph="..." />
+            <marker date="1516053367955" expanded="true" signature="25750:25851" ph="SELECT COUNT... $" />
+            <marker date="1516053367955" expanded="true" signature="28405:28479" ph="SELECT COUNT... $" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/phrase.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1904">
+          <caret line="112" column="16" lean-forward="false" selection-start-line="112" selection-start-column="16" selection-end-line="112" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nb_flower/404.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nb_flower/archive.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nb_flower/headers/header-default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="94" lean-forward="false" selection-start-line="37" selection-start-column="94" selection-end-line="37" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="39" column="15" lean-forward="false" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="15" />
+          <folding>
+            <element signature="e#6#463#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/languages/continents-cities-he_IL.po">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/languages/admin-network-he_IL.po">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/myaccount/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="60" lean-forward="false" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nb_flower/headers/header-home5.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="175" lean-forward="false" selection-start-line="22" selection-start-column="175" selection-end-line="22" selection-end-column="185" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/akismet/class.akismet-admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3978">
+          <caret line="234" column="39" lean-forward="false" selection-start-line="234" selection-start-column="39" selection-end-line="234" selection-end-column="39" />
+          <folding>
+            <marker date="1516053367955" expanded="true" signature="13619:13626" ph="..." />
+            <marker date="1516053367955" expanded="true" signature="13909:13916" ph="..." />
+            <marker date="1516053367955" expanded="true" signature="16399:16478" ph="SELECT * FRO... $" />
+            <marker date="1516053367955" expanded="true" signature="21238:21251" ph="..." />
+            <marker date="1516053367955" expanded="true" signature="24601:24621" ph="..." />
+            <marker date="1516053367955" expanded="true" signature="25750:25851" ph="SELECT COUNT... $" />
+            <marker date="1516053367955" expanded="true" signature="28405:28479" ph="SELECT COUNT... $" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/phrase.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1904">
+          <caret line="112" column="16" lean-forward="false" selection-start-line="112" selection-start-column="16" selection-end-line="112" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nb_flower/404.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nb_flower/archive.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nb_flower/headers/header-default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="94" lean-forward="false" selection-start-line="37" selection-start-column="94" selection-end-line="37" selection-end-column="94" />
           <folding />
         </state>
       </provider>
@@ -283,25 +492,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nb_flower/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="14851" column="1" lean-forward="false" selection-start-line="14851" selection-start-column="1" selection-end-line="14851" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="1666">
+          <caret line="98" column="7" lean-forward="false" selection-start-line="98" selection-start-column="7" selection-end-line="98" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/nb_flower/inc/import-files/widgets.wie">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nb_flower/headers/header-default.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="0" column="7226" lean-forward="false" selection-start-line="0" selection-start-column="7150" selection-end-line="0" selection-end-column="7226" />
+        <state relative-caret-position="1020">
+          <caret line="60" column="27" lean-forward="false" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nb_flower/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
+        <state relative-caret-position="136">
           <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -309,14 +516,154 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="15" column="76" lean-forward="false" selection-start-line="15" selection-start-column="76" selection-end-line="15" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nb_flower/inc/import-files/widgets.wie">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="0" column="7226" lean-forward="false" selection-start-line="0" selection-start-column="7150" selection-end-line="0" selection-end-column="7226" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#463#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nb_flower/inc/import-files/content.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6685" column="0" lean-forward="false" selection-start-line="6685" selection-start-column="0" selection-end-line="6685" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nb_flower/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="2034" column="1" lean-forward="true" selection-start-line="2034" selection-start-column="1" selection-end-line="2034" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nb_flower/inc/import-files/widgets.wie">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="0" column="7226" lean-forward="false" selection-start-line="0" selection-start-column="7150" selection-end-line="0" selection-end-column="7226" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nb_flower/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nb_flower/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="15" column="76" lean-forward="false" selection-start-line="15" selection-start-column="76" selection-end-line="15" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nb_flower/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="97" column="11" lean-forward="false" selection-start-line="97" selection-start-column="11" selection-end-line="97" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nb_flower/404.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nb_flower/archive.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="39" column="15" lean-forward="false" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="15" />
+          <folding>
+            <element signature="e#6#463#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/languages/admin-network-he_IL.po">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/myaccount/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="60" lean-forward="false" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/nb_flower/headers/header-home5.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="175" lean-forward="false" selection-start-line="22" selection-start-column="175" selection-end-line="22" selection-end-column="185" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/akismet/class.akismet-admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3978">
+          <caret line="234" column="39" lean-forward="false" selection-start-line="234" selection-start-column="39" selection-end-line="234" selection-end-column="39" />
+          <folding>
+            <marker date="1516053367955" expanded="true" signature="13619:13626" ph="..." />
+            <marker date="1516053367955" expanded="true" signature="13909:13916" ph="..." />
+            <marker date="1516053367955" expanded="true" signature="16399:16478" ph="SELECT * FRO... $" />
+            <marker date="1516053367955" expanded="true" signature="21238:21251" ph="..." />
+            <marker date="1516053367955" expanded="true" signature="24601:24621" ph="..." />
+            <marker date="1516053367955" expanded="true" signature="25750:25851" ph="SELECT COUNT... $" />
+            <marker date="1516053367955" expanded="true" signature="28405:28479" ph="SELECT COUNT... $" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/phrase.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1904">
+          <caret line="112" column="16" lean-forward="false" selection-start-line="112" selection-start-column="16" selection-end-line="112" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/nb_flower/headers/header-default.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="51" column="16" lean-forward="false" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+        <state relative-caret-position="84">
+          <caret line="37" column="94" lean-forward="false" selection-start-line="37" selection-start-column="94" selection-end-line="37" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/languages/continents-cities-he_IL.po">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
           <folding />
         </state>
       </provider>

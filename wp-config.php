@@ -37,6 +37,8 @@ define('DB_CHARSET', 'utf8');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
+define ('WPLANG', 'he_IL');
+
 define('FS_METHOD', 'direct');
 
 /**#@+
