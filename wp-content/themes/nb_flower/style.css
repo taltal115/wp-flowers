@@ -6126,6 +6126,7 @@ body,
 html {
   min-height: 100vh;
   font-family: 'Roboto';
+  text-align: right;
   color: #888;
   overflow-x: hidden;
 }
