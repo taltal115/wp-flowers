@@ -24,3 +24,12 @@
 
 2018-01-08T00:08:53+00:00 CRITICAL Cannot use object of type WP_Error as array
 
+2018-01-21T00:10:08+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Error as array in /var/www/html/blog/wp-content/plugins/nbt-so-widgets/includes/widgets/nbtsow-tab-woocommerce-widget/nbtsow-tab-woocommerce-widget.php:78
+Stack trace:
+#0 /var/www/html/blog/wp-content/plugins/nbt-so-widgets/includes/widgets/nbtsow-tab-woocommerce-widget/nbtsow-tab-woocommerce-widget.php(53): NBTSOW_WC_Product_Tabs_Widget->getCategories()
+#1 /var/www/html/blog/wp-content/plugins/so-widgets-bundle/base/siteorigin-widget.class.php(91): NBTSOW_WC_Product_Tabs_Widget->initialize_form()
+#2 /var/www/html/blog/wp-content/plugins/so-widgets-bundle/base/siteorigin-widget.class.php(99): SiteOrigin_Widget->get_widget_form()
+#3 /var/www/html/blog/wp-content/plugins/so-widgets-bundle/base/siteorigin-widget.class.php(136): SiteOrigin_Widget->get_cached_widget_form()
+#4 /var/www/html/blog/wp-content/plugins/so-widgets-bundle/base/siteorigin-widget.class.php(670): SiteOrigin_Widget->form_options()
+#5 /var/www/html/blog/wp-content/plugins/siteorigin-panels/inc/admin
+

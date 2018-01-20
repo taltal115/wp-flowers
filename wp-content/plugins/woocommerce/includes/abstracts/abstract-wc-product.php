@@ -1724,7 +1724,7 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @return string
 	 */
 	public function single_add_to_cart_text() {
-		return apply_filters( 'woocommerce_product_single_add_to_cart_text', __( 'Add to cart', 'woocommerce' ), $this );
+		return apply_filters( 'woocommerce_product_single_add_to_cart_text', __( 'הוסף לעגלה', 'woocommerce' ), $this );
 	}
 
 	/**
@@ -1733,7 +1733,7 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @return string
 	 */
 	public function add_to_cart_text() {
-		return apply_filters( 'woocommerce_product_add_to_cart_text', __( 'Read more', 'woocommerce' ), $this );
+		return apply_filters( 'woocommerce_product_add_to_cart_text', __( 'קרא עוד', 'woocommerce' ), $this );
 	}
 
 	/**
