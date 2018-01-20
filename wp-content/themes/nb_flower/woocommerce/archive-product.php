@@ -96,13 +96,13 @@ get_header( 'shop' ); ?>
                 <?php endif; ?>
                 </main>
             </div>            
-            <?php
-            if ( nb_flower_get_option('shop_layout') !== 'no-sidebar' ) {
-                echo '<aside id="secondary" class="widget-area shop-sidebar" role="complementary">';
-                dynamic_sidebar( 'wc-shop-sidebar' );
-                echo '</aside>';
-            }                        
-            ?>            
+<!--            --><?php
+//            if ( nb_flower_get_option('shop_layout') !== 'no-sidebar' ) {
+//                echo '<aside id="secondary" class="widget-area shop-sidebar" role="complementary">';
+//                dynamic_sidebar( 'wc-shop-sidebar' );
+//                echo '</aside>';
+//            }
+//            ?><!--            -->
         </div>
        <!--  <?php
         if( $shop_bottom_banner = nb_flower_get_option('shop_bottom_banner', false, 'url') ) {
