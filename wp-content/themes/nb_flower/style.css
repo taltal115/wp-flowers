@@ -14881,3 +14881,12 @@ body.home .site-content {
   z-index: 1;
   position: relative;
 }
+
+.woocommerce-checkout-review-order-table th{
+    text-align: right;
+  }
+
+.woocommerce table.shop_table th {
+  text-align: right;
+
+}

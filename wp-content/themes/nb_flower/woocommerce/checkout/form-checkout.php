@@ -56,7 +56,7 @@ if ( ! $checkout->enable_signup && ! $checkout->enable_guest_checkout && ! is_us
 
 			<div class="col-2">
 				
-				<h3 id="order_review_heading"><?php esc_html_e( 'Your order', 'nb_flower' ); ?></h3>
+				<h3 id="order_review_heading"><?php esc_html_e( 'ההזמנה שלך', 'nb_flower' ); ?></h3>
 				<?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
 
 				<div id="order_review" class="woocommerce-checkout-review-order">

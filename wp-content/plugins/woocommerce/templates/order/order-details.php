@@ -34,14 +34,14 @@ if ( $show_downloads ) {
 }
 ?>
 <section class="woocommerce-order-details">
-	<h2 class="woocommerce-order-details__title"><?php _e( 'Order details', 'woocommerce' ); ?></h2>
+	<h2 class="woocommerce-order-details__title"><?php _e( 'פרטי הזמנה', 'woocommerce' ); ?></h2>
 
 	<table class="woocommerce-table woocommerce-table--order-details shop_table order_details">
 
 		<thead>
 			<tr>
-				<th class="woocommerce-table__product-name product-name"><?php _e( 'Product', 'woocommerce' ); ?></th>
-				<th class="woocommerce-table__product-table product-total"><?php _e( 'Total', 'woocommerce' ); ?></th>
+				<th class="woocommerce-table__product-name product-name"><?php _e( 'מוצר', 'woocommerce' ); ?></th>
+				<th class="woocommerce-table__product-table product-total"><?php _e( 'סה"כ', 'woocommerce' ); ?></th>
 			</tr>
 		</thead>
 
@@ -76,7 +76,7 @@ if ( $show_downloads ) {
 			?>
 			<?php if ( $order->get_customer_note() ) : ?>
 				<tr>
-					<th><?php _e( 'Note:', 'woocommerce' ); ?></th>
+					<th><?php _e( 'הערות:', 'woocommerce' ); ?></th>
 					<td><?php echo wptexturize( $order->get_customer_note() ); ?></td>
 				</tr>
 			<?php endif; ?>

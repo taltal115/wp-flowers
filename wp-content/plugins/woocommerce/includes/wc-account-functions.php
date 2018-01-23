@@ -97,13 +97,13 @@ function wc_get_account_menu_items() {
 	);
 
 	$items = array(
-		'dashboard'       => __( 'Dashboard', 'woocommerce' ),
-		'orders'          => __( 'Orders', 'woocommerce' ),
-		'downloads'       => __( 'Downloads', 'woocommerce' ),
-		'edit-address'    => __( 'Addresses', 'woocommerce' ),
-		'payment-methods' => __( 'Payment methods', 'woocommerce' ),
-		'edit-account'    => __( 'Account details', 'woocommerce' ),
-		'customer-logout' => __( 'Logout', 'woocommerce' ),
+		'dashboard'       => __( 'לוח ראשי', 'woocommerce' ),
+		'orders'          => __( 'הזמנות', 'woocommerce' ),
+		'downloads'       => __( 'הורדות', 'woocommerce' ),
+		'edit-address'    => __( 'כתוהות', 'woocommerce' ),
+		'payment-methods' => __( 'שיטות תשלומים', 'woocommerce' ),
+		'edit-account'    => __( 'פרטי החשבון', 'woocommerce' ),
+		'customer-logout' => __( 'התנתק', 'woocommerce' ),
 	);
 
 	// Remove missing endpoints.

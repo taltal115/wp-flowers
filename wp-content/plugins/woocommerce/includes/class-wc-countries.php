@@ -377,7 +377,7 @@ class WC_Countries {
 	 * @return string
 	 */
 	public function tax_or_vat() {
-		$return = in_array( $this->get_base_country(), array_merge( $this->get_european_union_countries( 'eu_vat' ), array( 'NO' ) ) ) ? __( 'VAT', 'woocommerce' ) : __( 'Tax', 'woocommerce' );
+		$return = in_array( $this->get_base_country(), array_merge( $this->get_european_union_countries( 'eu_vat' ), array( 'NO' ) ) ) ? __( 'מע"מ', 'woocommerce' ) : __( 'Tax', 'woocommerce' );
 
 		return apply_filters( 'woocommerce_countries_tax_or_vat', $return );
 	}
@@ -387,7 +387,7 @@ class WC_Countries {
 	 * @return string
 	 */
 	public function inc_tax_or_vat() {
-		$return = in_array( $this->get_base_country(), array_merge( $this->get_european_union_countries( 'eu_vat' ), array( 'NO' ) ) ) ? __( '(incl. VAT)', 'woocommerce' ) : __( '(incl. tax)', 'woocommerce' );
+		$return = in_array( $this->get_base_country(), array_merge( $this->get_european_union_countries( 'eu_vat' ), array( 'NO' ) ) ) ? __( 'כולל מע"מ ', 'woocommerce' ) : __( '(incl. tax)', 'woocommerce' );
 
 		return apply_filters( 'woocommerce_countries_inc_tax_or_vat', $return );
 	}
@@ -580,7 +580,7 @@ class WC_Countries {
 	public function get_default_address_fields() {
 		$fields = array(
 			'first_name' => array(
-				'label'        => __( 'First name', 'woocommerce' ),
+				'label'        => __( 'שם פרטי', 'woocommerce' ),
 				'required'     => true,
 				'class'        => array( 'form-row-first' ),
 				'autocomplete' => 'given-name',
@@ -588,60 +588,60 @@ class WC_Countries {
 				'priority'     => 10,
 			),
 			'last_name' => array(
-				'label'        => __( 'Last name', 'woocommerce' ),
+				'label'        => __( 'שם משפחה', 'woocommerce' ),
 				'required'     => true,
 				'class'        => array( 'form-row-last' ),
 				'autocomplete' => 'family-name',
 				'priority'     => 20,
 			),
-			'company' => array(
-				'label'        => __( 'Company name', 'woocommerce' ),
-				'class'        => array( 'form-row-wide' ),
-				'autocomplete' => 'organization',
-				'priority'     => 30,
-			),
-			'country' => array(
-				'type'         => 'country',
-				'label'        => __( 'Country', 'woocommerce' ),
-				'required'     => true,
-				'class'        => array( 'form-row-wide', 'address-field', 'update_totals_on_change' ),
-				'autocomplete' => 'country',
-				'priority'     => 40,
-			),
+//			'company' => array(
+//				'label'        => __( 'Company name', 'woocommerce' ),
+//				'class'        => array( 'form-row-wide' ),
+//				'autocomplete' => 'organization',
+//				'priority'     => 30,
+//			),
+//			'country' => array(
+//				'type'         => 'country',
+//				'label'        => __( 'מדינה', 'woocommerce' ),
+//				'required'     => true,
+//				'class'        => array( 'form-row-wide', 'address-field', 'update_totals_on_change' ),
+//				'autocomplete' => 'country',
+//				'priority'     => 40,
+//			),
 			'address_1' => array(
-				'label'        => __( 'Street address', 'woocommerce' ),
+				'label'        => __( 'רחוב', 'woocommerce' ),
 				/* translators: use local order of street name and house number. */
-				'placeholder'  => esc_attr__( 'House number and street name', 'woocommerce' ),
+				'placeholder'  => esc_attr__( 'מס בית ומס רחוב', 'woocommerce' ),
 				'required'     => true,
 				'class'        => array( 'form-row-wide', 'address-field' ),
 				'autocomplete' => 'address-line1',
 				'priority'     => 50,
 			),
 			'address_2' => array(
-				'placeholder'  => esc_attr__( 'Apartment, suite, unit etc. (optional)', 'woocommerce' ),
+				'placeholder'  => esc_attr__( 'דירה, יחדדה וכו. (לא חובה)', 'woocommerce' ),
 				'class'        => array( 'form-row-wide', 'address-field' ),
 				'required'     => false,
 				'autocomplete' => 'address-line2',
 				'priority'     => 60,
 			),
 			'city' => array(
-				'label'        => __( 'Town / City', 'woocommerce' ),
+				'label'        => __( 'עיר', 'woocommerce' ),
 				'required'     => true,
 				'class'        => array( 'form-row-wide', 'address-field' ),
 				'autocomplete' => 'address-level2',
 				'priority'     => 70,
 			),
-			'state' => array(
-				'type'         => 'state',
-				'label'        => __( 'State / County', 'woocommerce' ),
-				'required'     => true,
-				'class'        => array( 'form-row-wide', 'address-field' ),
-				'validate'     => array( 'state' ),
-				'autocomplete' => 'address-level1',
-				'priority'     => 80,
-			),
+//			'state' => array(
+//				'type'         => 'state',
+//				'label'        => __( 'State / County', 'woocommerce' ),
+//				'required'     => true,
+//				'class'        => array( 'form-row-wide', 'address-field' ),
+//				'validate'     => array( 'state' ),
+//				'autocomplete' => 'address-level1',
+//				'priority'     => 80,
+//			),
 			'postcode' => array(
-				'label'        => __( 'Postcode / ZIP', 'woocommerce' ),
+				'label'        => __( 'מיקוד', 'woocommerce' ),
 				'required'     => true,
 				'class'        => array( 'form-row-wide', 'address-field' ),
 				'validate'     => array( 'postcode' ),
@@ -1146,7 +1146,7 @@ class WC_Countries {
 		// Add email and phone fields.
 		if ( 'billing_' === $type ) {
 			$address_fields['billing_phone'] = array(
-				'label'        => __( 'Phone', 'woocommerce' ),
+				'label'        => __( 'טלפון', 'woocommerce' ),
 				'required'     => true,
 				'type'         => 'tel',
 				'class'        => array( 'form-row-first' ),
@@ -1155,7 +1155,7 @@ class WC_Countries {
 				'priority'     => 100,
 			);
 			$address_fields['billing_email'] = array(
-				'label'        => __( 'Email address', 'woocommerce' ),
+				'label'        => __( 'דוא"ל', 'woocommerce' ),
 				'required'     => true,
 				'type'         => 'email',
 				'class'        => array( 'form-row-last' ),

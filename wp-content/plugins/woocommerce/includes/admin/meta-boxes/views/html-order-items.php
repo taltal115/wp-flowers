@@ -138,7 +138,7 @@ if ( wc_tax_enabled() ) {
 
 		<?php if ( $order->get_shipping_methods() ) : ?>
 			<tr>
-				<td class="label"><?php _e( 'Shipping:', 'woocommerce' ); ?></td>
+				<td class="label"><?php _e( 'משלוח:', 'woocommerce' ); ?></td>
 				<td width="1%"></td>
 				<td class="total"><?php
 					if ( ( $refunded = $order->get_total_shipping_refunded() ) > 0 ) {

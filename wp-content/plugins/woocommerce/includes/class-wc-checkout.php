@@ -200,7 +200,7 @@ class WC_Checkout {
 						'type'        => 'textarea',
 						'class'       => array( 'notes' ),
 						'label'       => __( 'הערות להזמנה', 'woocommerce' ),
-						'placeholder' => esc_attr__( 'Notes about your order, e.g. special notes for delivery.', 'woocommerce' ),
+						'placeholder' => esc_attr__( 'הערות לגבי ההזמנה שלך, למשל הערות מיוחדות למסירה.', 'woocommerce' ),
 					),
 				),
 			);

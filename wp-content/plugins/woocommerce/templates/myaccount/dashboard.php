@@ -26,7 +26,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <p><?php
 	/* translators: 1: user display name 2: logout url */
 	printf(
-		__( 'Hello %1$s (not %1$s? <a href="%2$s">Log out</a>)', 'woocommerce' ),
+		__( 'שלום %1$s (לא %1$s? <a href="%2$s">התנתק</a>)', 'woocommerce' ),
 		'<strong>' . esc_html( $current_user->display_name ) . '</strong>',
 		esc_url( wc_logout_url( wc_get_page_permalink( 'myaccount' ) ) )
 	);
@@ -34,7 +34,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <p><?php
 	printf(
-		__( 'From your account dashboard you can view your <a href="%1$s">recent orders</a>, manage your <a href="%2$s">shipping and billing addresses</a> and <a href="%3$s">edit your password and account details</a>.', 'woocommerce' ),
+		__( 'מתוך מרכז השליטה של ​​החשבון שלך תוכל להציג את <a href="%1$s">הזמנות אחרונות</a>, manage your <a href="%2$s">משלוח וכתובת החיוב</a> ו <a href="%3$s">ערוך את הסיסמה ואת פרטי החשבון שלך</a>.', 'woocommerce' ),
 		esc_url( wc_get_endpoint_url( 'orders' ) ),
 		esc_url( wc_get_endpoint_url( 'edit-address' ) ),
 		esc_url( wc_get_endpoint_url( 'edit-account' ) )

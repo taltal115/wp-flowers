@@ -157,7 +157,7 @@ class WC_Order extends WC_Abstract_Order {
 				$tax_string_array[] = sprintf( '%s %s', wc_price( $tax_amount, array( 'currency' => $this->get_currency() ) ), WC()->countries->tax_or_vat() );
 			}
 			if ( ! empty( $tax_string_array ) ) {
-				$tax_string = ' <small class="includes_tax">' . sprintf( __( '(includes %s)', 'woocommerce' ), implode( ', ', $tax_string_array ) ) . '</small>';
+				$tax_string = ' <small class="includes_tax">' . sprintf( __( '(כולל %s)', 'woocommerce' ), implode( ', ', $tax_string_array ) ) . '</small>';
 			}
 		}
 
@@ -313,13 +313,13 @@ class WC_Order extends WC_Abstract_Order {
 
 			if ( ! empty( $status_transition['from'] ) ) {
 				/* translators: 1: old order status 2: new order status */
-				$transition_note = sprintf( __( 'Order status changed from %1$s to %2$s.', 'woocommerce' ), wc_get_order_status_name( $status_transition['from'] ), wc_get_order_status_name( $status_transition['to'] ) );
+				$transition_note = sprintf( __( 'מצב הזמנה שונה מ %1$s ל %2$s.', 'woocommerce' ), wc_get_order_status_name( $status_transition['from'] ), wc_get_order_status_name( $status_transition['to'] ) );
 
 				do_action( 'woocommerce_order_status_' . $status_transition['from'] . '_to_' . $status_transition['to'], $this->get_id(), $this );
 				do_action( 'woocommerce_order_status_changed', $this->get_id(), $status_transition['from'], $status_transition['to'], $this );
 			} else {
 				/* translators: %s: new order status */
-				$transition_note = sprintf( __( 'Order status set to %s.', 'woocommerce' ), wc_get_order_status_name( $status_transition['to'] ) );
+				$transition_note = sprintf( __( 'מצב הזמנה נקבע ל %s.', 'woocommerce' ), wc_get_order_status_name( $status_transition['to'] ) );
 			}
 
 			// Note the transition occurred
@@ -1000,7 +1000,7 @@ class WC_Order extends WC_Abstract_Order {
 	 */
 	public function set_billing_email( $value ) {
 		if ( $value && ! is_email( $value ) ) {
-			$this->error( 'order_invalid_billing_email', __( 'Invalid billing email address', 'woocommerce' ) );
+			$this->error( 'order_invalid_billing_email', __( 'דוא"ל שגוי לחיוב', 'woocommerce' ) );
 		}
 		$this->set_address_prop( 'email', 'billing', sanitize_email( $value ) );
 	}
@@ -1804,7 +1804,7 @@ class WC_Order extends WC_Abstract_Order {
 	protected function add_order_item_totals_payment_method_row( &$total_rows, $tax_display ) {
 		if ( $this->get_total() > 0 && $this->get_payment_method_title() ) {
 			$total_rows['payment_method'] = array(
-				'label' => __( 'Payment method:', 'woocommerce' ),
+				'label' => __( 'שיטת תשלום:', 'woocommerce' ),
 				'value' => $this->get_payment_method_title(),
 			);
 		}
@@ -1820,7 +1820,7 @@ class WC_Order extends WC_Abstract_Order {
 		if ( $refunds = $this->get_refunds() ) {
 			foreach ( $refunds as $id => $refund ) {
 				$total_rows[ 'refund_' . $id ] = array(
-					'label' => $refund->get_reason() ? $refund->get_reason() : __( 'Refund', 'woocommerce' ) . ':',
+					'label' => $refund->get_reason() ? $refund->get_reason() : __( 'החזר', 'woocommerce' ) . ':',
 					'value'    => wc_price( '-' . $refund->get_amount(), array( 'currency' => $this->get_currency() ) ),
 				);
 			}
