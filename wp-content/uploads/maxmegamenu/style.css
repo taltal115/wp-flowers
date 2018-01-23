@@ -1,4 +1,4 @@
-/** Friday 19th of January 2018 09:02:28 AM (core) **/
+/** Tuesday 23rd of January 2018 05:43:39 AM (core) **/
 
 #mega-menu-wrap-primary, #mega-menu-wrap-primary #mega-menu-primary, #mega-menu-wrap-primary #mega-menu-primary ul.mega-sub-menu, #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item, #mega-menu-wrap-primary #mega-menu-primary a.mega-menu-link {
   -moz-transition: none;
@@ -37,7 +37,7 @@
   padding: 0;
   position: relative;
   right: auto;
-  text-align: left;
+  text-align: right;
   text-decoration: none;
   text-transform: none;
   top: auto;
@@ -404,6 +404,11 @@
   border-bottom: 0px solid #fff;
   max-width: none;
   left: 0;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
 }
 @media only screen and (max-width: 600px) {
   #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-megamenu > ul.mega-sub-menu {
@@ -566,7 +571,8 @@
   font-family: Tahoma, Geneva, sans-serif;
   font-size: 14px;
   display: block;
-  float: left;
+  float: right;
+  right: -200px;
   clear: none;
   padding: 15px 15px 15px 15px;
   vertical-align: top;
@@ -677,6 +683,11 @@
   padding: 0px 0px 0px 0px;
   background: #f1f1f1;
   max-width: none;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
 }
 @media only screen and (max-width: 600px) {
   #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-flyout ul.mega-sub-menu {

@@ -39,10 +39,10 @@ if ( $rating_count > 0 ) : ?>
 		</div>
 		<?php if ( comments_open() ) : ?>
 			<span class="product-review-rating">
-				<?php printf( _n( '%s review', '%s reviews', $review_count, 'nb_flower' ), '<span itemprop="reviewCount" class="count">' . $review_count . '</span>' ); ?>				
+				<?php printf( _n( '%s תגובה', '%s תגובות', $review_count, 'nb_flower' ), '<span itemprop="reviewCount" class="count">' . $review_count . '</span>' ); ?>
 			</span>
 			<a href="#reviews" class="woocommerce-review-link" rel="nofollow">
-				<?php esc_html_e('Add your review', 'nb_flower'); ?>				
+				<?php esc_html_e('הוסף את תגובתך', 'nb_flower'); ?>
 			</a>
 		<?php endif ?>
 	</div>
@@ -54,10 +54,10 @@ if ( $rating_count > 0 ) : ?>
 		<?php if ( comments_open() ) : ?>
 
 			<span class="product-review-rating">
-				<?php printf( _n( '%s review', '%s review', $review_count, 'nb_flower' ), '<span itemprop="reviewCount" class="count">' . $review_count . '</span>' ); ?>				
+				<?php printf( _n( '%s תגובה', '%s תגובות', $review_count, 'nb_flower' ), '<span itemprop="reviewCount" class="count">' . $review_count . '</span>' ); ?>
 			</span>
 			<a href="#reviews" class="woocommerce-review-link" rel="nofollow">
-				<?php esc_html_e('Add your review', 'nb_flower'); ?>				
+				<?php esc_html_e('הוסף את תגובתך', 'nb_flower'); ?>
 			</a>
 		<?php endif ?>
 	</div>

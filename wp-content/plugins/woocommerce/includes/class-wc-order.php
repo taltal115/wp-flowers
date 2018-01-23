@@ -906,7 +906,7 @@ class WC_Order extends WC_Abstract_Order {
 	 * @throws WC_Data_Exception
 	 */
 	public function set_billing_last_name( $value ) {
-		$this->set_address_prop( 'last_name', 'billing', $value );
+		$this->set_address_prop( 'שם משפחה', 'billing', $value );
 	}
 
 	/**

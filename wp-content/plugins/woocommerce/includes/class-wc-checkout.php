@@ -199,7 +199,7 @@ class WC_Checkout {
 					'order_comments' => array(
 						'type'        => 'textarea',
 						'class'       => array( 'notes' ),
-						'label'       => __( 'Order notes', 'woocommerce' ),
+						'label'       => __( 'הערות להזמנה', 'woocommerce' ),
 						'placeholder' => esc_attr__( 'Notes about your order, e.g. special notes for delivery.', 'woocommerce' ),
 					),
 				),
@@ -207,7 +207,7 @@ class WC_Checkout {
 			if ( 'no' === get_option( 'woocommerce_registration_generate_username' ) ) {
 				$this->fields['account']['account_username'] = array(
 					'type'         => 'text',
-					'label'        => __( 'Account username', 'woocommerce' ),
+					'label'        => __( 'שם משתמש', 'woocommerce' ),
 					'required'     => true,
 					'placeholder'  => esc_attr__( 'Username', 'woocommerce' ),
 				);
@@ -216,7 +216,7 @@ class WC_Checkout {
 			if ( 'no' === get_option( 'woocommerce_registration_generate_password' ) ) {
 				$this->fields['account']['account_password'] = array(
 					'type'         => 'password',
-					'label'        => __( 'Create account password', 'woocommerce' ),
+					'label'        => __( 'צור סיסמא לחשבון', 'woocommerce' ),
 					'required'     => true,
 					'placeholder'  => esc_attr__( 'Password', 'woocommerce' ),
 				);
@@ -618,11 +618,11 @@ class WC_Checkout {
 				switch ( $fieldset_key ) {
 					case 'shipping' :
 						/* translators: %s: field name */
-						$field_label = sprintf( __( 'Shipping %s', 'woocommerce' ), $field_label );
+						$field_label = sprintf( __( 'משלוח %s', 'woocommerce' ), $field_label );
 					break;
 					case 'billing' :
 						/* translators: %s: field name */
-						$field_label = sprintf( __( 'Billing %s', 'woocommerce' ), $field_label );
+						$field_label = sprintf( __( 'חשבון %s', 'woocommerce' ), $field_label );
 					break;
 				}
 
@@ -631,7 +631,7 @@ class WC_Checkout {
 					$data[ $key ] = wc_format_postcode( $data[ $key ], $country );
 
 					if ( '' !== $data[ $key ] && ! WC_Validation::is_postcode( $data[ $key ], $country ) ) {
-						$errors->add( 'validation', __( 'Please enter a valid postcode / ZIP.', 'woocommerce' ) );
+						$errors->add( 'validation', __( 'הכנס מיקוד תקין.', 'woocommerce' ) );
 					}
 				}
 
@@ -640,7 +640,7 @@ class WC_Checkout {
 
 					if ( '' !== $data[ $key ] && ! WC_Validation::is_phone( $data[ $key ] ) ) {
 						/* translators: %s: phone number */
-						$errors->add( 'validation', sprintf( __( '%s is not a valid phone number.', 'woocommerce' ), '<strong>' . esc_html( $field_label ) . '</strong>' ) );
+						$errors->add( 'validation', sprintf( __( '%s לא מספר טלפון תקין.', 'woocommerce' ), '<strong>' . esc_html( $field_label ) . '</strong>' ) );
 					}
 				}
 
@@ -649,7 +649,7 @@ class WC_Checkout {
 
 					if ( ! is_email( $data[ $key ] ) ) {
 						/* translators: %s: email address */
-						$errors->add( 'validation', sprintf( __( '%s is not a valid email address.', 'woocommerce' ), '<strong>' . esc_html( $field_label ) . '</strong>' ) );
+						$errors->add( 'validation', sprintf( __( '%s לא דוא"ל תקין.', 'woocommerce' ), '<strong>' . esc_html( $field_label ) . '</strong>' ) );
 						continue;
 					}
 				}
@@ -669,14 +669,14 @@ class WC_Checkout {
 
 						if ( ! in_array( $data[ $key ], $valid_state_values ) ) {
 							/* translators: 1: state field 2: valid states */
-							$errors->add( 'validation', sprintf( __( '%1$s is not valid. Please enter one of the following: %2$s', 'woocommerce' ), '<strong>' . esc_html( $field_label ) . '</strong>', implode( ', ', $valid_states ) ) );
+							$errors->add( 'validation', sprintf( __( '%1$sלא תקף. הזן אחת מהפעולות הבאות: %2$s', 'woocommerce' ), '<strong>' . esc_html( $field_label ) . '</strong>', implode( ', ', $valid_states ) ) );
 						}
 					}
 				}
 
 				if ( $required && '' === $data[ $key ] ) {
 					/* translators: %s: field name */
-					$errors->add( 'required-field', apply_filters( 'woocommerce_checkout_required_field_notice', sprintf( __( '%s is a required field.', 'woocommerce' ), '<strong>' . esc_html( $field_label ) . '</strong>' ), $field_label ) );
+					$errors->add( 'required-field', apply_filters( 'woocommerce_checkout_required_field_notice', sprintf( __( '%s שדה חובה.', 'woocommerce' ), '<strong>' . esc_html( $field_label ) . '</strong>' ), $field_label ) );
 				}
 			}
 		}
@@ -694,14 +694,14 @@ class WC_Checkout {
 		$this->check_cart_items();
 
 		if ( empty( $data['woocommerce_checkout_update_totals'] ) && empty( $data['terms'] ) && apply_filters( 'woocommerce_checkout_show_terms', wc_get_page_id( 'terms' ) > 0 ) ) {
-			$errors->add( 'terms', __( 'You must accept our Terms &amp; Conditions.', 'woocommerce' ) );
+			$errors->add( 'terms', __( 'אתה חייב לקבל את התנאים .', 'woocommerce' ) );
 		}
 
 		if ( WC()->cart->needs_shipping() ) {
 			$shipping_country = WC()->customer->get_shipping_country();
 
 			if ( empty( $shipping_country ) ) {
-				$errors->add( 'shipping', __( 'Please enter an address to continue.', 'woocommerce' ) );
+				$errors->add( 'shipping', __( 'הכנס כתובת להמשיך', 'woocommerce' ) );
 			} elseif ( ! in_array( WC()->customer->get_shipping_country(), array_keys( WC()->countries->get_shipping_countries() ) ) ) {
 				$errors->add( 'shipping', sprintf( __( 'Unfortunately <strong>we do not ship %s</strong>. Please enter an alternative shipping address.', 'woocommerce' ), WC()->countries->shipping_to_prefix() . ' ' . WC()->customer->get_shipping_country() ) );
 			} else {
@@ -709,7 +709,7 @@ class WC_Checkout {
 
 				foreach ( WC()->shipping->get_packages() as $i => $package ) {
 					if ( ! isset( $chosen_shipping_methods[ $i ], $package['rates'][ $chosen_shipping_methods[ $i ] ] ) ) {
-						$errors->add( 'shipping', __( 'No shipping method has been selected. Please double check your address, or contact us if you need any help.', 'woocommerce' ) );
+						$errors->add( 'shipping', __( 'לא נבחרה שיטת משלוח. בדוק את הכתובת שלך, או צור איתנו קשר אם תזדקק לעזרה.', 'woocommerce' ) );
 					}
 				}
 			}
@@ -719,7 +719,7 @@ class WC_Checkout {
 			$available_gateways = WC()->payment_gateways->get_available_payment_gateways();
 
 			if ( ! isset( $available_gateways[ $data['payment_method'] ] ) ) {
-				$errors->add( 'payment', __( 'Invalid payment method.', 'woocommerce' ) );
+				$errors->add( 'payment', __( 'שיטת תשלום שגויה.', 'woocommerce' ) );
 			} else {
 				$available_gateways[ $data['payment_method'] ]->validate_fields();
 			}
@@ -944,7 +944,7 @@ class WC_Checkout {
 		try {
 			if ( empty( $_POST['_wpnonce'] ) || ! wp_verify_nonce( $_POST['_wpnonce'], 'woocommerce-process_checkout' ) ) {
 				WC()->session->set( 'refresh_totals', true );
-				throw new Exception( __( 'We were unable to process your order, please try again.', 'woocommerce' ) );
+				throw new Exception( __( 'לא הצלחנו לעבד את ההזמנה שלך, נסה שוב.', 'woocommerce' ) );
 			}
 
 			wc_maybe_define_constant( 'WOOCOMMERCE_CHECKOUT', true );
@@ -953,7 +953,7 @@ class WC_Checkout {
 			do_action( 'woocommerce_before_checkout_process' );
 
 			if ( WC()->cart->is_empty() ) {
-				throw new Exception( sprintf( __( 'Sorry, your session has expired. <a href="%s" class="wc-backward">Return to shop</a>', 'woocommerce' ), esc_url( wc_get_page_permalink( 'shop' ) ) ) );
+				throw new Exception( sprintf( __( 'סליחה, תם זמנך באתרץ <a href="%s" class="wc-backward">חזור לחנות</a>', 'woocommerce' ), esc_url( wc_get_page_permalink( 'shop' ) ) ) );
 			}
 
 			do_action( 'woocommerce_checkout_process' );

@@ -46,7 +46,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 						echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf(
 							'<a href="%s" class="remove" title="%s" data-product_id="%s" data-product_sku="%s"><i class="icon-cancel"></i></a>',
 							esc_url( WC()->cart->get_remove_url( $cart_item_key ) ),
-							esc_html__( 'Remove this item', 'nb_flower' ),
+							esc_html__( 'הסר את המוצר הזה', 'nb_flower' ),
 							esc_attr( $product_id ),
 							esc_attr( $_product->get_sku() )
 						), $cart_item_key );
@@ -73,7 +73,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<?php else : ?>
 
-		<li class="empty"><?php esc_html_e( 'No products in the cart.', 'nb_flower' ); ?></li>
+		<li class="empty"><?php esc_html_e( 'אין מוצרים בעגלה', 'nb_flower' ); ?></li>
 
 	<?php endif; ?>
 
@@ -81,13 +81,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <?php if ( ! WC()->cart->is_empty() ) : ?>
 
-	<p class="total"><strong><?php esc_html_e( 'Subtotal', 'nb_flower' ); ?>:</strong> <?php echo WC()->cart->get_cart_subtotal(); ?></p>
+	<p class="total"><strong><?php esc_html_e( 'סה"כ', 'nb_flower' ); ?>:</strong> <?php echo WC()->cart->get_cart_subtotal(); ?></p>
 
 	<?php do_action( 'woocommerce_widget_shopping_cart_before_buttons' ); ?>
 
 	<p class="buttons">
-		<a href="<?php echo esc_url( wc_get_cart_url() ); ?>" class="button wc-forward"><?php esc_html_e( 'View Cart', 'nb_flower' ); ?></a>
-		<a href="<?php echo esc_url( wc_get_checkout_url() ); ?>" class="button checkout wc-forward"><?php esc_html_e( 'Checkout', 'nb_flower' ); ?></a>
+		<a href="<?php echo esc_url( wc_get_cart_url() ); ?>" class="button wc-forward"><?php esc_html_e( 'צפה בעגלה', 'nb_flower' ); ?></a>
+		<a href="<?php echo esc_url( wc_get_checkout_url() ); ?>" class="button checkout wc-forward"><?php esc_html_e( 'המשך לקנייה', 'nb_flower' ); ?></a>
 	</p>
 
 <?php endif; ?>

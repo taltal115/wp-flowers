@@ -743,6 +743,8 @@ $_old_files = array(
 'wp-includes/js/plupload/plupload.silverlight.xap',
 'wp-includes/js/swfupload/plugins',
 'wp-includes/js/swfupload/swfupload.swf',
+'wp-content/themes/nb_flower/css/autoptimize.css',
+'wp-content/themes/nb_flower/js/autoptimize.js',
 );
 
 /**

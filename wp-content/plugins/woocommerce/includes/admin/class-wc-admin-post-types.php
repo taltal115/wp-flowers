@@ -639,7 +639,7 @@ class WC_Admin_Post_Types {
 				} elseif ( $the_order->get_billing_company() ) {
 					$username = trim( $the_order->get_billing_company() );
 				} else {
-					$username = __( 'Guest', 'woocommerce' );
+					$username = __( 'אורח', 'woocommerce' );
 				}
 
 				/* translators: 1: order and number (i.e. Order #13) 2: user name */

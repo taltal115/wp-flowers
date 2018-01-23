@@ -26,10 +26,10 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 <form action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post" class="cart-form">
 <div class="cart-top-section">
-	<span><?php esc_html_e('shopping cart', 'nb_flower'); ?></span>
+	<span><?php esc_html_e('עגלת קניות', 'nb_flower'); ?></span>
 	<span>(<?php echo WC()->cart->get_cart_contents_count(); ?>)</span>
 	<span>
-		<a href="<?php echo esc_url(get_permalink( woocommerce_get_page_id( 'shop' ) ));?>"><?php esc_html_e('continue shopping', 'nb_flower'); ?></a>
+		<a href="<?php echo esc_url(get_permalink( woocommerce_get_page_id( 'shop' ) ));?>"><?php esc_html_e('המשך לקנות', 'nb_flower'); ?></a>
 		<i class="icon-right-circled"></i>
 	</span>
 	<?php if($cart_notice = nb_flower_get_option('cart_notice') ):?>
@@ -49,10 +49,10 @@ do_action( 'woocommerce_before_cart' ); ?>
 <table class="shop_table shop_table_responsive cart" cellspacing="0">
 	<thead>
 		<tr>
-			<th class="product-thumbnail"><?php esc_html_e( 'Product', 'nb_flower' ); ?></th>
-			<th class="product-price"><?php esc_html_e( 'Price', 'nb_flower' ); ?></th>
-			<th class="product-quantity"><?php esc_html_e( 'Quantity', 'nb_flower' ); ?></th>
-			<th class="product-subtotal"><?php esc_html_e( 'Total', 'nb_flower' ); ?></th>
+			<th class="product-thumbnail"><?php esc_html_e( 'מוצר', 'nb_flower' ); ?></th>
+			<th class="product-price"><?php esc_html_e( 'מחיר', 'nb_flower' ); ?></th>
+			<th class="product-quantity"><?php esc_html_e( 'כמות', 'nb_flower' ); ?></th>
+			<th class="product-subtotal"><?php esc_html_e( 'סכום', 'nb_flower' ); ?></th>
 		</tr>
 	</thead>
 	<tbody>
@@ -109,13 +109,13 @@ do_action( 'woocommerce_before_cart' ); ?>
 						</div>
 					</td>
 
-					<td class="product-price" data-title="<?php esc_html_e( 'Price', 'nb_flower' ); ?>">
+					<td class="product-price" data-title="<?php esc_html_e( 'מחיר', 'nb_flower' ); ?>">
 						<?php
 							echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key );
 						?>
 					</td>
 
-					<td class="product-quantity" data-title="<?php esc_html_e( 'Quantity', 'nb_flower' ); ?>">
+					<td class="product-quantity" data-title="<?php esc_html_e( 'כמות', 'nb_flower' ); ?>">
 						<?php
 							if ( $_product->is_sold_individually() ) {
 								$product_quantity = sprintf( '1 <input type="hidden" name="cart[%s][qty]" value="1" />', $cart_item_key );
@@ -132,7 +132,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 						?>
 					</td>
 
-					<td class="product-subtotal" data-title="<?php esc_html_e( 'Total', 'nb_flower' ); ?>">
+					<td class="product-subtotal" data-title="<?php esc_html_e( 'סכום', 'nb_flower' ); ?>">
 						<?php
 							echo apply_filters( 'woocommerce_cart_item_subtotal', WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ), $cart_item, $cart_item_key );
 						?>
@@ -152,13 +152,13 @@ do_action( 'woocommerce_before_cart' ); ?>
 <?php if ( wc_coupons_enabled() ) { ?>
 	<div class="coupon">
 	
-		<input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="<?php esc_attr_e( 'Coupon code', 'nb_flower' ); ?>" /> <input type="submit" class="button" name="apply_coupon" value="<?php esc_attr_e( 'Apply Coupon', 'nb_flower' ); ?>" />
+		<input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="<?php esc_attr_e( 'קוד קופון', 'nb_flower' ); ?>" /> <input type="submit" class="button" name="apply_coupon" value="<?php esc_attr_e( 'קבל קופון', 'nb_flower' ); ?>" />
 
 		<?php do_action( 'woocommerce_cart_coupon' ); ?>
 	</div>
 <?php } ?>
 <div class="cart-update">
-	<input type="submit" class="button" name="update_cart" value="<?php esc_attr_e( 'Update Cart', 'nb_flower' ); ?>" />
+	<input type="submit" class="button" name="update_cart" value="<?php esc_attr_e( 'עדכן עגלה', 'nb_flower' ); ?>" />
 </div>
 <?php do_action( 'woocommerce_cart_actions' ); ?>
 

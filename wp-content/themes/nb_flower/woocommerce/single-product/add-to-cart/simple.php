@@ -41,9 +41,9 @@ if ( ! $product->is_purchasable() ) {
 	<?php do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 
 	<form class="cart" method="post" enctype='multipart/form-data'>
-        
+
 	 	<?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
-        <span class="quantity-label"><?php esc_html_e('Quantity', 'nb_flower'); ?></span>
+        <span class="quantity-label"><?php esc_html_e('כמות', 'nb_flower'); ?></span>
 	 	<?php
 	 		if ( ! $product->is_sold_individually() ) {
 	 			woocommerce_quantity_input( array(
