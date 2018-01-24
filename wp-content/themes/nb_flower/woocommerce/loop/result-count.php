@@ -36,9 +36,9 @@ if ( ! woocommerce_products_will_display() )
 	// $last     = min( $total, $wp_query->get( 'posts_per_page' ) * $paged );
 
 	if ( $total <= $per_page || -1 === $per_page ) {
-		printf( _n( 'One items', ' %d Items', $total, 'nb_flower' ), $total );
+		printf( _n( 'פריט אחד', ' %d פריטים', $total, 'nb_flower' ), $total );
 	} else {
-		printf( _nx( 'Showing the single result', '%1$d items', $total, '%1$d = total', 'nb_flower' ), $total );
+		printf( _nx( 'מראה תצוגת יחיד', '%1$d פריטים', $total, '%1$d = total', 'nb_flower' ), $total );
 	}
 	?>
 </p>

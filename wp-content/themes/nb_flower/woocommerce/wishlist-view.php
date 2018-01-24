@@ -28,7 +28,7 @@ do_action( 'yith_wcwl_before_wishlist_form', $wishlist_meta ); ?>
             <?php if( $wishlist_meta['is_default'] != 1 && $is_user_owner ): ?>
                 <a class="btn button show-title-form">
                     <?php echo apply_filters( 'yith_wcwl_edit_title_icon', '<i class="fa fa-pencil"></i>' )?>
-                    <?php esc_html_e( 'Edit title', 'nb_flower' ) ?>
+                    <?php esc_html_e( 'ערוך כותרת', 'nb_flower' ) ?>
                 </a>
             <?php endif; ?>
         </div>
@@ -37,11 +37,11 @@ do_action( 'yith_wcwl_before_wishlist_form', $wishlist_meta ); ?>
                 <input type="text" value="<?php echo esc_attr($page_title); ?>" name="wishlist_name"/>
                 <button>
                     <?php echo apply_filters( 'yith_wcwl_save_wishlist_title_icon', '<i class="fa fa-check"></i>' )?>
-                    <?php esc_html_e( 'Save', 'nb_flower' )?>
+                    <?php esc_html_e( 'שמור', 'nb_flower' )?>
                 </button>
                 <a class="hide-title-form btn button">
                     <?php echo apply_filters( 'yith_wcwl_cancel_wishlist_title_icon', '<i class="fa fa-remove"></i>' )?>
-                    <?php esc_html_e( 'Cancel', 'nb_flower' )?>
+                    <?php esc_html_e( 'ביטול', 'nb_flower' )?>
                 </a>
             </div>
         <?php endif; ?>
@@ -75,17 +75,17 @@ do_action( 'yith_wcwl_before_wishlist_form', $wishlist_meta ); ?>
 	        endif;
 	        ?>
 
-            <th class="product-thumbnail"><?php esc_html_e('Product Image', 'nb_flower'); ?></th>
+            <th class="product-thumbnail"><?php esc_html_e('תמונת המוצר', 'nb_flower'); ?></th>
 
             <th class="product-name">
-                <span class="nobr"><?php echo apply_filters( 'yith_wcwl_wishlist_view_name_heading', esc_html__( 'Product Name', 'nb_flower' ) ) ?></span>
+                <span class="nobr"><?php echo apply_filters( 'yith_wcwl_wishlist_view_name_heading', esc_html__( 'שם המוצר', 'nb_flower' ) ) ?></span>
             </th>
 
             <?php if( $show_price ) : ?>
 
                 <th class="product-price">
                     <span class="nobr">
-                        <?php echo apply_filters( 'yith_wcwl_wishlist_view_price_heading', esc_html__( 'Unit Price', 'nb_flower' ) ) ?>
+                        <?php echo apply_filters( 'yith_wcwl_wishlist_view_price_heading', esc_html__( 'מחיר ליחידה', 'nb_flower' ) ) ?>
                     </span>
                 </th>
 
@@ -98,7 +98,7 @@ do_action( 'yith_wcwl_before_wishlist_form', $wishlist_meta ); ?>
 
                 <th class="product-stock-stauts">
                     <span class="nobr">
-                        <?php echo apply_filters( 'yith_wcwl_wishlist_view_stock_heading', esc_html__( 'Stock Status', 'nb_flower' ) ) ?>
+                        <?php echo apply_filters( 'yith_wcwl_wishlist_view_stock_heading', esc_html__( 'מצב המלאי', 'nb_flower' ) ) ?>
                     </span>
                 </th>
 
@@ -144,7 +144,7 @@ do_action( 'yith_wcwl_before_wishlist_form', $wishlist_meta ); ?>
                         <?php if( $is_user_owner ): ?>
                         <td class="product-remove">
                             <div>
-                                <a href="<?php echo esc_url( add_query_arg( 'remove_from_wishlist', $item['prod_id'] ) ) ?>" class="remove remove_from_wishlist" title="<?php esc_html_e( 'Remove this product', 'nb_flower' ) ?>"><i class="icon-cancel"></i></a>
+                                <a href="<?php echo esc_url( add_query_arg( 'remove_from_wishlist', $item['prod_id'] ) ) ?>" class="remove remove_from_wishlist" title="<?php esc_html_e( 'הסר את המוצר', 'nb_flower' ) ?>"><i class="icon-cancel"></i></a>
                             </div>
                         </td>
                         <?php endif; ?>
@@ -175,7 +175,7 @@ do_action( 'yith_wcwl_before_wishlist_form', $wishlist_meta ); ?>
 	                                printf('%s', $product->get_price_html()) ;
                                 }
                                 else {
-                                    echo apply_filters( 'yith_free_text', esc_html__( 'Free!', 'nb_flower' ) );
+                                    echo apply_filters( 'yith_free_text', esc_html__( 'חינם!', 'nb_flower' ) );
                                 }
                                 ?>
                             </td>
@@ -186,10 +186,10 @@ do_action( 'yith_wcwl_before_wishlist_form', $wishlist_meta ); ?>
                                 <?php
                                 if( $stock_status == 'out-of-stock' ) {
                                     $stock_status = "Out";
-                                    echo '<span class="wishlist-out-of-stock">' . esc_html__( 'Out of Stock', 'nb_flower' ) . '</span>';
+                                    echo '<span class="wishlist-out-of-stock">' . esc_html__( 'לא במלאי', 'nb_flower' ) . '</span>';
                                 } else {
                                     $stock_status = "In";
-                                    echo '<span class="wishlist-in-stock">' . esc_html__( 'In Stock', 'nb_flower' ) . '</span>';
+                                    echo '<span class="wishlist-in-stock">' . esc_html__( 'לא במלאי', 'nb_flower' ) . '</span>';
                                 }
                                 ?>
                             </td>
@@ -200,7 +200,7 @@ do_action( 'yith_wcwl_before_wishlist_form', $wishlist_meta ); ?>
 	                        <!-- Date added -->
 	                        <?php
 	                        if( $show_dateadded && isset( $item['dateadded'] ) ):
-								echo '<span class="dateadded">' . sprintf( esc_html__( 'Added on : %s', 'nb_flower' ), date_i18n( get_option( 'date_format' ), strtotime( $item['dateadded'] ) ) ) . '</span>';
+								echo '<span class="dateadded">' . sprintf( esc_html__( 'הוסף ל : %s', 'nb_flower' ), date_i18n( get_option( 'date_format' ), strtotime( $item['dateadded'] ) ) ) . '</span>';
 	                        endif;
 	                        ?>
 
@@ -219,7 +219,7 @@ do_action( 'yith_wcwl_before_wishlist_form', $wishlist_meta ); ?>
 	                        <!-- Change wishlist -->
 							<?php if( $available_multi_wishlist && is_user_logged_in() && count( $users_wishlists ) > 1 && $move_to_another_wishlist ): ?>
 	                        <select class="change-wishlist selectBox">
-		                        <option value=""><?php esc_html_e( 'Move', 'nb_flower' ) ?></option>
+		                        <option value=""><?php esc_html_e( 'העבר', 'nb_flower' ) ?></option>
 		                        <?php
 		                        foreach( $users_wishlists as $wl ):
 			                        if( $wl['wishlist_token'] == $wishlist_meta['wishlist_token'] ){
@@ -231,13 +231,13 @@ do_action( 'yith_wcwl_before_wishlist_form', $wishlist_meta ); ?>
 				                        <?php
 				                        $wl_title = ! empty( $wl['wishlist_name'] ) ? esc_html( $wl['wishlist_name'] ) : esc_html( $default_wishlsit_title );
 				                        if( $wl['wishlist_privacy'] == 1 ){
-					                        $wl_privacy = esc_html__( 'Shared', 'nb_flower' );
+					                        $wl_privacy = esc_html__( 'משותף', 'nb_flower' );
 				                        }
 				                        elseif( $wl['wishlist_privacy'] == 2 ){
-					                        $wl_privacy = esc_html__( 'Private', 'nb_flower' );
+					                        $wl_privacy = esc_html__( 'פרטי', 'nb_flower' );
 				                        }
 				                        else{
-					                        $wl_privacy = esc_html__( 'Public', 'nb_flower' );
+					                        $wl_privacy = esc_html__( 'פומבי', 'nb_flower' );
 				                        }
 
 				                        echo sprintf( '%s - %s', $wl_title, $wl_privacy );
@@ -251,7 +251,7 @@ do_action( 'yith_wcwl_before_wishlist_form', $wishlist_meta ); ?>
 
 	                        <!-- Remove from wishlist -->
 	                        <?php if( $is_user_owner && $repeat_remove_button ): ?>
-                                <a href="<?php echo esc_url( add_query_arg( 'remove_from_wishlist', $item['prod_id'] ) ) ?>" class="remove_from_wishlist button" title="<?php esc_html_e( 'Remove this product', 'nb_flower' ) ?>"><?php esc_html_e( 'Remove', 'nb_flower' ) ?></a>
+                                <a href="<?php echo esc_url( add_query_arg( 'remove_from_wishlist', $item['prod_id'] ) ) ?>" class="remove_from_wishlist button" title="<?php esc_html_e( 'הסר את המוצר', 'nb_flower' ) ?>"><?php esc_html_e( 'הסר', 'nb_flower' ) ?></a>
                             <?php endif; ?>
                         </td>
 	                <?php endif; ?>
@@ -261,7 +261,7 @@ do_action( 'yith_wcwl_before_wishlist_form', $wishlist_meta ); ?>
             endforeach;
         else: ?>
             <tr>
-                <td colspan="<?php echo esc_attr( $column_count ) ?>" class="wishlist-empty"><?php esc_html_e( 'No products were added to the wishlist', 'nb_flower' ) ?></td>
+                <td colspan="<?php echo esc_attr( $column_count ) ?>" class="wishlist-empty"><?php esc_html_e( 'אין מוצרים ברשימת המשאלות', 'nb_flower' ) ?></td>
             </tr>
         <?php
         endif;
@@ -278,7 +278,7 @@ do_action( 'yith_wcwl_before_wishlist_form', $wishlist_meta ); ?>
 	        <td colspan="<?php echo esc_attr( $column_count ) ?>">
 	            <?php if( $show_cb ) : ?>
 		            <div class="custom-add-to-cart-button-cotaniner">
-		                <a href="<?php echo esc_url( add_query_arg( array( 'wishlist_products_to_add_to_cart' => '', 'wishlist_token' => $wishlist_meta['wishlist_token'] ) ) ) ?>" class="button alt" id="custom_add_to_cart"><?php echo apply_filters( 'yith_wcwl_custom_add_to_cart_text', esc_html__( 'Add the selected products to the cart', 'nb_flower' ) ) ?></a>
+		                <a href="<?php echo esc_url( add_query_arg( array( 'wishlist_products_to_add_to_cart' => '', 'wishlist_token' => $wishlist_meta['wishlist_token'] ) ) ) ?>" class="button alt" id="custom_add_to_cart"><?php echo apply_filters( 'yith_wcwl_custom_add_to_cart_text', esc_html__( 'הוסף את המוצרים שנבחרו לעגלה', 'nb_flower' ) ) ?></a>
 		            </div>
 	            <?php endif; ?>
 
@@ -286,7 +286,7 @@ do_action( 'yith_wcwl_before_wishlist_form', $wishlist_meta ); ?>
 		            <div class="ask-an-estimate-button-container">
 	                    <a href="<?php echo ( $additional_info ) ? '#ask_an_estimate_popup' : $ask_estimate_url ?>" class="btn button ask-an-estimate-button" <?php echo ( $additional_info ) ? 'data-rel="prettyPhoto[ask_an_estimate]"' : '' ?> >
 	                    <?php echo apply_filters( 'yith_wcwl_ask_an_estimate_icon', '<i class="fa fa-shopping-cart"></i>' )?>
-	                    <?php echo apply_filters( 'yith_wcwl_ask_an_estimate_text', esc_html__( 'Ask for an estimate', 'nb_flower' ) ) ?>
+	                    <?php echo apply_filters( 'yith_wcwl_ask_an_estimate_text', esc_html__( 'בקש הערכה', 'nb_flower' ) ) ?>
 	                </a>
 		            </div>
 	            <?php endif; ?>
@@ -330,7 +330,7 @@ do_action( 'yith_wcwl_after_wishlist_share' );
 
 			<button class="btn button ask-an-estimate-button ask-an-estimate-button-popup" >
 				<?php echo apply_filters( 'yith_wcwl_ask_an_estimate_icon', '<i class="fa fa-shopping-cart"></i>' )?>
-				<?php esc_html_e( 'Ask for an estimate', 'nb_flower' ) ?>
+				<?php esc_html_e( 'בקש הערכה', 'nb_flower' ) ?>
 			</button>
 		</form>
 	</div>

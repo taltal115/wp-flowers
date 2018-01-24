@@ -55,7 +55,7 @@ if ( ! comments_open() ) {
 
 		<?php else : ?>
 
-			<p class="woocommerce-noreviews"><?php _e( 'There are no reviews yet.', 'woocommerce' ); ?></p>
+			<p class="woocommerce-noreviews"><?php _e( 'אין עדיין חוות דעת', 'woocommerce' ); ?></p>
 
 		<?php endif; ?>
 	</div>

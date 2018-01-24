@@ -32,13 +32,7 @@ get_header( 'shop' ); ?>
 		do_action( 'woocommerce_before_main_content' );
 	?>
 	<div class="container">
-        <?php
-        if ( nb_flower_get_option('single_product_layout') !== 'no-sidebar' ) {
-            echo '<aside id="secondary" class="widget-area single-product-sidebar" role="complementary">';
-            dynamic_sidebar( 'wc-product-sidebar' );
-            echo '</aside>';
-        }
-        ?>
+
         <div id="primary" class="content-area">
             <main id="main" class="site-main" role="main">
 				<div class="row">
@@ -50,7 +44,13 @@ get_header( 'shop' ); ?>
 				</div>
 			</main>
 		</div>
-
+        <?php
+        if ( nb_flower_get_option('single_product_layout') !== 'no-sidebar' ) {
+            echo '<aside id="222 secondary" class="widget-area single-product-sidebar" role="complementary">';
+            dynamic_sidebar( 'wc-product-sidebar' );
+            echo '</aside>';
+        }
+        ?>
 	</div>
 	<?php
 		/**

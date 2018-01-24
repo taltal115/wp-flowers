@@ -754,7 +754,7 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	public function set_catalog_visibility( $visibility ) {
 		$options = array_keys( wc_get_product_visibility_options() );
 		if ( ! in_array( $visibility, $options, true ) ) {
-			$this->error( 'product_invalid_catalog_visibility', __( 'Invalid catalog visibility option.', 'woocommerce' ) );
+			$this->error( 'product_invalid_catalog_visibility', __( 'אפשרות תצוגה לא חוקית של קטלוג.', 'woocommerce' ) );
 		}
 		$this->set_prop( 'catalog_visibility', $visibility );
 	}
@@ -791,7 +791,7 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 		if ( $this->get_object_read() && ! empty( $sku ) && ! wc_product_has_unique_sku( $this->get_id(), $sku ) ) {
 			$sku_found = wc_get_product_id_by_sku( $sku );
 
-			$this->error( 'product_invalid_sku', __( 'Invalid or duplicated SKU.', 'woocommerce' ), 400, array( 'resource_id' => $sku_found ) );
+			$this->error( 'product_invalid_sku', __( 'מק"ט לא חוקי או משוכפל.', 'woocommerce' ), 400, array( 'resource_id' => $sku_found ) );
 		}
 		$this->set_prop( 'sku', $sku );
 	}
@@ -875,7 +875,7 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 		}
 
 		if ( ! in_array( $status, $options, true ) ) {
-			$this->error( 'product_invalid_tax_status', __( 'Invalid product tax status.', 'woocommerce' ) );
+			$this->error( 'product_invalid_tax_status', __( 'סטטוס מס לא חוקי של מוצר.', 'woocommerce' ) );
 		}
 
 		$this->set_prop( 'tax_status', $status );
@@ -1885,9 +1885,9 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 */
 	protected function get_availability_text() {
 		if ( ! $this->is_in_stock() ) {
-			$availability = __( 'Out of stock', 'woocommerce' );
+			$availability = __( 'לא במלאי', 'woocommerce' );
 		} elseif ( $this->managing_stock() && $this->is_on_backorder( 1 ) ) {
-			$availability = $this->backorders_require_notification() ? __( 'Available on backorder', 'woocommerce' ) : '';
+			$availability = $this->backorders_require_notification() ? __( 'זמין בהזמנה אחורית', 'woocommerce' ) : '';
 		} elseif ( $this->managing_stock() ) {
 			$availability = wc_format_stock_for_display( $this );
 		} else {

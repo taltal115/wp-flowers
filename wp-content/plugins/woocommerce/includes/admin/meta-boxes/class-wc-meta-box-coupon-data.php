@@ -150,7 +150,7 @@ class WC_Meta_Box_Coupon_Data {
 
 				// Product ids
 				?>
-				<p class="form-field"><label><?php _e( 'Products', 'woocommerce' ); ?></label>
+				<p class="form-field"><label><?php _e( 'מוצרים', 'woocommerce' ); ?></label>
 				<select class="wc-product-search" multiple="multiple" style="width: 50%;" name="product_ids[]" data-placeholder="<?php esc_attr_e( 'Search for a product&hellip;', 'woocommerce' ); ?>" data-action="woocommerce_json_search_products_and_variations">
 					<?php
 						$product_ids = $coupon->get_product_ids();

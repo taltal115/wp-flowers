@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 ?>
 <div class="woocommerce-ordering-wrap">
-    <span class="sort-label"><?php esc_html_e('Sort By', 'nb_flower'); ?></span>
+    <span class="sort-label"><?php esc_html_e('מיין לפי', 'nb_flower'); ?></span>
     <form class="woocommerce-ordering" method="get">
         <select name="orderby" class="orderby">
             <?php foreach ( $catalog_orderby_options as $id => $name ) : ?>

@@ -54,7 +54,7 @@ $settings = array(
 			'name'      => __( 'Quick View Button Label', 'yith-woocommerce-quick-view' ),
 			'desc'      => __( 'Label for the quick view button in the WooCommerce loop.', 'yith-woocommerce-quick-view' ),
 			'type'      => 'text',
-			'default'   => __( 'Quick View', 'yith-woocommerce-quick-view' ),
+			'default'   => __( 'מבט מהיר', 'yith-woocommerce-quick-view' ),
 		),
 
 		'enable-lightbox' => array(

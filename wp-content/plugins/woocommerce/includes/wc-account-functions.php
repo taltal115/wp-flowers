@@ -184,11 +184,11 @@ function wc_get_account_endpoint_url( $endpoint ) {
  */
 function wc_get_account_orders_columns() {
 	$columns = apply_filters( 'woocommerce_account_orders_columns', array(
-		'order-number'  => __( 'Order', 'woocommerce' ),
-		'order-date'    => __( 'Date', 'woocommerce' ),
-		'order-status'  => __( 'Status', 'woocommerce' ),
-		'order-total'   => __( 'Total', 'woocommerce' ),
-		'order-actions' => __( 'Actions', 'woocommerce' ),
+		'order-number'  => __( 'הזמנה', 'woocommerce' ),
+		'order-date'    => __( 'תאריך', 'woocommerce' ),
+		'order-status'  => __( 'סטאטוס', 'woocommerce' ),
+		'order-total'   => __( 'סה"כ', 'woocommerce' ),
+		'order-actions' => __( 'פעולות', 'woocommerce' ),
 	) );
 
 	// Deprecated filter since 2.6.0.
@@ -203,10 +203,10 @@ function wc_get_account_orders_columns() {
  */
 function wc_get_account_downloads_columns() {
 	$columns = apply_filters( 'woocommerce_account_downloads_columns', array(
-		'download-product'   => __( 'Product', 'woocommerce' ),
-		'download-remaining' => __( 'Downloads remaining', 'woocommerce' ),
-		'download-expires'   => __( 'Expires', 'woocommerce' ),
-		'download-file'      => __( 'Download', 'woocommerce' ),
+		'download-product'   => __( 'מוצר', 'woocommerce' ),
+		'download-remaining' => __( 'הורדות שנשארו', 'woocommerce' ),
+		'download-expires'   => __( 'תפוגה', 'woocommerce' ),
+		'download-file'      => __( 'הורדות', 'woocommerce' ),
 		'download-actions'   => '&nbsp;',
 	) );
 
@@ -225,8 +225,8 @@ function wc_get_account_downloads_columns() {
  */
 function wc_get_account_payment_methods_columns() {
 	return apply_filters( 'woocommerce_account_payment_methods_columns', array(
-		'method'  => __( 'Method', 'woocommerce' ),
-		'expires' => __( 'Expires', 'woocommerce' ),
+		'method'  => __( 'שיטה', 'woocommerce' ),
+		'expires' => __( 'תאריך תפוגה', 'woocommerce' ),
 		'actions' => '&nbsp;',
 	) );
 }
@@ -239,7 +239,7 @@ function wc_get_account_payment_methods_columns() {
  */
 function wc_get_account_payment_methods_types() {
 	return apply_filters( 'woocommerce_payment_methods_types', array(
-		'cc'     => __( 'Credit card', 'woocommerce' ),
+		'cc'     => __( 'כרטיס אשראי', 'woocommerce' ),
 		'echeck' => __( 'eCheck', 'woocommerce' ),
 	) );
 }
@@ -260,15 +260,15 @@ function wc_get_account_orders_actions( $order ) {
 	$actions = array(
 		'pay'    => array(
 			'url'  => $order->get_checkout_payment_url(),
-			'name' => __( 'Pay', 'woocommerce' ),
+			'name' => __( 'שלם', 'woocommerce' ),
 		),
 		'view'   => array(
 			'url'  => $order->get_view_order_url(),
-			'name' => __( 'View', 'woocommerce' ),
+			'name' => __( 'צפה', 'woocommerce' ),
 		),
 		'cancel' => array(
 			'url'  => $order->get_cancel_order_url( wc_get_page_permalink( 'myaccount' ) ),
-			'name' => __( 'Cancel', 'woocommerce' ),
+			'name' => __( 'ביטול', 'woocommerce' ),
 		),
 	);
 
@@ -337,7 +337,7 @@ function wc_get_account_saved_payment_methods_list( $list, $customer_id ) {
 			'actions'    => array(
 				'delete' => array(
 					'url'  => $delete_url,
-					'name' => esc_html__( 'Delete', 'woocommerce' ),
+					'name' => esc_html__( 'מחיקה', 'woocommerce' ),
 				),
 			),
 		);
@@ -346,7 +346,7 @@ function wc_get_account_saved_payment_methods_list( $list, $customer_id ) {
 		if ( ! $payment_token->is_default() ) {
 			$list[ $type ][ $key ]['actions']['default'] = array(
 				'url' => $set_default_url,
-				'name' => esc_html__( 'Make default', 'woocommerce' ),
+				'name' => esc_html__( 'הפוך לברירת מחדל', 'woocommerce' ),
 			);
 		}
 
@@ -372,7 +372,7 @@ function wc_get_account_saved_payment_methods_list_item_cc( $item, $payment_toke
 
 	$card_type               = $payment_token->get_card_type();
 	$item['method']['last4'] = $payment_token->get_last4();
-	$item['method']['brand'] = ( ! empty( $card_type ) ? ucfirst( $card_type ) : esc_html__( 'Credit card', 'woocommerce' ) );
+	$item['method']['brand'] = ( ! empty( $card_type ) ? ucfirst( $card_type ) : esc_html__( 'כרטיס אשראי', 'woocommerce' ) );
 	$item['expires']         = $payment_token->get_expiry_month() . '/' . substr( $payment_token->get_expiry_year(), -2 );
 
 	return $item;

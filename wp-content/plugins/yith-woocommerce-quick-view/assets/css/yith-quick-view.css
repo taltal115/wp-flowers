@@ -112,7 +112,7 @@ html.yith-quick-view-is-open body {
 }
 #yith-quick-view-content div.images {
     width: 40%;
-    float: left;
+    float: right;
     opacity: 1 !important;
 }
 #yith-quick-view-content div.summary {

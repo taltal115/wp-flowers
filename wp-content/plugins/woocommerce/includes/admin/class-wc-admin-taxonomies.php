@@ -92,7 +92,7 @@ class WC_Admin_Taxonomies {
 			<label for="display_type"><?php _e( 'Display type', 'woocommerce' ); ?></label>
 			<select id="display_type" name="display_type" class="postform">
 				<option value=""><?php _e( 'Default', 'woocommerce' ); ?></option>
-				<option value="products"><?php _e( 'Products', 'woocommerce' ); ?></option>
+				<option value="products"><?php _e( 'מוצרים', 'woocommerce' ); ?></option>
 				<option value="subcategories"><?php _e( 'Subcategories', 'woocommerce' ); ?></option>
 				<option value="both"><?php _e( 'Both', 'woocommerce' ); ?></option>
 			</select>

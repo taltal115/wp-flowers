@@ -33,7 +33,7 @@ get_header( 'shop' ); ?>
 	?>    
     <div class="container">
         <div class="row">
-            <div id="primary" class="content-area">
+            <div id="11primary" class="content-area">
 	            <main id="main" class="site-main" role="main">
 
                 <?php

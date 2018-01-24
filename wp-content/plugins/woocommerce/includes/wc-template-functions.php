@@ -181,7 +181,7 @@ function wc_products_rss_feed() {
 
 		$feed = get_post_type_archive_feed_link( 'product' );
 
-		echo '<link rel="alternate" type="application/rss+xml"  title="' . esc_attr__( 'New products', 'woocommerce' ) . '" href="' . esc_url( $feed ) . '" />';
+		echo '<link rel="alternate" type="application/rss+xml"  title="' . esc_attr__( 'מוצרים חדשים', 'woocommerce' ) . '" href="' . esc_url( $feed ) . '" />';
 
 	} elseif ( is_tax( 'product_cat' ) ) {
 
@@ -189,7 +189,7 @@ function wc_products_rss_feed() {
 
 		if ( $term ) {
 			$feed = add_query_arg( 'product_cat', $term->slug, get_post_type_archive_feed_link( 'product' ) );
-			echo '<link rel="alternate" type="application/rss+xml"  title="' . esc_attr( sprintf( __( 'New products added to %s', 'woocommerce' ), $term->name ) ) . '" href="' . esc_url( $feed ) . '" />';
+			echo '<link rel="alternate" type="application/rss+xml"  title="' . esc_attr( sprintf( __( 'מוצרים חדשים הוספו ל %s', 'woocommerce' ), $term->name ) ) . '" href="' . esc_url( $feed ) . '" />';
 		}
 	} elseif ( is_tax( 'product_tag' ) ) {
 
@@ -197,7 +197,7 @@ function wc_products_rss_feed() {
 
 		if ( $term ) {
 			$feed = add_query_arg( 'product_tag', $term->slug, get_post_type_archive_feed_link( 'product' ) );
-			echo '<link rel="alternate" type="application/rss+xml"  title="' . sprintf( esc_attr__( 'New products tagged %s', 'woocommerce' ), urlencode( $term->name ) ) . '" href="' . esc_url( $feed ) . '" />';
+			echo '<link rel="alternate" type="application/rss+xml"  title="' . sprintf( esc_attr__( 'מוצרים חדשים תוייגו %s', 'woocommerce' ), urlencode( $term->name ) ) . '" href="' . esc_url( $feed ) . '" />';
 		}
 	}
 }
@@ -838,16 +838,16 @@ if ( ! function_exists( 'woocommerce_catalog_ordering' ) ) {
 		$orderby                 = isset( $_GET['orderby'] ) ? wc_clean( wp_unslash( $_GET['orderby'] ) ) : apply_filters( 'woocommerce_default_catalog_orderby', get_option( 'woocommerce_default_catalog_orderby' ) );
 		$show_default_orderby    = 'menu_order' === apply_filters( 'woocommerce_default_catalog_orderby', get_option( 'woocommerce_default_catalog_orderby' ) );
 		$catalog_orderby_options = apply_filters( 'woocommerce_catalog_orderby', array(
-			'menu_order' => __( 'Default sorting', 'woocommerce' ),
-			'popularity' => __( 'Sort by popularity', 'woocommerce' ),
-			'rating'     => __( 'Sort by average rating', 'woocommerce' ),
-			'date'       => __( 'Sort by newness', 'woocommerce' ),
-			'price'      => __( 'Sort by price: low to high', 'woocommerce' ),
-			'price-desc' => __( 'Sort by price: high to low', 'woocommerce' ),
+			'menu_order' => __( 'ברירת מחדל', 'woocommerce' ),
+			'popularity' => __( 'חפש לפי פופולריות', 'woocommerce' ),
+			'rating'     => __( 'חפש לפי דרוג ממוצע', 'woocommerce' ),
+			'date'       => __( 'חפש לפי החדשים ביותר', 'woocommerce' ),
+			'price'      => __( 'חפש לפי מחיר: נמוך לגבוה', 'woocommerce' ),
+			'price-desc' => __( 'חפש לפי מחיר: גבוה לנמוך', 'woocommerce' ),
 		) );
 
 		if ( $wp_query->is_search() ) {
-			$catalog_orderby_options = array_merge( array( 'relevance' => __( 'Relevance', 'woocommerce' ) ), $catalog_orderby_options );
+			$catalog_orderby_options = array_merge( array( 'relevance' => __( 'רלוונטיות', 'woocommerce' ) ), $catalog_orderby_options );
 			unset( $catalog_orderby_options['menu_order'] );
 			if ( 'menu_order' === $orderby ) {
 				$orderby = 'relevance';
@@ -1184,7 +1184,7 @@ if ( ! function_exists( 'woocommerce_default_product_tabs' ) ) {
 		// Description tab - shows product content.
 		if ( $post->post_content ) {
 			$tabs['description'] = array(
-				'title'    => __( 'Description', 'woocommerce' ),
+				'title'    => __( 'פירוט', 'woocommerce' ),
 				'priority' => 10,
 				'callback' => 'woocommerce_product_description_tab',
 			);
@@ -1193,7 +1193,7 @@ if ( ! function_exists( 'woocommerce_default_product_tabs' ) ) {
 		// Additional information tab - shows attributes.
 		if ( $product && ( $product->has_attributes() || apply_filters( 'wc_product_enable_dimensions_display', $product->has_weight() || $product->has_dimensions() ) ) ) {
 			$tabs['additional_information'] = array(
-				'title'    => __( 'Additional information', 'woocommerce' ),
+				'title'    => __( 'מידע נוסף', 'woocommerce' ),
 				'priority' => 20,
 				'callback' => 'woocommerce_product_additional_information_tab',
 			);
@@ -1202,7 +1202,7 @@ if ( ! function_exists( 'woocommerce_default_product_tabs' ) ) {
 		// Reviews tab - shows comments.
 		if ( comments_open() ) {
 			$tabs['reviews'] = array(
-				'title'    => sprintf( __( 'Reviews (%d)', 'woocommerce' ), $product->get_review_count() ),
+				'title'    => sprintf( __( 'ביקורות (%d)', 'woocommerce' ), $product->get_review_count() ),
 				'priority' => 30,
 				'callback' => 'comments_template',
 			);
@@ -1513,7 +1513,7 @@ if ( ! function_exists( 'woocommerce_widget_shopping_cart_proceed_to_checkout' )
 	 * @subpackage	Cart
 	 */
 	function woocommerce_widget_shopping_cart_proceed_to_checkout() {
-		echo '<a href="' . esc_url( wc_get_checkout_url() ) . '" class="button checkout wc-forward">' . esc_html__( 'Checkout', 'woocommerce' ) . '</a>';
+		echo '<a href="' . esc_url( wc_get_checkout_url() ) . '" class="button checkout wc-forward">' . esc_html__( 'קנייה', 'woocommerce' ) . '</a>';
 	}
 }
 
@@ -1983,7 +1983,7 @@ if ( ! function_exists( 'woocommerce_form_field' ) ) {
 
 		if ( $args['required'] ) {
 			$args['class'][] = 'validate-required';
-			$required = ' <abbr class="required" title="' . esc_attr__( 'required', 'woocommerce' ) . '">*</abbr>';
+			$required = ' <abbr class="required" title="' . esc_attr__( 'נדרש', 'woocommerce' ) . '">*</abbr>';
 		} else {
 			$required = '';
 		}
@@ -2042,7 +2042,7 @@ if ( ! function_exists( 'woocommerce_form_field' ) ) {
 
 				} else {
 
-					$field = '<select name="' . esc_attr( $key ) . '" id="' . esc_attr( $args['id'] ) . '" class="country_to_state country_select ' . esc_attr( implode( ' ', $args['input_class'] ) ) . '" ' . implode( ' ', $custom_attributes ) . '><option value="">' . esc_html__( 'Select a country&hellip;', 'woocommerce' ) . '</option>';
+					$field = '<select name="' . esc_attr( $key ) . '" id="' . esc_attr( $args['id'] ) . '" class="country_to_state country_select ' . esc_attr( implode( ' ', $args['input_class'] ) ) . '" ' . implode( ' ', $custom_attributes ) . '><option value="">' . esc_html__( 'בחר מדינה&hellip;', 'woocommerce' ) . '</option>';
 
 					foreach ( $countries as $ckey => $cvalue ) {
 						$field .= '<option value="' . esc_attr( $ckey ) . '" ' . selected( $value, $ckey, false ) . '>' . $cvalue . '</option>';
@@ -2050,7 +2050,7 @@ if ( ! function_exists( 'woocommerce_form_field' ) ) {
 
 					$field .= '</select>';
 
-					$field .= '<noscript><input type="submit" name="woocommerce_checkout_update_totals" value="' . esc_attr__( 'Update country', 'woocommerce' ) . '" /></noscript>';
+					$field .= '<noscript><input type="submit" name="woocommerce_checkout_update_totals" value="' . esc_attr__( 'עדכן מודעה', 'woocommerce' ) . '" /></noscript>';
 
 				}
 
@@ -2114,7 +2114,7 @@ if ( ! function_exists( 'woocommerce_form_field' ) ) {
 						if ( '' === $option_key ) {
 							// If we have a blank option, select2 needs a placeholder.
 							if ( empty( $args['placeholder'] ) ) {
-								$args['placeholder'] = $option_text ? $option_text : __( 'Choose an option', 'woocommerce' );
+								$args['placeholder'] = $option_text ? $option_text : __( 'בחר אפשרות', 'woocommerce' );
 							}
 							$custom_attributes[] = 'data-allow_clear="true"';
 						}
@@ -2266,7 +2266,7 @@ if ( ! function_exists( 'wc_dropdown_variation_attribute_options' ) ) {
 			'name'             => '',
 			'id'               => '',
 			'class'            => '',
-			'show_option_none' => __( 'Choose an option', 'woocommerce' ),
+			'show_option_none' => __( 'בחר אפשרות', 'woocommerce' ),
 		) );
 
 		$options               = $args['options'];
@@ -2276,7 +2276,7 @@ if ( ! function_exists( 'wc_dropdown_variation_attribute_options' ) ) {
 		$id                    = $args['id'] ? $args['id'] : sanitize_title( $attribute );
 		$class                 = $args['class'];
 		$show_option_none      = $args['show_option_none'] ? true : false;
-		$show_option_none_text = $args['show_option_none'] ? $args['show_option_none'] : __( 'Choose an option', 'woocommerce' ); // We'll do our best to hide the placeholder, but we'll need to show something when resetting options.
+		$show_option_none_text = $args['show_option_none'] ? $args['show_option_none'] : __( 'בחר אפשרות', 'woocommerce' ); // We'll do our best to hide the placeholder, but we'll need to show something when resetting options.
 
 		if ( empty( $options ) && ! empty( $product ) && ! empty( $attribute ) ) {
 			$attributes = $product->get_variation_attributes();
@@ -2714,7 +2714,7 @@ function wc_logout_url( $redirect = '' ) {
  * @since 3.1.0
  */
 function wc_empty_cart_message() {
-	echo '<p class="cart-empty">' . wp_kses_post( apply_filters( 'wc_empty_cart_message', __( 'Your cart is currently empty.', 'woocommerce' ) ) ) . '</p>';
+	echo '<p class="cart-empty">' . wp_kses_post( apply_filters( 'wc_empty_cart_message', __( 'העגלה ריקה כרגע.', 'woocommerce' ) ) ) . '</p>';
 }
 
 /**

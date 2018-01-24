@@ -146,10 +146,10 @@ jQuery(document).ready(function(){
         jQuery(this).find('.button-tooltip').text('Added');
     });
     // Add Quickview Text
-    jQuery('.woocommerce a.yith-wcqv-button').append('<span class="button-tooltip">Quick View</span>');
-    jQuery('.woocommerce a.compare').append('<span class="button-tooltip">Compare</span>');
-    jQuery('.woocommerce .yith-wcwl-wishlistexistsbrowse').append('<span class="button-tooltip">Brower Wishlist</span>');
-    jQuery('.woocommerce .yith-wcwl-wishlistaddedbrowse').append('<span class="button-tooltip">Brower Wishlist</span>');
+    jQuery('.woocommerce a.yith-wcqv-button').append('<span class="button-tooltip">מבט מהיר</span>');
+    jQuery('.woocommerce a.compare').append('<span class="button-tooltip">השווה</span>');
+    jQuery('.woocommerce .yith-wcwl-wishlistexistsbrowse').append('<span class="button-tooltip">רשימת משאלות</span>');
+    jQuery('.woocommerce .yith-wcwl-wishlistaddedbrowse').append('<span class="button-tooltip">רשימת משאלות</span>');
 
     function trustView(elem){
         if( jQuery(elem).length ) {

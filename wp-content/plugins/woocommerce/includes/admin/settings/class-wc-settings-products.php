@@ -24,7 +24,7 @@ class WC_Settings_Products extends WC_Settings_Page {
 	 */
 	public function __construct() {
 		$this->id    = 'products';
-		$this->label = __( 'Products', 'woocommerce' );
+		$this->label = __( 'מוצרים', 'woocommerce' );
 
 		parent::__construct();
 	}

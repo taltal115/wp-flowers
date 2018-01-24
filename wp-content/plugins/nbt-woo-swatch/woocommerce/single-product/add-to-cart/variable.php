@@ -70,7 +70,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 								
 								nbtws_dropdown_variation_attribute_options1( array( 'options' => $options, 'attribute' =>        $attribute_name, 'product' => $product, 'selected' => $selected ) );
 								
-								echo end( $attribute_keys ) === $attribute_name ? '<a class="reset_variations" href="#">' . __( 'Clear selection', 'nbtws' ) . '</a>' : ''; 
+								echo end( $attribute_keys ) === $attribute_name ? '<a class="reset_variations" href="#">' . __( 'נקה בחירה', 'nbtws' ) . '</a>' : '';
 						    ?>
 							<?php elseif (isset($attribute_display_type) && ($attribute_display_type  == "global")) : ?>
 							<?php   
@@ -82,7 +82,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 								
 								nbtws_dropdown_variation_attribute_options1( array( 'options' => $options, 'attribute' =>        $attribute_name, 'product' => $product, 'selected' => $selected ) );
 								
-								echo end( $attribute_keys ) === $attribute_name ? '<a class="reset_variations" href="#">' . __( 'Clear selection', 'nbtws' ) . '</a>' : ''; 
+								echo end( $attribute_keys ) === $attribute_name ? '<a class="reset_variations" href="#">' . __( 'נקה בחירה', 'nbtws' ) . '</a>' : '';
 							?>	
 							<?php else : ?>
 							
@@ -91,7 +91,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 								
 								nbtws_dropdown_variation_attribute_options2( array( 'options' => $options, 'attribute' =>        $attribute_name, 'product' => $product, 'selected' => $selected ) );
 								
-								echo end( $attribute_keys ) === $attribute_name ? '<a class="reset_variations" href="#">' . __( 'Clear selection', 'nbtws' ) . '</a>' : '';
+								echo end( $attribute_keys ) === $attribute_name ? '<a class="reset_variations" href="#">' . __( 'נקה בחירה', 'nbtws' ) . '</a>' : '';
 							?>
 							<?php endif; ?>
 						</td>
