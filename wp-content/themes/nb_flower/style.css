@@ -12466,12 +12466,13 @@ body.woocommerce-checkout {
 4.19  Page Title
 */
 .page-title-wrap {
-  border-bottom: 1px solid #e1e1e1;
+  /*border-bottom: 1px solid #e1e1e1;*/
   border-top: 1px solid #e1e1e1;
   padding-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 20px;
-  background: #f8f9f9; }
+  /*background: #f8f9f9; */
+}
   .page-title-wrap .page-entry-title {
     font-size: 16px;
     font-weight: normal;
