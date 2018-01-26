@@ -104,7 +104,7 @@ function nb_flower_rename_wc_tabs( $tabs ) {
     global $product;
     if($product->has_attributes() || $product->has_dimensions() || $product->has_weight()){
         $tabs['additional_information']['title'] = esc_html__( 'Specs','nb_flower');
-        $tabs['description']['title'] = esc_html__( 'Overview','nb_flower' );
+        $tabs['description']['title'] = esc_html__( 'פירוט','nb_flower' );
         // $tabs['template'] = array(
         //     'title' => esc_html__('Template','nb_flower'),
         //     'priority' => 10,
@@ -239,9 +239,9 @@ function nb_flower_stock_and_sku() {
 
     echo '<div class="stock-and-sku-wrap">';
     if ( $product->is_in_stock() ) {
-        echo '<span class="product-stock">In stock</span>';
+        echo '<span class="product-stock">במלאי</span>';
     } else {
-        echo '<span class="product-stock">Out of stock</span>';
+        echo '<span class="product-stock">לא במלאי</span>';
     }
 
     if( $product_sku = $product->get_sku() ) {

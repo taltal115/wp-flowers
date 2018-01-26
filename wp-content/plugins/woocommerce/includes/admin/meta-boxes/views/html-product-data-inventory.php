@@ -66,7 +66,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				'id'             => '_stock_status',
 				'value'          => $product_object->get_stock_status( 'edit' ),
 				'wrapper_class'  => 'hide_if_variable hide_if_external',
-				'label'          => __( 'Stock status', 'woocommerce' ),
+				'label'          => __( 'מצב המלאי', 'woocommerce' ),
 				'options'        => wc_get_product_stock_status_options(),
 				'desc_tip'       => true,
 				'description'    => __( 'Controls whether or not the product is listed as "in stock" or "out of stock" on the frontend.', 'woocommerce' ),

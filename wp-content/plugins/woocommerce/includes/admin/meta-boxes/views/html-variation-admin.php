@@ -203,7 +203,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 						'id'            => "variable_stock_status{$loop}",
 						'name'          => "variable_stock_status[{$loop}]",
 						'value'         => $variation_object->get_stock_status( 'edit' ),
-						'label'         => __( 'Stock status', 'woocommerce' ),
+						'label'         => __( 'מצב המלאי', 'woocommerce' ),
 						'options'       => wc_get_product_stock_status_options(),
 						'desc_tip'      => true,
 						'description'   => __( 'Controls whether or not the product is listed as "in stock" or "out of stock" on the frontend.', 'woocommerce' ),

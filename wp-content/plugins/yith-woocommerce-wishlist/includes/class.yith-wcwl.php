@@ -1570,7 +1570,7 @@ if ( ! class_exists( 'YITH_WCWL' ) ) {
                 }
             }
             else{
-                $message = apply_filters( 'yith_wcwl_no_product_to_remove_message', __( 'No products were added to the wishlist', 'yith-woocommerce-wishlist' ) );
+                $message = apply_filters( 'yith_wcwl_no_product_to_remove_message', __( 'אין מוצרים ברשימת המשאלות', 'yith-woocommerce-wishlist' ) );
             }
 
             wc_add_notice( $message );

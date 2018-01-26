@@ -1051,17 +1051,17 @@ if ( ! function_exists( 'wc_make_numeric_postcode' ) ) {
  * @return string
  */
 function wc_format_stock_for_display( $product ) {
-	$display      = __( 'In stock', 'woocommerce' );
+	$display      = __( 'במלאי', 'woocommerce' );
 	$stock_amount = $product->get_stock_quantity();
 
 	switch ( get_option( 'woocommerce_stock_format' ) ) {
 		case 'low_amount' :
 			if ( $stock_amount <= get_option( 'woocommerce_notify_low_stock_amount' ) ) {
-				$display = sprintf( __( 'Only %s left in stock', 'woocommerce' ), wc_format_stock_quantity_for_display( $stock_amount, $product ) );
+				$display = sprintf( __( 'רק %s נשארו במלאי', 'woocommerce' ), wc_format_stock_quantity_for_display( $stock_amount, $product ) );
 			}
 		break;
 		case '' :
-			$display = sprintf( __( '%s in stock', 'woocommerce' ), wc_format_stock_quantity_for_display( $stock_amount, $product ) );
+			$display = sprintf( __( '%s במלאי', 'woocommerce' ), wc_format_stock_quantity_for_display( $stock_amount, $product ) );
 		break;
 	}
 

@@ -165,11 +165,11 @@ class WC_Report_Stock extends WP_List_Table {
 	public function get_columns() {
 
 		$columns = array(
-			'product'      => __( 'Product', 'woocommerce' ),
-			'parent'       => __( 'Parent', 'woocommerce' ),
-			'stock_level'  => __( 'Units in stock', 'woocommerce' ),
-			'stock_status' => __( 'Stock status', 'woocommerce' ),
-			'wc_actions'   => __( 'Actions', 'woocommerce' ),
+			'product'      => __( 'מוצר', 'woocommerce' ),
+			'parent'       => __( 'הורה', 'woocommerce' ),
+			'stock_level'  => __( 'יחידות במלאי', 'woocommerce' ),
+			'stock_status' => __( 'מצב המוצר', 'woocommerce' ),
+			'wc_actions'   => __( 'פעולות', 'woocommerce' ),
 		);
 
 		return $columns;

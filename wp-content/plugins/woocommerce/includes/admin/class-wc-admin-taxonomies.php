@@ -199,10 +199,10 @@ class WC_Admin_Taxonomies {
 			<th scope="row" valign="top"><label><?php _e( 'Display type', 'woocommerce' ); ?></label></th>
 			<td>
 				<select id="display_type" name="display_type" class="postform">
-					<option value="" <?php selected( '', $display_type ); ?>><?php _e( 'Default', 'woocommerce' ); ?></option>
-					<option value="products" <?php selected( 'products', $display_type ); ?>><?php _e( 'Products', 'woocommerce' ); ?></option>
-					<option value="subcategories" <?php selected( 'subcategories', $display_type ); ?>><?php _e( 'Subcategories', 'woocommerce' ); ?></option>
-					<option value="both" <?php selected( 'both', $display_type ); ?>><?php _e( 'Both', 'woocommerce' ); ?></option>
+					<option value="" <?php selected( '', $display_type ); ?>><?php _e( 'ברירת מחדל', 'woocommerce' ); ?></option>
+					<option value="products" <?php selected( 'products', $display_type ); ?>><?php _e( 'מוצרים', 'woocommerce' ); ?></option>
+					<option value="subcategories" <?php selected( 'subcategories', $display_type ); ?>><?php _e( 'תת קטגוריות', 'woocommerce' ); ?></option>
+					<option value="both" <?php selected( 'both', $display_type ); ?>><?php _e( 'גם וגם', 'woocommerce' ); ?></option>
 				</select>
 			</td>
 		</tr>

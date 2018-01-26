@@ -656,12 +656,12 @@ require self::getPathTemplate('template-selector');
 					</table>
 					<?php if(RevSliderWooCommerce::isWooCommerceExists()){ ?>
 						<table class="table_template_help" id="slide-woocommerce-template-entry" style="display: none;">
-							<tr><td><a href="javascript:UniteLayersRev.insertTemplate('wc_sku')">{{wc_sku}}</a></td><td><?php _e("SKU",'revslider') ?></td></tr>
+							<tr><td><a href="javascript:UniteLayersRev.insertTemplate('wc_sku')">{{wc_sku}}</a></td><td><?php _e("מקט",'revslider') ?></td></tr>
 							<tr><td><a href="javascript:UniteLayersRev.insertTemplate('wc_full_price')">{{wc_full_price}}</a></td><td><?php _e("Full Price",'revslider') ?></td></tr>
-							<tr><td><a href="javascript:UniteLayersRev.insertTemplate('wc_price')">{{wc_price}}</a></td><td><?php _e("Single Price",'revslider') ?></td></tr>
-							<tr><td><a href="javascript:UniteLayersRev.insertTemplate('wc_price_no_cur')">{{wc_price_no_cur}}</a></td><td><?php _e("Single Price without currency",'revslider') ?></td></tr>
-							<tr><td><a href="javascript:UniteLayersRev.insertTemplate('wc_stock')">{{wc_stock}}</a></td><td><?php _e("In Stock",'revslider') ?></td></tr>
-							<tr><td><a href="javascript:UniteLayersRev.insertTemplate('wc_stock_quantity')">{{wc_stock_quantity}}</a></td><td><?php _e("Stock Quantity",'revslider') ?></td></tr>
+							<tr><td><a href="javascript:UniteLayersRev.insertTemplate('wc_price')">{{wc_price}}</a></td><td><?php _e("מחיר אחיד",'revslider') ?></td></tr>
+							<tr><td><a href="javascript:UniteLayersRev.insertTemplate('wc_price_no_cur')">{{wc_price_no_cur}}</a></td><td><?php _e("מחיר יחיד בלי המרות",'revslider') ?></td></tr>
+							<tr><td><a href="javascript:UniteLayersRev.insertTemplate('wc_stock')">{{wc_stock}}</a></td><td><?php _e("במלאי",'revslider') ?></td></tr>
+							<tr><td><a href="javascript:UniteLayersRev.insertTemplate('wc_stock_quantity')">{{wc_stock_quantity}}</a></td><td><?php _e("כמות המלאי",'revslider') ?></td></tr>
 							<tr><td><a href="javascript:UniteLayersRev.insertTemplate('wc_rating_count')">{{wc_rating_count}}</a></td><td><?php _e("Number of Ratings",'revslider') ?></td></tr>
 							<tr><td><a href="javascript:UniteLayersRev.insertTemplate('wc_review_count')">{{wc_review_count}}</a></td><td><?php _e("Number of Reviews",'revslider') ?></td></tr>
 							<tr><td><a href="javascript:UniteLayersRev.insertTemplate('wc_rating')">{{wc_rating}}</a></td><td><?php _e("Text Rating",'revslider') ?></td></tr>

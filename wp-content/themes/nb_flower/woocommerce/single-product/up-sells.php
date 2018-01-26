@@ -45,7 +45,7 @@ if ( $products->have_posts() ) : ?>
 
 	<div class="up-sells upsells products">
         <div class="container">
-			<h2><?php esc_html_e( 'YOU MAY ALSO BE INTERESTED IN THE FOLLOWING PRODUCT(S)', 'nb_flower' ) ?></h2>
+			<h2><?php esc_html_e( 'אולי תהיה מעונין במוצר/ים הבאים', 'nb_flower' ) ?></h2>
 
 			<?php woocommerce_product_loop_start(); ?>
 

@@ -150,7 +150,7 @@ function wpcf7_messages() {
 			'description'
 				=> __( "Sender's message failed to send", 'contact-form-7' ),
 			'default'
-				=> __( "There was an error trying to send your message. Please try again later.", 'contact-form-7' ),
+				=> __( "אירעה שגיאה בעת ניסיון לשלוח את ההודעה. בבקשה נסה שוב מאוחר יותר.", 'contact-form-7' ),
 		),
 
 		'validation_error' => array(
@@ -164,7 +164,7 @@ function wpcf7_messages() {
 			'description'
 				=> __( "Submission was referred to as spam", 'contact-form-7' ),
 			'default'
-				=> __( "There was an error trying to send your message. Please try again later.", 'contact-form-7' ),
+				=> __( "אירעה שגיאה בעת ניסיון לשלוח את ההודעה. בבקשה נסה שוב מאוחר יותר.", 'contact-form-7' ),
 		),
 
 		'accept_terms' => array(

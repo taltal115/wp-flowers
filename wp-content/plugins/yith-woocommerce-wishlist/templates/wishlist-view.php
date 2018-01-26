@@ -99,7 +99,7 @@ if ( ! defined( 'YITH_WCWL' ) ) {
 
                 <th class="product-stock-status">
                     <span class="nobr">
-                        <?php echo apply_filters( 'yith_wcwl_wishlist_view_stock_heading', __( 'Stock Status', 'yith-woocommerce-wishlist' ) ) ?>
+                        <?php echo apply_filters( 'yith_wcwl_wishlist_view_stock_heading', __( 'מצב המוצר', 'yith-woocommerce-wishlist' ) ) ?>
                     </span>
                 </th>
 
@@ -236,7 +236,7 @@ if ( ! defined( 'YITH_WCWL' ) ) {
             endforeach;
         else: ?>
             <tr>
-                <td colspan="<?php echo esc_attr( $column_count ) ?>" class="wishlist-empty"><?php echo apply_filters( 'yith_wcwl_no_product_to_remove_message', __( 'No products were added to the wishlist', 'yith-woocommerce-wishlist' ) ) ?></td>
+                <td colspan="<?php echo esc_attr( $column_count ) ?>" class="wishlist-empty"><?php echo apply_filters( 'yith_wcwl_no_product_to_remove_message', __( 'אין מוצרים ברשימת המשאלות', 'yith-woocommerce-wishlist' ) ) ?></td>
             </tr>
         <?php
         endif;

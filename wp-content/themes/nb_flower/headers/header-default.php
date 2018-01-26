@@ -51,7 +51,7 @@
 
 <header dir="rtl" id="masthead" class="site-header ">
 	<div class="header-wrap">
-		<div class="container">
+		<div class="container" style="padding: 0;width: 100%;">
 			<div class="header-right-wrap-top col-sm-12 col-md-12">
 				<?php wp_nav_menu( array('theme_location' => 'primary', 'container' => '', 'items_wrap' => '%3$s' ) ); ?>
 			</div>
