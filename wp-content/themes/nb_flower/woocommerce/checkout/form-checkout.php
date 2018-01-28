@@ -22,9 +22,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <div class="top-banner-wrap clear">
     <div class="top-banner">
-        <p><?php esc_html_e('Check out our lastest deals and start saving', 'nb_flower'); ?></p>
+        <p><?php esc_html_e('בדוק את העסקאות האחרונות שלנו והתחל לחסוך', 'nb_flower'); ?></p>
         <p>
-	        <span><?php esc_html_e('get started', 'nb_flower'); ?></span>
+	        <span><?php esc_html_e('התחל עכשיו', 'nb_flower'); ?></span>
 	        <i class="icon-play-circled-1"></i>
         </p>
     </div>

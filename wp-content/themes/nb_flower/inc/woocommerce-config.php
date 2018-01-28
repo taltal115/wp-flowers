@@ -192,8 +192,8 @@ function nb_flower_product_thumb_link_close() {
 }
 
 function nb_flower_wc_pagination( $args ) {
-	$args['prev_text'] = '<i class="icon-left-open"></i>';
-	$args['next_text'] = '<i class="icon-right-open"></i>';
+	$args['prev_text'] = '<i class="icon-right-open"></i>';
+	$args['next_text'] = '<i class="icon-left-open"></i>';
 	return $args;
 }
 
