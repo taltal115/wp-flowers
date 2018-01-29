@@ -1,7 +1,20 @@
 <div id="topbar" class="site-topbar">
 	<div class="container">
 		<div class="topbar-inner row clearfix">
-			
+
+            <div class="header-center-logo col-xs-12 col-sm-6 col-md-6 text-center">
+                <div class="site-branding padding-left-0">
+                    <?php if ( $header_logo = nb_flower_get_option('header_logo', false, 'url')) : ?>
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+                            <img src="<?php echo esc_url($header_logo);?>" alt="<?php get_bloginfo( 'name' ) ?>" />
+                        </a>
+                    <?php else: ?>
+                        <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+                        <!--						<h2 class="tal111  site-description">--><?php //bloginfo( 'description' ); ?><!--</h2>-->
+                    <?php endif; ?>
+                </div><!-- /.site-branding -->
+            </div>
+
 			<div class="header-left-widgets col-xs-12 col-sm-3 col-md-3 ">
                 <p class="shipping-to-all">משלוחים לכל חלקי הארץ</p>
                 <a href="tel:03-5608887">
@@ -34,19 +47,6 @@
                     </div>
                 </div>
             </div>
-
-			<div class="header-center-logo col-xs-12 col-sm-6 col-md-6 text-center">
-				<div class="site-branding padding-left-0">
-					<?php if ( $header_logo = nb_flower_get_option('header_logo', false, 'url')) : ?>
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-							<img src="<?php echo esc_url($header_logo);?>" alt="<?php get_bloginfo( 'name' ) ?>" />
-						</a>
-					<?php else: ?>
-						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-<!--						<h2 class="tal111  site-description">--><?php //bloginfo( 'description' ); ?><!--</h2>-->
-					<?php endif; ?>
-				</div><!-- /.site-branding -->
-			</div>
 			<div class="clear"></div>
 		</div>
 	</div>
