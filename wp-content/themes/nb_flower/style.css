@@ -9464,23 +9464,149 @@ body.woocommerce-checkout {
 #topbar {
   border-bottom: 1px solid #dedede; }
 
-.header-left-widgets {
-  /*width: 230px;*/
-  /*position: relative;*/
-  left: -40px;
-  top: -100px;
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .header-right-widgets {
+    position: absolute!important;
+    top: -10px!important;
+    width: 290px!important;
+  }
+  .header-left-widgets {
+    width: 183px!important;
+    position: absolute!important;
+    top: 0!important;
+    left: 0!important;
+  }
+  #mega-menu-wrap-primary .mega-menu-toggle + #mega-menu-primary li.mega-menu-item.mega-toggle-on > ul.mega-sub-menu, #mega-menu-wrap-primary .mega-menu-toggle + #mega-menu-primary li.mega-menu-item.mega-menu-megamenu.mega-toggle-on ul.mega-sub-menu {
+    display: block;
+    background: #f1f1f1!important;
+  }
+  .mega-menu-link{
+    color: #000!important;
+  }
 }
-.header-right-widgets {
-  float: right;
-  /*position: relative;*/
-  top: -100px;
-  /*width: 290px;*/
+
+@media (max-width: 767px) {
+    .header-center-logo {
+        width: 100%;
+        margin: 50px 0 30px;
+    }
+    .header-left-widgets {
+      width: 185px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .header-left-widgets .shipping-to-all {
+        margin: 0px 0px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .fa.fa-phone {
+        margin: -10px 17px 0 0;
+    }
+    .fa.fa-phone p {
+      float: left;
+      margin: 0px 10px;
+      font-weight: bold;
+      font-size: 14px;
+      font-family: 'Roboto';
+    }
+    .fa-phone:before {
+        top: 13px;
+        font-size: 17px;
+    }
+    .header-right-widgets {
+      position: absolute;
+      top: 15px;
+      width: 290px;
+    }
+    .header-social {
+        position: relative;
+        width: 100px;
+        top: 17px;
+    }
+  #netbase-responsive-toggle {
+    font-size: 20px;
+    line-height: 50px;
+    float: right;
+    margin: 0 0 0 20px;
+  }
+  .topbar-inner .header-cart-search .cart-contentss:before {
+    font-size: 20px!important;
+    top: 50% !important;
+    left: 50% !important;
+  }
+  .topbar-inner .search-form:before {
+    font-size: 19px!important;
+    top: 2px!important;
+  }
+  .topbar-inner .search-form label {
+    right: 90px;
+  }
+  .topbar-inner .search-form {
+    min-width: 50px!important;
+  }
 }
-.header-social {
-  position: relative;
-  width: 100px;
-  top: 14px;
+@media (min-width: 768px) {
+    .header-left-widgets {
+        /*width: 230px;*/
+        /*position: relative;*/
+        left: -40px;
+        top: -100px;
+    }
+    .header-right-widgets {
+        float: right;
+        /*position: relative;*/
+        top: -100px;
+        /*width: 290px;*/
+    }
+    .header-social {
+        position: relative;
+        width: 100px;
+        top: 14px;
+    }
+  .fa.fa-user {
+    font-size: 30px;
+    float: right;
+  }
+  .fa.fa-phone {
+    float: right;
+    margin: -10px 10px 0 0;
+  }
+  .fa.fa-phone p {
+    float: left;
+    margin: 10px 10px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Roboto';
+  }
+  .fa-phone:before {
+    content: "\f095";
+    position: relative;
+    top: 5px;
+    font-size: 30px;
+  }
+  .header-left-widgets .shipping-to-all {
+    float: right;
+    margin: 7px 0px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+  }
+  .header-center-logo {
+    width: 100%;
+    margin: 0px 0px -60px;
+  }
+  #netbase-responsive-toggle {
+    font-size: 30px;
+    line-height: 60px;
+    float: right;
+    margin: 0px 0px 0 30px;
+  }
 }
+
 
 .topbar-inner .header-left-widgets .header-social {
   float: left;
@@ -9965,12 +10091,6 @@ body.woocommerce-checkout {
   #mega-menu-primary > li.mega-menu-flyout > ul.mega-sub-menu {
     padding-left: 15px !important; } }
 
-#netbase-responsive-toggle {
-  font-size: 30px;
-  line-height: 60px;
-  float: right;
-  margin: 0px 0px 0 30px;
-}
   @media (max-width: 479px) {
     #netbase-responsive-toggle {
       display: block;
@@ -14996,30 +15116,4 @@ body.home .site-content {
   .topbar-inner .search-form label {
     right: 25%!important;
   }
-}
-
-.fa.fa-user {
-  font-size: 30px;
-  float: right;
-}
-.fa.fa-phone {
-  float: right;
-  margin: -10px 10px 0 0;
-}
-.fa-phone:before {
-  content: "\f095";
-  position: relative;
-  top: 5px;
-  font-size: 30px;
-}
-.header-left-widgets .shipping-to-all {
-  float: right;
-  margin: 7px 0px;
-  font-size: 18px;
-  font-weight: bold;
-  width: 100%;
-}
-.header-center-logo {
-  width: 100%;
-  margin: 0px 0px -60px;
 }

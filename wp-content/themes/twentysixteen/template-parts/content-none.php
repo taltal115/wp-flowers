@@ -20,7 +20,7 @@
 
 		<?php elseif ( is_search() ) : ?>
 
-			<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'twentysixteen' ); ?></p>
+			<p><?php _e( 'מצטערים, אך שום דבר לא התאים למונחי החיפוש שלך. נסה שוב עם מספר מילות מפתח שונות.', 'twentysixteen' ); ?></p>
 			<?php get_search_form(); ?>
 
 		<?php else : ?>

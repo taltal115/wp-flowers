@@ -505,11 +505,11 @@ if(!isset($linksEditSlides)) $linksEditSlides = '';
 								<?php $fetch_type = RevSliderFunctions::getVal($arrFieldsParams, 'fetch_type', 'cat_tag'); ?>
 								<span class="rev-new-label"><?php _e('Fetch Posts By:', 'revslider');?></span>
 								<select id="fetch_type" name="fetch_type" style="width:181px; vertical-align: top; height:50px">
-									<option value="cat_tag" <?php selected($fetch_type, 'cat_tag'); ?>><?php _e('Categories & Tags', 'revslider'); ?></option>
-									<option value="related" <?php selected($fetch_type, 'related'); ?>><?php _e('Related', 'revslider'); ?></option>
-									<option value="popular" <?php selected($fetch_type, 'popular'); ?>><?php _e('Popular', 'revslider'); ?></option>
-									<option value="recent" <?php selected($fetch_type, 'recent'); ?>><?php _e('Recent', 'revslider'); ?></option>
-									<option value="next_prev" <?php selected($fetch_type, 'next_prev'); ?>><?php _e('Next / Previous', 'revslider'); ?></option>
+									<option value="cat_tag" <?php selected($fetch_type, 'cat_tag'); ?>><?php _e('קטגוריות וטאגים', 'revslider'); ?></option>
+									<option value="related" <?php selected($fetch_type, 'related'); ?>><?php _e('מוצרים דומים', 'revslider'); ?></option>
+									<option value="popular" <?php selected($fetch_type, 'popular'); ?>><?php _e('פופולארי', 'revslider'); ?></option>
+									<option value="recent" <?php selected($fetch_type, 'recent'); ?>><?php _e('מוצרים אחרונים', 'revslider'); ?></option>
+									<option value="next_prev" <?php selected($fetch_type, 'next_prev'); ?>><?php _e('הבא / הקודם', 'revslider'); ?></option>
 								</select>
 								
 								<span class="tp-clearfix"></span>

@@ -570,7 +570,7 @@ class WC_Form_Handler {
 				wp_safe_redirect( wc_get_checkout_url() );
 				exit;
 			} elseif ( $cart_updated ) {
-				wc_add_notice( __( 'Cart updated.', 'woocommerce' ) );
+				wc_add_notice( __( 'עגלה עודכנה', 'woocommerce' ) );
 				$referer = remove_query_arg( array( 'remove_coupon', 'add-to-cart' ), ( wp_get_referer() ? wp_get_referer() : wc_get_cart_url() ) );
 				wp_safe_redirect( $referer );
 				exit;
@@ -660,7 +660,7 @@ class WC_Form_Handler {
 		}
 
 		if ( $num_items_in_cart > 0 ) {
-			wc_add_notice( __( 'The cart has been filled with the items from your previous order.', 'woocommerce' ) );
+			wc_add_notice( __( 'העגלה נמלאה בפריטים מהזמנתך הקודמת.', 'woocommerce' ) );
 		}
 
 		// Redirect to cart
@@ -693,17 +693,17 @@ class WC_Form_Handler {
 
 				// Cancel the order + restore stock
 				WC()->session->set( 'order_awaiting_payment', false );
-				$order->update_status( 'cancelled', __( 'Order cancelled by customer.', 'woocommerce' ) );
+				$order->update_status( 'cancelled', __( 'ההזמנה בוטלה ע"י הלקוח.', 'woocommerce' ) );
 
 				// Message
-				wc_add_notice( apply_filters( 'woocommerce_order_cancelled_notice', __( 'Your order was cancelled.', 'woocommerce' ) ), apply_filters( 'woocommerce_order_cancelled_notice_type', 'notice' ) );
+				wc_add_notice( apply_filters( 'woocommerce_order_cancelled_notice', __( 'ההזמנה שלך בוטלה.', 'woocommerce' ) ), apply_filters( 'woocommerce_order_cancelled_notice_type', 'notice' ) );
 
 				do_action( 'woocommerce_cancelled_order', $order->get_id() );
 
 			} elseif ( $user_can_cancel && ! $order_can_cancel ) {
-				wc_add_notice( __( 'Your order can no longer be cancelled. Please contact us if you need assistance.', 'woocommerce' ), 'error' );
+				wc_add_notice( __( 'לא ניתן עוד לבטל את הזמנתך. צור איתנו קשר אם אתה זקוק לעזרה.', 'woocommerce' ), 'error' );
 			} else {
-				wc_add_notice( __( 'Invalid order.', 'woocommerce' ), 'error' );
+				wc_add_notice( __( 'הזמנה שגויה.', 'woocommerce' ), 'error' );
 			}
 
 			if ( $redirect ) {
@@ -812,7 +812,7 @@ class WC_Form_Handler {
 			}
 
 			if ( ! $was_added_to_cart && ! $quantity_set ) {
-				wc_add_notice( __( 'Please choose the quantity of items you wish to add to your cart&hellip;', 'woocommerce' ), 'error' );
+				wc_add_notice( __( 'אנא בחר את כמות הפריטים שברצונך להוסיף לעגלה&hellip;', 'woocommerce' ), 'error' );
 			} elseif ( $was_added_to_cart ) {
 				wc_add_to_cart_message( $added_to_cart );
 				WC()->cart->calculate_totals();
@@ -820,7 +820,7 @@ class WC_Form_Handler {
 			}
 		} elseif ( $product_id ) {
 			/* Link on product archives */
-			wc_add_notice( __( 'Please choose a product to add to your cart&hellip;', 'woocommerce' ), 'error' );
+			wc_add_notice( __( 'בחר מוצר להוספה לעגלה שלך&hellip;', 'woocommerce' ), 'error' );
 		}
 		return false;
 	}
@@ -863,7 +863,7 @@ class WC_Form_Handler {
 
 			// Validate the attributes.
 			if ( empty( $variation_id ) ) {
-				throw new Exception( __( 'Please choose product options&hellip;', 'woocommerce' ) );
+				throw new Exception( __( 'בחר אפשרויות מוצר&hellip;', 'woocommerce' ) );
 			}
 
 			$variation_data = wc_get_product_variation_attributes( $variation_id );
@@ -897,14 +897,14 @@ class WC_Form_Handler {
 						// If valid values are empty, this is an 'any' variation so get all possible values.
 						$variations[ $taxonomy ] = $value;
 					} else {
-						throw new Exception( sprintf( __( 'Invalid value posted for %s', 'woocommerce' ), wc_attribute_label( $attribute['name'] ) ) );
+						throw new Exception( sprintf( __( 'ערך לא חוקי פורסם עבור %s', 'woocommerce' ), wc_attribute_label( $attribute['name'] ) ) );
 					}
 				} elseif ( '' === $valid_value ) {
 					$missing_attributes[] = wc_attribute_label( $attribute['name'] );
 				}
 			}
 			if ( ! empty( $missing_attributes ) ) {
-				throw new Exception( sprintf( _n( '%s is a required field', '%s are required fields', count( $missing_attributes ), 'woocommerce' ), wc_format_list_of_items( $missing_attributes ) ) );
+				throw new Exception( sprintf( _n( '%s הוא שדה חובה', '%s are required fields', count( $missing_attributes ), 'woocommerce' ), wc_format_list_of_items( $missing_attributes ) ) );
 			}
 		} catch ( Exception $e ) {
 			wc_add_notice( $e->getMessage(), 'error' );
@@ -941,11 +941,11 @@ class WC_Form_Handler {
 				$validation_error = apply_filters( 'woocommerce_process_login_errors', $validation_error, $_POST['username'], $_POST['password'] );
 
 				if ( $validation_error->get_error_code() ) {
-					throw new Exception( '<strong>' . __( 'Error:', 'woocommerce' ) . '</strong> ' . $validation_error->get_error_message() );
+					throw new Exception( '<strong>' . __( 'שגיאה:', 'woocommerce' ) . '</strong> ' . $validation_error->get_error_message() );
 				}
 
 				if ( empty( $username ) ) {
-					throw new Exception( '<strong>' . __( 'Error:', 'woocommerce' ) . '</strong> ' . __( 'Username is required.', 'woocommerce' ) );
+					throw new Exception( '<strong>' . __( 'שגיאה:', 'woocommerce' ) . '</strong> ' . __( 'נדרש שם משתמש.', 'woocommerce' ) );
 				}
 
 				if ( is_email( $username ) && apply_filters( 'woocommerce_get_username_from_email', true ) ) {
@@ -1036,11 +1036,11 @@ class WC_Form_Handler {
 
 		if ( $user instanceof WP_User ) {
 			if ( empty( $posted_fields['password_1'] ) ) {
-				wc_add_notice( __( 'Please enter your password.', 'woocommerce' ), 'error' );
+				wc_add_notice( __( 'הזן את סיסמתך בבקשה.', 'woocommerce' ), 'error' );
 			}
 
 			if ( $posted_fields['password_1'] !== $posted_fields['password_2'] ) {
-				wc_add_notice( __( 'Passwords do not match.', 'woocommerce' ), 'error' );
+				wc_add_notice( __( 'סיסמאות לא תואמות.', 'woocommerce' ), 'error' );
 			}
 
 			$errors = new WP_Error();

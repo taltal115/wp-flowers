@@ -342,7 +342,7 @@
             <div class="col-2">
                 <div class="section-title">
                     <img src="<?php echo YITH_WOOCOMPARE_URL?>assets/images/07-icon.png" alt="icon 05" />
-                    <h2><?php _e('RELATED PRODUCTS','yith-woocommerce-compare');?></h2>
+                    <h2><?php _e('מוצרים דומים','yith-woocommerce-compare');?></h2>
                 </div>
                 <p>
                     <?php echo sprintf( __('All the products that have common categories and/or tags with those in the comparison table will be showed in a slider, right under the comparison table.%3$sA completely %1$s"touch friendly"%2$s slider to encourage your users to discover the shop products of the shop related to those they are interested into.','yith-woocommerce-compare'),'<b>','</b>','<br>'); ?>

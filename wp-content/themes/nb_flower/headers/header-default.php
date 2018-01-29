@@ -18,7 +18,7 @@
 			<div class="header-left-widgets col-xs-12 col-sm-3 col-md-3 ">
                 <p class="shipping-to-all">משלוחים לכל חלקי הארץ</p>
                 <a href="tel:03-5608887">
-                    <i class="fa fa-phone" aria-hidden="true"><p style="float: left;margin: 10px 10px;font-weight: bold;font-size: 20px;font-family: 'Roboto';">03-5608887</p></i>
+                    <i class="fa fa-phone" aria-hidden="true"><p>03-5608887</p></i>
                 </a>
             </div>
 
@@ -39,9 +39,9 @@
                     </form>
                     <div class="header-social">
                         <?php if ( is_user_logged_in() ) { ?>
-                            <a href="<?php echo esc_url(home_url( '/my-account' )); ?>" title="Account" class="social-user"><i class="fa fa-user" aria-hidden="true"></i><?php esc_html_e('החשבון שלי','nb_flower') ?></a>
+                            <a href="<?php echo esc_url(home_url( '/index.php/my-account' )); ?>" title="Account" class="social-user"><i class="fa fa-user" aria-hidden="true"></i><?php esc_html_e('החשבון שלי','nb_flower') ?></a>
                         <?php } else { ?>
-                            <a href="<?php echo esc_url(home_url( '/my-account' )); ?>" title="Login" class="social-user"><i class="fa fa-sign-in"></i><?php esc_html_e('היתחבר','nb_flower') ?></a>
+                            <a href="<?php echo esc_url(home_url( '/index.php/my-account' )); ?>" title="Login" class="social-user"><i class="fa fa-sign-in"></i><?php esc_html_e('היתחבר','nb_flower') ?></a>
 
                         <?php } ?>
                     </div>
