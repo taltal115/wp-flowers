@@ -11392,9 +11392,9 @@ body.woocommerce-checkout {
   font-size: 30px;
   font-weight: bold;
   color: #fff;
-  text-align: left;
+  text-align: right;
   background-color: #eb55a3;
-  padding: 25px 0 25px 30px; }
+  padding: 25px 10px 25px 30px; }
 
 .our-working .mon-sun {
   padding: 0;
@@ -11410,13 +11410,13 @@ body.woocommerce-checkout {
     .our-working .mon-sun li:last-child {
       border: none; }
     .our-working .mon-sun li span.day {
-      float: left;
+      float: right;
       font-size: 14px;
       font-weight: bold;
       color: #3c3c3c;
       line-height: 38px; }
     .our-working .mon-sun li span.value {
-      float: right;
+      float: left;
       font-size: 14px;
       line-height: 38px;
       color: #666; }

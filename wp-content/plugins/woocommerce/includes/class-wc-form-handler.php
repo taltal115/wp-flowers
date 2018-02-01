@@ -100,7 +100,7 @@ class WC_Form_Handler {
 
 			// Validation: Required fields.
 			if ( ! empty( $field['required'] ) && empty( $_POST[ $key ] ) ) {
-				wc_add_notice( sprintf( __( '%s is a required field.', 'woocommerce' ), $field['label'] ), 'error' );
+				wc_add_notice( sprintf( __( '%s הוא שדה חובה.', 'woocommerce' ), $field['label'] ), 'error' );
 			}
 
 			if ( ! empty( $_POST[ $key ] ) ) {
@@ -216,7 +216,7 @@ class WC_Form_Handler {
 
 		foreach ( $required_fields as $field_key => $field_name ) {
 			if ( empty( $_POST[ $field_key ] ) ) {
-				wc_add_notice( sprintf( __( '%s is a required field.', 'woocommerce' ), '<strong>' . esc_html( $field_name ) . '</strong>' ), 'error' );
+				wc_add_notice( sprintf( __( '%s הוא שדה חובה.', 'woocommerce' ), '<strong>' . esc_html( $field_name ) . '</strong>' ), 'error' );
 			}
 		}
 

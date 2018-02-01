@@ -89,7 +89,6 @@ function wc_edit_address_i18n( $id, $flip = false ) {
 function wc_get_account_menu_items() {
 	$endpoints = array(
 		'orders'          => get_option( 'woocommerce_myaccount_orders_endpoint', 'orders' ),
-		'downloads'       => get_option( 'woocommerce_myaccount_downloads_endpoint', 'downloads' ),
 		'edit-address'    => get_option( 'woocommerce_myaccount_edit_address_endpoint', 'edit-address' ),
 		'payment-methods' => get_option( 'woocommerce_myaccount_payment_methods_endpoint', 'payment-methods' ),
 		'edit-account'    => get_option( 'woocommerce_myaccount_edit_account_endpoint', 'edit-account' ),
@@ -99,8 +98,7 @@ function wc_get_account_menu_items() {
 	$items = array(
 		'dashboard'       => __( 'לוח ראשי', 'woocommerce' ),
 		'orders'          => __( 'הזמנות', 'woocommerce' ),
-		'downloads'       => __( 'הורדות', 'woocommerce' ),
-		'edit-address'    => __( 'כתוהות', 'woocommerce' ),
+		'edit-address'    => __( 'כתובת', 'woocommerce' ),
 		'payment-methods' => __( 'שיטות תשלומים', 'woocommerce' ),
 		'edit-account'    => __( 'פרטי החשבון', 'woocommerce' ),
 		'customer-logout' => __( 'התנתק', 'woocommerce' ),
@@ -202,19 +200,19 @@ function wc_get_account_orders_columns() {
  * @return array
  */
 function wc_get_account_downloads_columns() {
-	$columns = apply_filters( 'woocommerce_account_downloads_columns', array(
-		'download-product'   => __( 'מוצר', 'woocommerce' ),
-		'download-remaining' => __( 'הורדות שנשארו', 'woocommerce' ),
-		'download-expires'   => __( 'תפוגה', 'woocommerce' ),
-		'download-file'      => __( 'הורדות', 'woocommerce' ),
-		'download-actions'   => '&nbsp;',
-	) );
-
-	if ( ! has_filter( 'woocommerce_account_download_actions' ) ) {
-		unset( $columns['download-actions'] );
-	}
-
-	return $columns;
+//	$columns = apply_filters( 'woocommerce_account_downloads_columns', array(
+//		'download-product'   => __( 'מוצר', 'woocommerce' ),
+//		'download-remaining' => __( 'הורדות שנשארו', 'woocommerce' ),
+//		'download-expires'   => __( 'תפוגה', 'woocommerce' ),
+//		'download-file'      => __( 'הורדות', 'woocommerce' ),
+//		'download-actions'   => '&nbsp;',
+//	) );
+//
+//	if ( ! has_filter( 'woocommerce_account_download_actions' ) ) {
+//		unset( $columns['download-actions'] );
+//	}
+//
+//	return $columns;
 }
 
 /**

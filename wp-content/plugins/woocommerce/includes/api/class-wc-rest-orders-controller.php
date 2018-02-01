@@ -939,7 +939,7 @@ class WC_REST_Orders_Controller extends WC_REST_Legacy_Orders_Controller {
 					'context'     => array( 'view', 'edit' ),
 				),
 				'billing' => array(
-					'description' => __( 'Billing address.', 'woocommerce' ),
+					'description' => __( 'כתובת לחיוב.', 'woocommerce' ),
 					'type'        => 'object',
 					'context'     => array( 'view', 'edit' ),
 					'properties'  => array(

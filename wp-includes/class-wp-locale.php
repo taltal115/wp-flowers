@@ -126,45 +126,45 @@ class WP_Locale {
 	 */
 	public function init() {
 		// The Weekdays
-		$this->weekday[0] = /* translators: weekday */ __('Sunday');
-		$this->weekday[1] = /* translators: weekday */ __('Monday');
-		$this->weekday[2] = /* translators: weekday */ __('Tuesday');
-		$this->weekday[3] = /* translators: weekday */ __('Wednesday');
-		$this->weekday[4] = /* translators: weekday */ __('Thursday');
-		$this->weekday[5] = /* translators: weekday */ __('Friday');
-		$this->weekday[6] = /* translators: weekday */ __('Saturday');
+		$this->weekday[0] = /* translators: weekday */ __('ראשון');
+		$this->weekday[1] = /* translators: weekday */ __('שני');
+		$this->weekday[2] = /* translators: weekday */ __('שלישי');
+		$this->weekday[3] = /* translators: weekday */ __('רביעי');
+		$this->weekday[4] = /* translators: weekday */ __('חמישי');
+		$this->weekday[5] = /* translators: weekday */ __('שישי');
+		$this->weekday[6] = /* translators: weekday */ __('שבת');
 
 		// The first letter of each day.
-		$this->weekday_initial[ __( 'Sunday' ) ]    = /* translators: one-letter abbreviation of the weekday */ _x( 'S', 'Sunday initial' );
-		$this->weekday_initial[ __( 'Monday' ) ]    = /* translators: one-letter abbreviation of the weekday */ _x( 'M', 'Monday initial' );
-		$this->weekday_initial[ __( 'Tuesday' ) ]   = /* translators: one-letter abbreviation of the weekday */ _x( 'T', 'Tuesday initial' );
-		$this->weekday_initial[ __( 'Wednesday' ) ] = /* translators: one-letter abbreviation of the weekday */ _x( 'W', 'Wednesday initial' );
-		$this->weekday_initial[ __( 'Thursday' ) ]  = /* translators: one-letter abbreviation of the weekday */ _x( 'T', 'Thursday initial' );
-		$this->weekday_initial[ __( 'Friday' ) ]    = /* translators: one-letter abbreviation of the weekday */ _x( 'F', 'Friday initial' );
-		$this->weekday_initial[ __( 'Saturday' ) ]  = /* translators: one-letter abbreviation of the weekday */ _x( 'S', 'Saturday initial' );
+		$this->weekday_initial[ __( 'ראשון' ) ]    = /* translators: one-letter abbreviation of the weekday */ _x( 'S', 'Sunday initial' );
+		$this->weekday_initial[ __( 'שני' ) ]    = /* translators: one-letter abbreviation of the weekday */ _x( 'M', 'Monday initial' );
+		$this->weekday_initial[ __( 'שלישי' ) ]   = /* translators: one-letter abbreviation of the weekday */ _x( 'T', 'Tuesday initial' );
+		$this->weekday_initial[ __( 'רביעי' ) ] = /* translators: one-letter abbreviation of the weekday */ _x( 'W', 'Wednesday initial' );
+		$this->weekday_initial[ __( 'חמישי' ) ]  = /* translators: one-letter abbreviation of the weekday */ _x( 'T', 'Thursday initial' );
+		$this->weekday_initial[ __( 'שישי' ) ]    = /* translators: one-letter abbreviation of the weekday */ _x( 'F', 'Friday initial' );
+		$this->weekday_initial[ __( 'שבת' ) ]  = /* translators: one-letter abbreviation of the weekday */ _x( 'S', 'Saturday initial' );
 
 		// Abbreviations for each day.
-		$this->weekday_abbrev[__('Sunday')]    = /* translators: three-letter abbreviation of the weekday */ __('Sun');
-		$this->weekday_abbrev[__('Monday')]    = /* translators: three-letter abbreviation of the weekday */ __('Mon');
-		$this->weekday_abbrev[__('Tuesday')]   = /* translators: three-letter abbreviation of the weekday */ __('Tue');
-		$this->weekday_abbrev[__('Wednesday')] = /* translators: three-letter abbreviation of the weekday */ __('Wed');
-		$this->weekday_abbrev[__('Thursday')]  = /* translators: three-letter abbreviation of the weekday */ __('Thu');
-		$this->weekday_abbrev[__('Friday')]    = /* translators: three-letter abbreviation of the weekday */ __('Fri');
-		$this->weekday_abbrev[__('Saturday')]  = /* translators: three-letter abbreviation of the weekday */ __('Sat');
+		$this->weekday_abbrev[__('ראשון')]    = /* translators: three-letter abbreviation of the weekday */ __('Sun');
+		$this->weekday_abbrev[__('שני')]    = /* translators: three-letter abbreviation of the weekday */ __('Mon');
+		$this->weekday_abbrev[__('שלישי')]   = /* translators: three-letter abbreviation of the weekday */ __('Tue');
+		$this->weekday_abbrev[__('רביעי')] = /* translators: three-letter abbreviation of the weekday */ __('Wed');
+		$this->weekday_abbrev[__('חמישי')]  = /* translators: three-letter abbreviation of the weekday */ __('Thu');
+		$this->weekday_abbrev[__('שישי')]    = /* translators: three-letter abbreviation of the weekday */ __('Fri');
+		$this->weekday_abbrev[__('שבת')]  = /* translators: three-letter abbreviation of the weekday */ __('Sat');
 
 		// The Months
-		$this->month['01'] = /* translators: month name */ __( 'January' );
-		$this->month['02'] = /* translators: month name */ __( 'February' );
-		$this->month['03'] = /* translators: month name */ __( 'March' );
-		$this->month['04'] = /* translators: month name */ __( 'April' );
-		$this->month['05'] = /* translators: month name */ __( 'May' );
-		$this->month['06'] = /* translators: month name */ __( 'June' );
-		$this->month['07'] = /* translators: month name */ __( 'July' );
-		$this->month['08'] = /* translators: month name */ __( 'August' );
-		$this->month['09'] = /* translators: month name */ __( 'September' );
-		$this->month['10'] = /* translators: month name */ __( 'October' );
-		$this->month['11'] = /* translators: month name */ __( 'November' );
-		$this->month['12'] = /* translators: month name */ __( 'December' );
+		$this->month['01'] = /* translators: month name */ __( 'ינואר' );
+		$this->month['02'] = /* translators: month name */ __( 'פברואר' );
+		$this->month['03'] = /* translators: month name */ __( 'מרץ' );
+		$this->month['04'] = /* translators: month name */ __( 'אפריל' );
+		$this->month['05'] = /* translators: month name */ __( 'מאי' );
+		$this->month['06'] = /* translators: month name */ __( 'יוני' );
+		$this->month['07'] = /* translators: month name */ __( 'יולי' );
+		$this->month['08'] = /* translators: month name */ __( 'אוגוסט' );
+		$this->month['09'] = /* translators: month name */ __( 'ספטמבר' );
+		$this->month['10'] = /* translators: month name */ __( 'אוקטובר' );
+		$this->month['11'] = /* translators: month name */ __( 'נובמבר' );
+		$this->month['12'] = /* translators: month name */ __( 'דצמבר' );
 
 		// The Months, genitive
 		$this->month_genitive['01'] = /* translators: month name, genitive */ _x( 'January', 'genitive' );

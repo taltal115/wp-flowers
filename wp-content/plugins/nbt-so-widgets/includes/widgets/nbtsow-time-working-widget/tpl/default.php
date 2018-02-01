@@ -1,11 +1,11 @@
 <?php
     $mon_sun = array(
-        'Monday' => $mon,
-        'Tuesday' => $tues,
-        'Wednesday' => $wednes,
-        'Thursday' => $thurs,
-        'Friday' => $fri,
-        'Sat & Sun' => $sun_sat
+        'ראשון' => $sun_sat,
+        'שני' => $mon,
+        'שלישי' => $tues,
+        'רביעי' => $wednes,
+        'חמישי' => $thurs,
+        'שישי' => $fri,
     );
 ?>
 <section class="our-working">

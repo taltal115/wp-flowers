@@ -17,39 +17,39 @@ class NBTSOW_Our_Working_Widget extends SiteOrigin_Widget{
             array(
                 'title' => array(
                     'type' => 'text',
-                    'label' => esc_html__('Title','nbtsow'),
-                    'default' => esc_html__('Our Working Hours','nbtsow'),
+                    'label' => esc_html__('כותרת','nbtsow'),
+                    'default' => esc_html__('ימי ושעות עבודה','nbtsow'),
+                ),
+                'sun_sat' => array(
+                    'type' => 'text',
+                    'label' => esc_html__('ראשון','nbtsow'),
+                    'default' => esc_html__('07am-08pm','nbtsow')
                 ),
                 'mon' => array(
                     'type' => 'text',
-                    'label' => esc_html__('Monday time working','nbtsow'),
+                    'label' => esc_html__('שני','nbtsow'),
                     'default' => esc_html__('07am-08pm','nbtsow')
                 ),
                 'tues' => array(
                     'type' => 'text',
-                    'label' => esc_html__('Tuesday time working','nbtsow'),
+                    'label' => esc_html__('שלישי','nbtsow'),
                     'default' => esc_html__('07am-08pm','nbtsow')
         
                 ),
                 'wednes' => array(
                     'type' => 'text',
-                    'label' => esc_html__('Wednesday time working','nbtsow'),
+                    'label' => esc_html__('רביעי','nbtsow'),
                     'default' => esc_html__('07am-08pm','nbtsow')
                 ),
                 'thurs' => array(
                     'type' => 'text',
-                    'label' => esc_html__('Thurday time working','nbtsow'),
+                    'label' => esc_html__('מחישי','nbtsow'),
                     'default' => esc_html__('07am-08pm','nbtsow')
                 ),
                 'fri' => array(
                     'type' => 'text',
-                    'label' => esc_html__('Fri time working','nbtsow'),
+                    'label' => esc_html__('שישי','nbtsow'),
                     'default' => esc_html__('07am-08pm','nbtsow')
-                ),
-                'sun_sat' => array(
-                    'type' => 'text',
-                    'label' => esc_html__('Sunday and Saturday time working','nbtsow'),
-                    'default' => esc_html__('Not working','nbtsow')
                 )
             )
         );

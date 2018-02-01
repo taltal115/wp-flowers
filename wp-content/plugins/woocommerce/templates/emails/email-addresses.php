@@ -25,7 +25,7 @@ $text_align = is_rtl() ? 'right' : 'left';
 ?><table id="addresses" cellspacing="0" cellpadding="0" style="width: 100%; vertical-align: top; margin-bottom: 40px; padding:0;" border="0">
 	<tr>
 		<td style="text-align:<?php echo $text_align; ?>; font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; border:0; padding:0;" valign="top" width="50%">
-			<h2><?php _e( 'Billing address', 'woocommerce' ); ?></h2>
+			<h2><?php _e( 'בתובת לחיוב', 'woocommerce' ); ?></h2>
 
 			<address class="address">
 				<?php echo ( $address = $order->get_formatted_billing_address() ) ? $address : __( 'N/A', 'woocommerce' ); ?>
