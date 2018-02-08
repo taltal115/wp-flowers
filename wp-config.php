@@ -26,8 +26,8 @@ if ($_SERVER['REMOTE_ADDR'] == '127.0.0.1' || $_SERVER['REMOTE_ADDR'] == '::1') 
     // accesing site from another machine in my home network,
     // all their (internal) network addresses begin with this number;
     // the next line provides the server's own internal network address
-    define('WP_SITEURL', 'http://104.198.191.201/blog/');
-    define('WP_HOME', 'http://104.198.191.201/blog');
+    define('WP_SITEURL', 'http://35.225.188.242/blog/');
+    define('WP_HOME', 'http://35.225.188.242/blog');
 }
 
 // ** MySQL settings - You can get this info from your web host ** //
