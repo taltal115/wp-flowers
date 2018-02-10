@@ -18,6 +18,8 @@
  * @package WordPress
  */
 
+$TEMP_GOOGLE_IP = 'http://35.226.50.54/blog';
+
 if ($_SERVER['REMOTE_ADDR'] == '127.0.0.1' || $_SERVER['REMOTE_ADDR'] == '::1') {
     // accesing site from my local server
     define('WP_SITEURL', 'http://localhost/blog/');
@@ -26,8 +28,8 @@ if ($_SERVER['REMOTE_ADDR'] == '127.0.0.1' || $_SERVER['REMOTE_ADDR'] == '::1') 
     // accesing site from another machine in my home network,
     // all their (internal) network addresses begin with this number;
     // the next line provides the server's own internal network address
-    define('WP_SITEURL', 'http://35.225.188.242/blog/');
-    define('WP_HOME', 'http://35.225.188.242/blog');
+    define('WP_SITEURL', $TEMP_GOOGLE_IP);
+    define('WP_HOME', $TEMP_GOOGLE_IP);
 }
 
 // ** MySQL settings - You can get this info from your web host ** //

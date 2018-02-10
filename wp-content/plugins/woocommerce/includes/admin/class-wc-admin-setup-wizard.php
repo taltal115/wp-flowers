@@ -619,7 +619,7 @@ class WC_Admin_Setup_Wizard {
 				'description' => __( 'WooCommerce Services and Jetpack will be installed and activated for you.', 'woocommerce' ),
 			),
 			'flat_rate' => array(
-				'name'        => __( 'Flat Rate', 'woocommerce' ),
+				'name'        => __( 'תעריף', 'woocommerce' ),
 				'description' => __( 'Set a fixed price to cover shipping costs.', 'woocommerce' ),
 				'settings'    => array(
 					'cost' => array(
