@@ -585,7 +585,7 @@ case 'retrievepassword' :
 
 <form name="lostpasswordform" id="lostpasswordform" action="<?php echo esc_url( network_site_url( 'wp-login.php?action=lostpassword', 'login_post' ) ); ?>" method="post">
 	<p>
-		<label for="user_login" ><?php _e( 'Username or Email Address' ); ?><br />
+		<label for="user_login" ><?php _e( 'שם משתמש או אימייל' ); ?><br />
 		<input type="text" name="user_login" id="user_login" class="input" value="<?php echo esc_attr($user_login); ?>" size="20" /></label>
 	</p>
 	<?php
@@ -600,7 +600,7 @@ case 'retrievepassword' :
 </form>
 
 <p id="nav">
-<a href="<?php echo esc_url( wp_login_url() ); ?>"><?php _e('Log in') ?></a>
+<a href="<?php echo esc_url( wp_login_url() ); ?>"><?php _e('היתחבר') ?></a>
 <?php
 if ( get_option( 'users_can_register' ) ) :
 	$registration_url = sprintf( '<a href="%s">%s</a>', esc_url( wp_registration_url() ), __( 'Register' ) );
@@ -686,7 +686,7 @@ case 'rp' :
 
 	<div class="user-pass1-wrap">
 		<p>
-			<label for="pass1"><?php _e( 'New password' ) ?></label>
+			<label for="pass1"><?php _e( 'סיסמא חדשה' ) ?></label>
 		</p>
 
 		<div class="wp-pwd">
@@ -696,12 +696,12 @@ case 'rp' :
 					<span class="dashicons dashicons-hidden"></span>
 				</span>
 			</div>
-			<div id="pass-strength-result" class="hide-if-no-js" aria-live="polite"><?php _e( 'Strength indicator' ); ?></div>
+			<div id="pass-strength-result" class="hide-if-no-js" aria-live="polite"><?php _e( 'מדד לחוזקה' ); ?></div>
 		</div>
 		<div class="pw-weak">
 			<label>
 				<input type="checkbox" name="pw_weak" class="pw-checkbox" />
-				<?php _e( 'Confirm use of weak password' ); ?>
+				<?php _e( 'אשר שימוש בסיסמא חלשה' ); ?>
 			</label>
 		</div>
 	</div>
@@ -985,11 +985,11 @@ default:
 
 <form name="loginform" id="loginform" action="<?php echo esc_url( site_url( 'wp-login.php', 'login_post' ) ); ?>" method="post">
 	<p>
-		<label for="user_login"><?php _e( 'Username or Email Address' ); ?><br />
+		<label for="user_login"><?php _e( 'שם משתמש או אימייל' ); ?><br />
 		<input type="text" name="log" id="user_login"<?php echo $aria_describedby_error; ?> class="input" value="<?php echo esc_attr( $user_login ); ?>" size="20" /></label>
 	</p>
 	<p>
-		<label for="user_pass"><?php _e( 'Password' ); ?><br />
+		<label for="user_pass"><?php _e( 'סיסמא' ); ?><br />
 		<input type="password" name="pwd" id="user_pass"<?php echo $aria_describedby_error; ?> class="input" value="" size="20" /></label>
 	</p>
 	<?php

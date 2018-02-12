@@ -204,7 +204,7 @@ if( !class_exists( 'YITH_Woocompare_Frontend' ) ) {
                 'actionremove' => $this->action_remove,
                 'actionview' => $this->action_view,
                 'actionreload' => $this->action_reload,
-                'added_label' => apply_filters( 'yith_woocompare_compare_added_label', __( 'Added', 'yith-woocommerce-compare' ) ),
+                'added_label' => apply_filters( 'yith_woocompare_compare_added_label', __( 'המוצר בעגלה', 'yith-woocommerce-compare' ) ),
                 'table_title' => apply_filters( 'yith_woocompare_compare_table_title',__( 'Product Comparison', 'yith-woocommerce-compare' ) ),
                 'auto_open' => get_option( 'yith_woocompare_auto_open', 'yes' ),
                 'loader'    => YITH_WOOCOMPARE_ASSETS_URL . '/images/loader.gif',

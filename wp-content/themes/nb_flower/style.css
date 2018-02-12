@@ -9490,7 +9490,7 @@ body.woocommerce-checkout {
 @media (max-width: 767px) {
     .header-center-logo {
         width: 100%;
-        margin: 50px 0 30px;
+        margin: 80px 0 0;
     }
     .header-left-widgets {
       width: 185px;
@@ -13117,7 +13117,11 @@ body.woocommerce-checkout {
           font-family: 'Roboto';
           font-size: 14px;
           color: #3c3c3c;
-          font-weight: bold; }
+          font-weight: bold;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
         .home2-feature-products .item-posts li.product > a .empty-rating, .home2-feature-products .item-posts li.product > a .star-rating {
           position: relative;
           width: 65px;

@@ -54,6 +54,7 @@ define('DB_COLLATE', '');
 define ('WPLANG', 'he_IL');
 
 define('FS_METHOD', 'direct');
+define('FSMETHOD', 'direct');
 
 /**#@+
  * Authentication Unique Keys and Salts.

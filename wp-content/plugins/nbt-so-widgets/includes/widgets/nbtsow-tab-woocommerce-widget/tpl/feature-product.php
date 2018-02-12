@@ -55,7 +55,7 @@ $font_lists = $this->getFontClass($instance);
                             endwhile;
 
                         } else {
-                            echo __( 'No products found' );
+                            echo __( 'לא נמצאו מוצרים' );
                         }
                             wp_reset_postdata();
                         ?>

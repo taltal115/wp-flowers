@@ -1267,7 +1267,7 @@
             array(
                 'id'       => 'opt-select',
                 'type'     => 'select',
-                'title'    => __( 'Select Option', 'redux-framework-demo' ),
+                'title'    => __( 'בחר גודל', 'redux-framework-demo' ),
                 'subtitle' => __( 'No validation can be done on this field type', 'redux-framework-demo' ),
                 'desc'     => __( 'This is the description field, again good for additional info.', 'redux-framework-demo' ),
                 //Must provide key => value pairs for select options

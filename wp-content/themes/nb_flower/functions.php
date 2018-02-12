@@ -7,6 +7,12 @@
  * @package Nb_flower
  */
 
+
+@ini_set( 'upload_max_size' , '64M' );
+@ini_set( 'post_max_size', '64M');
+@ini_set( 'max_execution_time', '300' );
+
+
 if ( ! function_exists( 'nb_flower_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
