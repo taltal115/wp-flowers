@@ -184,7 +184,7 @@ class SiteOrigin_Widget_Field_Media extends SiteOrigin_Widget_Field_Base {
 							</button>
 
 							<div id="so-widgets-image-search-suggestions">
-								<strong><?php esc_html_e( 'חיפושים דומים: ', 'so-widgets-bundle' ) ?></strong>
+								<strong><?php esc_html_e( 'Related Searches: ', 'so-widgets-bundle' ) ?></strong>
 								<ul class="so-keywords-list"></ul>
 							</div>
 						</form>

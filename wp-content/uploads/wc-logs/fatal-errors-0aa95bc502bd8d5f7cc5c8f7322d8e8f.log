@@ -312,3 +312,5 @@ Stack trace:
 #4 /var/www/html/blog/wp-content/plugins/so-widgets-bundle/base/siteorigin-widget.class.php(670): SiteOrigin_Widget->form_options()
 #5 /var/www/html/blog/wp-content/plugins/siteorigin-panels/inc/admin
 
+2018-02-13T18:40:57+00:00 CRITICAL Cannot use object of type WP_Error as array
+
