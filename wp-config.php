@@ -18,32 +18,41 @@
  * @package WordPress
  */
 
-$TEMP_GOOGLE_IP = 'http://35.226.50.54/blog';
+$TEMP_GOOGLE_IP = 'http://cpanel8.secured.co.il/~allenbyf/';
 
 if ($_SERVER['REMOTE_ADDR'] == '127.0.0.1' || $_SERVER['REMOTE_ADDR'] == '::1') {
     // accesing site from my local server
     define('WP_SITEURL', 'http://localhost/blog/');
     define('WP_HOME', 'http://localhost/blog');
+    $DB_NAME = 'blog';
+    $DB_USER = 'root';
+    $DB_PASSWORD = 'root';
+    $DB_HOST = 'localhost';
 } else {
     // accesing site from another machine in my home network,
     // all their (internal) network addresses begin with this number;
     // the next line provides the server's own internal network address
     define('WP_SITEURL', $TEMP_GOOGLE_IP);
     define('WP_HOME', $TEMP_GOOGLE_IP);
+    $DB_NAME = 'allenbyf_blog';
+    $DB_USER = 'allenbyf_wp404';
+    $DB_PASSWORD = '1^szlQvJs{sB';
+    $DB_HOST = 'localhost';
 }
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'blog');
+define('DB_NAME', $DB_NAME);
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', $DB_USER);
 
 /** MySQL database password */
-define('DB_PASSWORD', 'root');
+define('DB_PASSWORD', $DB_PASSWORD);
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', $DB_HOST);
+
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
