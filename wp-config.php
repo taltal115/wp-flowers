@@ -19,6 +19,7 @@
  */
 
 $TEMP_GOOGLE_IP = 'http://cpanel8.secured.co.il/~allenbyf/';
+$DB_HOST = 'localhost';
 
 if ($_SERVER['REMOTE_ADDR'] == '127.0.0.1' || $_SERVER['REMOTE_ADDR'] == '::1') {
     // accesing site from my local server
@@ -27,7 +28,6 @@ if ($_SERVER['REMOTE_ADDR'] == '127.0.0.1' || $_SERVER['REMOTE_ADDR'] == '::1') 
     $DB_NAME = 'blog';
     $DB_USER = 'root';
     $DB_PASSWORD = 'root';
-    $DB_HOST = 'localhost';
 } else {
     // accesing site from another machine in my home network,
     // all their (internal) network addresses begin with this number;
@@ -35,9 +35,8 @@ if ($_SERVER['REMOTE_ADDR'] == '127.0.0.1' || $_SERVER['REMOTE_ADDR'] == '::1') 
     define('WP_SITEURL', $TEMP_GOOGLE_IP);
     define('WP_HOME', $TEMP_GOOGLE_IP);
     $DB_NAME = 'allenbyf_blog';
-    $DB_USER = 'allenbyf_wp404';
+    $DB_USER = 'allenbyf_wp219';
     $DB_PASSWORD = '1^szlQvJs{sB';
-    $DB_HOST = 'localhost';
 }
 
 // ** MySQL settings - You can get this info from your web host ** //
