@@ -17,41 +17,78 @@
  *
  * @package WordPress
  */
+//
+//$TEMP_GOOGLE_IP = 'http://cpanel8.secured.co.il/~allenbyf/';
+//$DB_HOST = 'localhost';
+//
+//if ($_SERVER['REMOTE_ADDR'] == '127.0.0.1' || $_SERVER['REMOTE_ADDR'] == '::1') {
+//    // accesing site from my local server
+//    define('WP_SITEURL', 'http://localhost/blog/');
+//    define('WP_HOME', 'http://localhost/blog');
+//    $DB_NAME = 'blog';
+//    $DB_USER = 'root';
+//    $DB_PASSWORD = 'root';
+//} else {
+//    // accesing site from another machine in my home network,
+//    // all their (internal) network addresses begin with this number;
+//    // the next line provides the server's own internal network address
+//    define('WP_SITEURL', $TEMP_GOOGLE_IP);
+//    define('WP_HOME', $TEMP_GOOGLE_IP);
+//    $DB_NAME = 'allenbyf_blog';
+//    $DB_USER = 'allenbyf_wp219';
+//    $DB_PASSWORD = '1^szlQvJs{sB';
+//}
+//
+//// ** MySQL settings - You can get this info from your web host ** //
+///** The name of the database for WordPress */
+//define('DB_NAME', $DB_NAME);
+//
+///** MySQL database username */
+//define('DB_USER', $DB_USER);
+//
+///** MySQL database password */
+//define('DB_PASSWORD', $DB_PASSWORD);
+//
+///** MySQL hostname */
+//define('DB_HOST', $DB_HOST);
+//
+//
+///** Database Charset to use in creating database tables. */
+//define('DB_CHARSET', 'utf8');
+//
+///** The Database Collate type. Don't change this if in doubt. */
+//define('DB_COLLATE', '');
+//
+//define ('WPLANG', 'he_IL');
+//
+//define('FS_METHOD', 'direct');
+//define('FSMETHOD', 'direct');
 
-$TEMP_GOOGLE_IP = 'http://cpanel8.secured.co.il/~allenbyf/';
-$DB_HOST = 'localhost';
 
 if ($_SERVER['REMOTE_ADDR'] == '127.0.0.1' || $_SERVER['REMOTE_ADDR'] == '::1') {
     // accesing site from my local server
     define('WP_SITEURL', 'http://localhost/blog/');
     define('WP_HOME', 'http://localhost/blog');
-    $DB_NAME = 'blog';
-    $DB_USER = 'root';
-    $DB_PASSWORD = 'root';
 } else {
     // accesing site from another machine in my home network,
     // all their (internal) network addresses begin with this number;
     // the next line provides the server's own internal network address
-    define('WP_SITEURL', $TEMP_GOOGLE_IP);
-    define('WP_HOME', $TEMP_GOOGLE_IP);
-    $DB_NAME = 'allenbyf_blog';
-    $DB_USER = 'allenbyf_wp219';
-    $DB_PASSWORD = '1^szlQvJs{sB';
+    define('WP_SITEURL', 'http://35.224.23.1/blog/');
+    define('WP_HOME', 'http://35.224.23.1/blog');
 }
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', $DB_NAME);
+define('DB_NAME', 'blog');
 
 /** MySQL database username */
-define('DB_USER', $DB_USER);
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', $DB_PASSWORD);
+define('DB_PASSWORD', 'root');
 
 /** MySQL hostname */
-define('DB_HOST', $DB_HOST);
-
+define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -62,7 +99,8 @@ define('DB_COLLATE', '');
 define ('WPLANG', 'he_IL');
 
 define('FS_METHOD', 'direct');
-define('FSMETHOD', 'direct');
+
+
 
 /**#@+
  * Authentication Unique Keys and Salts.
