@@ -7538,7 +7538,7 @@ article.post.post-password-required input[type="submit"], .comments-area.post-pa
     .woocommerce div.product form.cart .quantity-label {
       margin-right: 15px; } }
   .woocommerce div.product form.cart .woocommerce-variation-add-to-cart > span {
-    float: left;
+    float: right;
     margin-top: 18px;
     font-weight: bold;
     color: #444; }
@@ -8914,6 +8914,7 @@ body.woocommerce-checkout {
   .wpcf7-form .contact-form-wrap .contact-left .wpcf7-textarea {
     padding: 15px;
     width: 100%;
+    text-align: right;
     border: 1px solid #d7d7d7;
     border-radius: 4px; }
     .wpcf7-form .contact-form-wrap .contact-left .wpcf7-textarea:-ms-input-placeholder {
@@ -8937,6 +8938,7 @@ body.woocommerce-checkout {
     border-radius: 4px;
     border: 1px solid #d7d7d7;
     text-indent: 20px;
+    text-align: right;
     width: 100%;
     margin-bottom: 15px; }
     .wpcf7-form .contact-form-wrap .contact-right .wpcf7-text:-ms-input-placeholder {
@@ -12685,7 +12687,21 @@ body.woocommerce-checkout {
       .page-title-wrap .page-breadcrumb {
         width: 100%;
         float: left;
-        margin-top: 10px; } }
+        margin-top: 10px;
+        display: none;
+      }
+      .page-title-wrap {
+        /* border-bottom: 1px solid #e1e1e1; */
+        border-top: 1px solid #e1e1e1;
+         padding-top: 0px;
+         padding-bottom: 0px;
+         margin-bottom: 0px;
+        /* background: #f8f9f9; */
+      }
+      .category .content-area, .single .content-area {
+        margin-top: 0px;
+      }
+    }
     .page-title-wrap .page-breadcrumb > span {
       margin-right: 3px;
       margin-left: 3px; }
@@ -15025,7 +15041,7 @@ body.home .site-content {
 }
 @media screen and (min-width: 1000px) {
   .woocommerce div.product div.images .woocommerce-product-gallery__image a > img{
-    height: 410px !important;
+    /*height: 410px !important;*/
   }
 }
 .woocommerce-checkout .woocommerce-account-fields{
@@ -15120,4 +15136,10 @@ body.home .site-content {
   .topbar-inner .search-form label {
     right: 25%!important;
   }
+}
+
+.owl-nav {
+  position: absolute;
+  top: 0;
+  left: 80px;
 }

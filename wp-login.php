@@ -334,7 +334,7 @@ function retrieve_password() {
 		return $errors;
 
 	if ( !$user_data ) {
-		$errors->add('invalidcombo', __('<strong>ERROR</strong>: Invalid username or email.'));
+		$errors->add('invalidcombo', __('<strong>שגיאה</strong>: שם משתמש או סיסמא שגויים.'));
 		return $errors;
 	}
 

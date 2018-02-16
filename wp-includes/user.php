@@ -146,7 +146,7 @@ function wp_authenticate_username_password($user, $username, $password) {
 		return new WP_Error( 'invalid_username',
 			__( '<strong>ERROR</strong>: Invalid username.' ) .
 			' <a href="' . wp_lostpassword_url() . '">' .
-			__( 'Lost your password?' ) .
+			__( 'איבדת את הסיסמא?' ) .
 			'</a>'
 		);
 	}
@@ -172,7 +172,7 @@ function wp_authenticate_username_password($user, $username, $password) {
 				'<strong>' . $username . '</strong>'
 			) .
 			' <a href="' . wp_lostpassword_url() . '">' .
-			__( 'Lost your password?' ) .
+			__( 'איבדת את הסיסמא?' ) .
 			'</a>'
 		);
 	}
@@ -224,7 +224,7 @@ function wp_authenticate_email_password( $user, $email, $password ) {
 		return new WP_Error( 'invalid_email',
 			__( '<strong>ERROR</strong>: Invalid email address.' ) .
 			' <a href="' . wp_lostpassword_url() . '">' .
-			__( 'Lost your password?' ) .
+			__( 'איבדת את הסיסמא?' ) .
 			'</a>'
 		);
 	}
@@ -244,7 +244,7 @@ function wp_authenticate_email_password( $user, $email, $password ) {
 				'<strong>' . $email . '</strong>'
 			) .
 			' <a href="' . wp_lostpassword_url() . '">' .
-			__( 'Lost your password?' ) .
+			__( 'איבדת את הסיסמא?' ) .
 			'</a>'
 		);
 	}

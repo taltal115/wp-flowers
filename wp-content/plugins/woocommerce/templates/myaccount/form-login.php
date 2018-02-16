@@ -66,13 +66,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		</form>
 
-<?php if ( get_option( 'woocommerce_enable_myaccount_registration' ) === 'yes' ) : ?>
+<?php if ( get_option( 'woocommerce_enable_myaccount_registration' ) === 'yes' && !is_user_logged_in()) : ?>
 
 	</div>
 
 	<div class="u-column2 col-2">
 
-		<h2><?php _e( 'Register', 'woocommerce' ); ?></h2>
+		<h2><?php _e( 'הרשמה', 'woocommerce' ); ?></h2>
 
 		<form method="post" class="register">
 
@@ -95,7 +95,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<?php if ( 'no' === get_option( 'woocommerce_registration_generate_password' ) ) : ?>
 
 				<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-					<label for="reg_password"><?php _e( 'Password', 'woocommerce' ); ?> <span class="required">*</span></label>
+					<label for="reg_password"><?php _e( 'סיסמא', 'woocommerce' ); ?> <span class="required">*</span></label>
 					<input type="password" class="woocommerce-Input woocommerce-Input--text input-text" name="password" id="reg_password" />
 				</p>
 
@@ -105,7 +105,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<p class="woocommerce-FormRow form-row">
 				<?php wp_nonce_field( 'woocommerce-register', 'woocommerce-register-nonce' ); ?>
-				<input type="submit" class="woocommerce-Button button" name="register" value="<?php esc_attr_e( 'Register', 'woocommerce' ); ?>" />
+				<input type="submit" class="woocommerce-Button button" name="register" value="<?php esc_attr_e( 'הירשם', 'woocommerce' ); ?>" />
 			</p>
 
 			<?php do_action( 'woocommerce_register_form_end' ); ?>

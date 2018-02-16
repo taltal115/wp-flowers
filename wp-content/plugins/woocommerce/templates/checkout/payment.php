@@ -32,7 +32,7 @@ if ( ! is_ajax() ) {
 						wc_get_template( 'checkout/payment-method.php', array( 'gateway' => $gateway ) );
 					}
 				} else {
-					echo '<li class="woocommerce-notice woocommerce-notice--info woocommerce-info">' . apply_filters( 'woocommerce_no_available_payment_methods_message', WC()->customer->get_billing_country() ? __( 'מצטערים, נראה שאין אמצעי תשלום זמינים עבור המדינה שלך. אנא צור איתנו קשר אם אתה זקוק לעזרה או רוצה לעשות סידורים חלופיים.', 'woocommerce' ) : __( 'מלא את הפרטים שלך למעלה כדי לראות את אמצעי התשלום הזמינים.', 'woocommerce' ) ) . '</li>';
+					echo '<li class="woocommerce-notice woocommerce-notice--info woocommerce-info">' . apply_filters( 'woocommerce_no_available_payment_methods_message', WC()->customer->get_billing_country() ? __( 'מצטערים, כרגע אפשר לבצע רק הזמנות טלפוניות. אנא צור איתנו קשר אם אתה זקוק לעזרה או רוצה לעשות הזמנה.', 'woocommerce' ) : __( 'מלא את הפרטים שלך למעלה כדי לראות את אמצעי התשלום הזמינים.', 'woocommerce' ) ) . '</li>';
 				}
 			?>
 		</ul>

@@ -522,3 +522,37 @@ add_action( 'after_setup_theme', 'remove_pgz_theme_support', 100 );
 function remove_pgz_theme_support() { 
 remove_theme_support( 'wc-product-gallery-zoom' );
 }
+
+add_action( 'woocommerce_checkout_process', 'wc_minimum_order_amount' );
+add_action( 'woocommerce_before_cart' , 'wc_minimum_order_amount' );
+
+function wc_minimum_order_amount() {
+    // Set this variable to specify a minimum order value
+    $minimum = 200;
+
+    if ( WC()->cart->total < $minimum ) {
+
+        if( is_cart() ) {
+
+            wc_print_notice(
+//                sprintf( 'You must have an order with a minimum of %s to place your order, your current order total is %s.' ,
+                sprintf( 'אתה חייב הזמנה עם מינימום של% s כדי לבצע את ההזמנה, סה"כ ההזמנה הנוכחית שלך היא% s.' ,
+                    wc_price( $minimum ),
+                    wc_price( WC()->cart->total )
+                ), 'error'
+            );
+
+        } else {
+
+            wc_add_notice(
+//                sprintf( 'You must have an order with a minimum of %s to place your order, your current order total is %s.' ,
+                sprintf( 'אתה חייב הזמנה עם מינימום של %s כדי לבצע את ההזמנה, סה"כ ההזמנה הנוכחית שלך היא %s.' ,
+                    wc_price( $minimum ),
+                    wc_price( WC()->cart->total )
+                ), 'error'
+            );
+
+        }
+    }
+
+}

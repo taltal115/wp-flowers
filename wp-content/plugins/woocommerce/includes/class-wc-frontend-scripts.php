@@ -572,7 +572,7 @@ class WC_Frontend_Scripts {
 			case 'wc-password-strength-meter' :
 				return array(
 					'min_password_strength' => apply_filters( 'woocommerce_min_password_strength', 3 ),
-					'i18n_password_error'   => esc_attr__( 'Please enter a stronger password.', 'woocommerce' ),
+					'i18n_password_error'   => esc_attr__( 'הכנס סיסמא חזקה יותר', 'woocommerce' ),
 					'i18n_password_hint'    => esc_attr( wp_get_password_hint() ),
 				);
 			break;
