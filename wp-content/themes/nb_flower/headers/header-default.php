@@ -16,9 +16,9 @@
             </div>
 
 			<div class="header-left-widgets col-xs-12 col-sm-3 col-md-3 ">
-                <p class="shipping-to-all">משלוחים לכל חלקי הארץ</p>
                 <a href="tel:03-5608887">
-                    <i class="fa fa-phone" aria-hidden="true"><p>03-5608887</p></i>
+                    <span class="shipping-to-all">משלוחים לכל הארץ</span>
+                    <i class="fa fa-phone" aria-hidden="true"><span>03-5608887</span></i>
                 </a>
             </div>
 

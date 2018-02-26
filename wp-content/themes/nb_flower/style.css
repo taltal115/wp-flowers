@@ -9476,10 +9476,11 @@ body.woocommerce-checkout {
     width: 290px!important;
   }
   .header-left-widgets {
-    width: 183px!important;
-    position: absolute!important;
-    top: 0!important;
-    left: 0!important;
+    width: 183px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: left;
   }
   #mega-menu-wrap-primary .mega-menu-toggle + #mega-menu-primary li.mega-menu-item.mega-toggle-on > ul.mega-sub-menu, #mega-menu-wrap-primary .mega-menu-toggle + #mega-menu-primary li.mega-menu-item.mega-menu-megamenu.mega-toggle-on ul.mega-sub-menu {
     display: block;
@@ -9488,9 +9489,46 @@ body.woocommerce-checkout {
   .mega-menu-link{
     color: #000!important;
   }
+  .header-left-widgets .shipping-to-all {
+    margin: 0px 0px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #3c3c3c;
+  }
+
+  .single-product-images-wraps.mobile {
+    display: block;
+  }
+  .single-product-images-wraps.desktop {
+    display: none;
+  }
 }
 
+@media only screen and (max-device-width: 767px) and (min-device-width : 321px) {
+  .header-left-widgets .shipping-to-all {
+    margin: 0px 0px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #3c3c3c;
+  }
+  .single-product-images-wraps.desktop {
+    display: none;
+  }
+  .single-product-images-wraps.mobile {
+    display: block;
+  }
+}
+
+
 @media (max-width: 767px) {
+
+  .single-product-images-wraps.desktop {
+    display: none;
+  }
+  .single-product-images-wraps.mobile {
+    display: block;
+  }
+
     .header-center-logo {
         width: 100%;
         margin: 80px 0 0;
@@ -9501,11 +9539,7 @@ body.woocommerce-checkout {
       top: 0;
       left: 0;
     }
-    .header-left-widgets .shipping-to-all {
-        margin: 0px 0px;
-        font-size: 14px;
-        font-weight: bold;
-    }
+
     .fa.fa-phone {
         margin: -10px 17px 0 0;
     }
@@ -9552,7 +9586,18 @@ body.woocommerce-checkout {
     min-width: 50px!important;
   }
 }
+
+.shipping-to-all {
+  color: #3c3c3c;
+}
+
 @media (min-width: 768px) {
+  .single-product-images-wraps.desktop {
+    display: block;
+  }
+  .single-product-images-wraps.mobile {
+    display: none;
+  }
     .header-left-widgets {
         /*width: 230px;*/
         /*position: relative;*/
@@ -9598,6 +9643,7 @@ body.woocommerce-checkout {
     font-family: Tahoma, Geneva, sans-serif;
     font-weight: bold;
     width: 100%;
+    color: #3c3c3c;
   }
   .header-center-logo {
     width: 100%;
@@ -15145,4 +15191,13 @@ body.home .site-content {
   position: absolute;
   top: 0;
   left: 80px;
+}
+
+@media (min-width: 768px){
+  #netbase-responsive-toggle {
+    font-size: 30px;
+    line-height: 60px;
+    float: right;
+    margin: 0px 0px 0 30px;
+  }
 }
