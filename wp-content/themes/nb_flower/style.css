@@ -6155,6 +6155,20 @@ button.close {
   font-weight: normal;
   font-style: italic; }
 
+@font-face {
+  font-family: 'Tahoma';
+  src: url("fonts/tahoma/Tahoma Regular font.ttf");
+  src: url("fonts/tahoma/TAHOMA_0.TTF");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Tahoma Bold';
+  src: url("fonts/tahoma/TAHOMAB0.TTF");
+  src: url("fonts/tahoma/TAHOMABD.TTF");
+  font-weight: bold;
+}
+
 * {
   box-sizing: border-box;
   font-smoothing: antialiased;
@@ -9536,12 +9550,15 @@ body.woocommerce-checkout {
     .header-left-widgets {
       width: 185px;
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 10px;
+      left: 10px;
+      text-align: center;
     }
 
     .fa.fa-phone {
-        margin: -10px 17px 0 0;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
     }
     .fa.fa-phone p {
       float: left;
@@ -9589,9 +9606,14 @@ body.woocommerce-checkout {
 
 .shipping-to-all {
   color: #3c3c3c;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 @media (min-width: 768px) {
+  .phone-container {
+    display: grid;
+  }
   .single-product-images-wraps.desktop {
     display: block;
   }
@@ -9599,7 +9621,7 @@ body.woocommerce-checkout {
     display: none;
   }
     .header-left-widgets {
-        /*width: 230px;*/
+        width: 230px;
         /*position: relative;*/
         left: -40px;
         top: -100px;
@@ -9620,8 +9642,8 @@ body.woocommerce-checkout {
     float: right;
   }
   .fa.fa-phone {
-    float: right;
-    margin: -10px 10px 0 0;
+    margin: -10px auto;
+    font-size: 20px;
   }
   .fa.fa-phone p {
     float: left;
@@ -9637,9 +9659,10 @@ body.woocommerce-checkout {
     font-size: 30px;
   }
   .header-left-widgets .shipping-to-all {
-    float: right;
+    float: left;
+    text-align: center;
     margin: 7px 0px;
-    font-size: 14px;
+    font-size: 20px;
     font-family: Tahoma, Geneva, sans-serif;
     font-weight: bold;
     width: 100%;
